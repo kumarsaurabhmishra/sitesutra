@@ -1,0 +1,5 @@
+example_type,url,purpose,decision,content_owner
+hypothetical,/index.html,Home,redirect to /,business
+hypothetical,/services.html,Service overview,redirect to /services/,business
+hypothetical,/contact-us.html,Enquiry,redirect to /contact/,business
+hypothetical,/offer-2023.html,Expired offer,review before retire,business
