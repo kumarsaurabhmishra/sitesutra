@@ -28,7 +28,7 @@ Rebuild both generators after editing content or configuration. `verify.py` chec
 
 ## Hosting and remaining setup
 
-The current site is deployed at https://chapter-studio-demo-141026.ochre-yew-5025.chatgpt.site with owner-only access. `.openai/hosting.json` records the Sites project and static output directory.
+The production site is https://sitesutra.vercel.app. Vercel serves the committed `dist` directory and deploys merges to `main`. The source repository is public. `.openai/hosting.json` retains the earlier Sites project identity.
 
 Bookings use the configured Cal.com 15-minute event. Availability and calendar connections are managed in Cal.com. The project-brief form currently prepares an email draft; the visitor must send it. A real submission endpoint and notification delivery still need configuration.
 
@@ -44,4 +44,4 @@ Enable local commit/push guardrails after cloning:
 git config core.hooksPath .githooks
 ```
 
-Local hooks are convenience guardrails and can be bypassed. GitHub must enforce PR-only merges, administrator enforcement, no force pushes/deletions, conversation resolution and the `PR title and description` status check through branch protection. Private repository protection requires a supported GitHub plan. No review approval is required while the founder is the sole reviewer.
+Local hooks are convenience guardrails and can be bypassed. GitHub must enforce PR-only merges, administrator enforcement, no force pushes/deletions, conversation resolution and the `PR title and description` status check through branch protection. The public repository has enforced protection on `main`, including for administrators. No review approval is required while the founder is the sole reviewer.
