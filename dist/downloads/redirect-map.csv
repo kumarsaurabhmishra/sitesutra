@@ -1,0 +1,5 @@
+example_type,old_url,new_url,status,validation
+hypothetical,/index.html,/,301,test final home
+hypothetical,/services.html,/services/,301,test overview
+hypothetical,/contact-us.html,/contact/,301,test enquiry
+hypothetical,/offer-2023.html,,410,only after retirement review

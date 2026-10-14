@@ -62,3 +62,9 @@ if(menuButton){
  header.addEventListener('focusout',()=>{setTimeout(()=>{if(!header.contains(document.activeElement))setMenu(false);},0);});
  window.matchMedia('(min-width: 901px)').addEventListener('change',()=>setMenu(false));
 }
+
+// Buyer-guide demonstrations never save or publish content.
+const editHeading=document.getElementById('demo-heading');
+if(editHeading){const original=editHeading.value;function renderEdit(){document.getElementById('edited-heading').textContent=editHeading.value.trim()||'Your service heading';document.getElementById('edit-status').textContent='Local preview updated. Nothing is saved or published.';}editHeading.addEventListener('input',renderEdit);document.getElementById('reset-edit').addEventListener('click',()=>{editHeading.value=original;renderEdit();editHeading.focus();});}
+const maintenance=document.getElementById('maintenance-demo');
+if(maintenance){maintenance.addEventListener('change',()=>{const count=maintenance.querySelectorAll('input:checked').length;document.getElementById('maintenance-status').textContent=count+' of 4 review items marked.'+(count===4?' Demo checklist complete; actual release approval is still required.':'');});}

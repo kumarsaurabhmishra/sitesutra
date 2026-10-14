@@ -44,3 +44,15 @@
 - Added content-hashed stylesheet, JavaScript and config URLs to avoid stale browser assets after publication.
 - Checked all 19 pages at 320,375,390,430,768,1024,1440px: no horizontal overflow.
 - Verified menu expansion/collapse, Escape, and Work navigation completing with menu closed. Core link/anchor/asset and syntax checks passed.
+
+## Qualified-enquiry preview — 14 October 2026
+
+- Four requested service titles/H1s verified, with audience, deliverables, exclusions, process, commercial approach, evidence and CTA.
+- Existing 19 routes retained; 415 local assets/links/fragments pass verification. Canonicals and sitemap retain https://sitesutra.vercel.app. Robots retains OAI-SearchBot and private/admin exclusions; no private/admin files published.
+- Eight changed service/guide pages checked at 375 and 1440 px with no page overflow. Guide tables scroll within their container.
+- Edited a fictional heading, observed live text update, reset it, and marked all four maintenance checkboxes; status matched. Neither demonstration saves or submits data. No-JavaScript guide content/downloads remain available with an explanatory note.
+- Four Markdown/CSV downloads exist and are linked. Hypothetical scopes and redirect examples are explicitly labelled.
+- JSON-LD parsed for every studio page: Organization/Person/WebPage; Article for guides, Service for service pages, ProfilePage for About. No ratings, credentials or fabricated results.
+- Verification values are empty and emit no meta tags. Search Console/Bing setup remains pending actual property creation, public values, approved release and provider confirmation.
+- No analytics, AI-citation measurements or confirmed-enquiry records created. Separate collection methods documented in SEARCH-SETUP.md.
+- Live production remains unchanged pending preview approval.
