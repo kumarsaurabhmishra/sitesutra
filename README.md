@@ -33,3 +33,15 @@ The current site is deployed at https://chapter-studio-demo-141026.ochre-yew-502
 Bookings use the configured Cal.com 15-minute event. Availability and calendar connections are managed in Cal.com. The project-brief form currently prepares an email draft; the visitor must send it. A real submission endpoint and notification delivery still need configuration.
 
 A custom domain, domain email, genuine professional-profile links and founder photograph can be supplied later. Update `origin` in `site-config.json` and rebuild when changing domains. Concept projects are demonstrations, not commissioned client work. See `SETUP.md` for further launch notes.
+
+## Branch and pull request workflow
+
+`main` is the production branch; Vercel deploys it after merges. Develop on `deployment` or a feature branch, then open a PR to `main`. Complete the Summary, Reason and Validation sections and use a specific title. The PR metadata check runs from trusted base-branch workflow code without checking out or executing PR code.
+
+Enable local commit/push guardrails after cloning:
+
+```sh
+git config core.hooksPath .githooks
+```
+
+Local hooks are convenience guardrails and can be bypassed. GitHub must enforce PR-only merges, administrator enforcement, no force pushes/deletions, conversation resolution and the `PR title and description` status check through branch protection. Private repository protection requires a supported GitHub plan. No review approval is required while the founder is the sole reviewer.

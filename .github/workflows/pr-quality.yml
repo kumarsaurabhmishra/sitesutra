@@ -1,0 +1,44 @@
+name: Pull request quality
+on:
+  pull_request_target:
+    branches: [main]
+    types: [opened, edited, synchronize, reopened, ready_for_review]
+permissions:
+  contents: read
+jobs:
+  pr-quality:
+    name: PR title and description
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate pull request metadata
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, os, re
+          with open(os.environ['GITHUB_EVENT_PATH']) as file:
+              pr = json.load(file)['pull_request']
+          title = pr['title'].strip()
+          errors = []
+          if not 15 <= len(title) <= 100 or len(title.split()) < 3:
+              errors.append('Use a descriptive title of 15–100 characters and at least three words.')
+          if re.fullmatch(r'(update|changes?|fix|test|wip|pr)[\s\d.!_-]*', title, re.I):
+              errors.append('Replace the generic title with a specific description of the change.')
+          body = re.sub(r'<!--.*?-->', '', pr.get('body') or '', flags=re.S)
+          placeholders = [
+              'Describe what changes for visitors or maintainers.',
+              'Explain the problem or request this addresses.',
+              'Describe the checks performed and their results. Include a preview link or screenshots for visual changes.',
+          ]
+          for heading in ['Summary', 'Reason', 'Validation']:
+              match = re.search(r'^##\s+' + heading + r'\s*\n(.*?)(?=^##\s|\Z)', body, re.M | re.S | re.I)
+              content = match.group(1).strip() if match else ''
+              for placeholder in placeholders:
+                  content = content.replace(placeholder, '')
+              if len(content.strip()) < 20 or len(content.split()) < 4:
+                  errors.append('Fill the ' + heading + ' section with a meaningful explanation (at least 20 characters and four words).')
+          for error in errors:
+              print('::error::' + error)
+          if errors:
+              raise SystemExit(1)
+          print('PR title and required description sections are complete.')
+          PY
