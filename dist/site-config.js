@@ -1,0 +1,1 @@
+window.SITESUTRA_CONFIG={"formEndpoint": "", "bookingUrl": "https://cal.com/kumar-saurabh-mishra/15min", "bookingTimezone": "Asia/Kolkata", "email": "contactkumarsmishra@gmail.com", "bookingEmbedUrl": "", "bookingDurationMinutes": 15, "bookingProvider": "cal.com", "calLink": "kumar-saurabh-mishra/15min"};
