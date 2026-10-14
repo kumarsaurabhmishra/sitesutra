@@ -56,3 +56,7 @@
 - Verification values are empty and emit no meta tags. Search Console/Bing setup remains pending actual property creation, public values, approved release and provider confirmation.
 - No analytics, AI-citation measurements or confirmed-enquiry records created. Separate collection methods documented in SEARCH-SETUP.md.
 - Live production remains unchanged pending preview approval.
+
+## Blog preview — 14 October 2026
+
+Added blog index and today's original comparison article, homepage/nav/footer discovery and BlogPosting markup. 21 total routes and 503 local references pass. Article attributes the draft to SiteSutra with visible AI-assisted founder-review disclosure. The listed date is the draft date; adjust to actual release date before first production publication if approval is later. No daily post is automatically published. Candidate keyword phrases have no verified demand or outcome data.
