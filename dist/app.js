@@ -50,3 +50,15 @@ if(calContainer){
  window.Cal('ui',{theme:'light',styles:{branding:{brandColor:'#244CFF'}},hideEventTypeDetails:false,layout:'month_view'});
  const observer=new MutationObserver(()=>{if(calContainer.querySelector('iframe')){calContainer.querySelector('iframe').title='Book a '+window.SITESUTRA_CONFIG.bookingDurationMinutes+'-minute discovery call with Kumar on Cal.com';calContainer.querySelector('.cal-loading')?.remove();observer.disconnect();}});observer.observe(calContainer,{childList:true,subtree:true});
 }
+// A standard disclosure navigation: regular links, keyboard focus and Escape.
+const menuButton=document.querySelector('.menu-toggle');
+if(menuButton){
+ const header=menuButton.closest('header');const navigation=document.getElementById('main-navigation');header.classList.add('nav-ready');
+ function setMenu(open,returnFocus=false){header.classList.toggle('nav-open',open);menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');if(returnFocus)menuButton.focus();}
+ menuButton.addEventListener('click',()=>setMenu(menuButton.getAttribute('aria-expanded')!=='true'));
+ navigation.querySelectorAll('a').forEach(link=>{if(new URL(link.href).pathname===location.pathname&&!new URL(link.href).hash)link.setAttribute('aria-current','page');link.addEventListener('click',()=>{setMenu(false);const destination=new URL(link.href);if(destination.pathname===location.pathname&&destination.hash){const target=document.querySelector(destination.hash);if(target){target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}}});});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&header.classList.contains('nav-open'))setMenu(false,true);});
+ document.addEventListener('pointerdown',e=>{if(!header.contains(e.target))setMenu(false);});
+ header.addEventListener('focusout',()=>{setTimeout(()=>{if(!header.contains(document.activeElement))setMenu(false);},0);});
+ window.matchMedia('(min-width: 901px)').addEventListener('change',()=>setMenu(false));
+}

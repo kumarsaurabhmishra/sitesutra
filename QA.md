@@ -37,3 +37,10 @@
 - No real order/payment/appointment created. Cal.com booking confirmation, notification delivery and actual calendar sync remain untested. External mail-app navigation is subject to the earlier browser security restriction and was not attempted again.
 - TESTING.md contains a user checklist. Full desktop/mobile demo captures updated to the revised copy and interfaces.
 - Nothing published.
+
+## Mobile navigation and layout revision
+- Added sticky compact header, disclosure Menu button, shortened booking action, active-page links, Escape/outside/focus dismissal and same-page focus handling.
+- Refined mobile type scale, full-width actions, consistent section/card padding, single-column services, process alignment, labelled form sizes, footer links and booking spacing.
+- Added content-hashed stylesheet, JavaScript and config URLs to avoid stale browser assets after publication.
+- Checked all 19 pages at 320,375,390,430,768,1024,1440px: no horizontal overflow.
+- Verified menu expansion/collapse, Escape, and Work navigation completing with menu closed. Core link/anchor/asset and syntax checks passed.
