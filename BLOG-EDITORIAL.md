@@ -4,7 +4,7 @@ Daily writing is a draft cadence, not an automatic publishing commitment. The he
 
 ## Add an article
 
-Store one JSON object in content/blog/YYYY-MM-DD-topic.json with slug, title, date (ISO), category, description, summary and body (trusted HTML). blog.py creates /blog/ and /blog/slug/, homepage/nav/footer links. The current article navigation expects a next-step heading with id="next-step". Use only safe, semantic article HTML; no inline scripts, fake data or tracking. Each post contains an AI-assisted draft disclosure pending founder review. Retain it until the actual human review is recorded; do not invent authorship or approval. BlogPosting currently attributes the editorial article to SiteSutra, not a fabricated expert.
+Store one JSON object in content/blog/YYYY-MM-DD-topic.json with slug, title, date (ISO), category, description, summary and body (trusted HTML). blog.py creates /blog/ and /blog/slug/, homepage/nav/footer links. The current article navigation expects a next-step heading with id="next-step". Use only safe, semantic article HTML; no inline scripts, fake data or tracking. Write in SiteSutra’s editorial voice. Public articles use the SiteSutra byline and date, without tool credits, writing-assistance disclosures or internal review notes. Do not fabricate personal experiences, credentials or approval. Human preview approval is still required before publication.
 
 Before a first live publication, datePublished must match the actual release date. The draft date is visible in previews only. If release happens on a later date, update the JSON date before merging; future modifications should use an actual dateModified only when documented.
 

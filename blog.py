@@ -17,7 +17,7 @@ def add_blog(g):
   title=escape(post['title']);day=datetime.date.fromisoformat(post['date']).strftime('%d %B %Y')
   g['blog_posts'][route]=post
   body=g['intro']('SITESUTRA JOURNAL / '+escape(post['category']).upper(),title,escape(post['summary']))
-  body+='<section class="reading blog-article"><p class="fine">By SiteSutra · <time datetime="'+post['date']+'">'+day+'</time></p><p class="fine">AI-assisted editorial draft prepared for founder review.</p><nav class="article-nav" aria-label="Article navigation"><a href="/blog/">← All articles</a><a href="#next-step">Your next step ↓</a></nav>'+post['body']+'</section>'
+  body+='<section class="reading blog-article"><p class="fine">By SiteSutra · <time datetime="'+post['date']+'">'+day+'</time></p><nav class="article-nav" aria-label="Article navigation"><a href="/blog/">← All articles</a><a href="#next-step">Your next step ↓</a></nav>'+post['body']+'</section>'
   body+='<section class="editorialclosing"><h2>Make the next decision with clarity.</h2><p>Discuss your business website or an agency delivery brief with Kumar Saurabh Mishra.</p><a class="btn orange" href="/#booking">Book a discovery call ↗</a></section>'
   g['pages'][route]=(post['title'],body);g['descriptions'][route]=post['description']
   cards.append('<a class="guidecard blog-card" href="'+route+'"><small>'+day+' / '+escape(post['category'])+'</small><h2>'+title+'</h2><p>'+escape(post['summary'])+'</p><span>Read article ↗</span></a>')
