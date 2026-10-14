@@ -9,7 +9,7 @@ def update(g):
  cal_link=c.get('calLink','')
  def widget():
   if c.get('bookingProvider')=='cal.com' and cal_link:
-   return f'<div class="bookinglive calbooking"><div id="cal-inline" data-cal-link="{escape(cal_link)}" role="region" aria-label="Cal.com discovery-call booking calendar"><p class="cal-loading" role="status">Loading available times…</p></div><p id="cal-fallback" class="fine">If the calendar does not load, use the booking link below.</p><a class="textlink" href="{escape(url)}" target="_blank" rel="noopener">Open Cal.com booking page ↗</a></div>'
+   return f'<div class="bookinglive calbooking"><div class="calendar-theme" role="group" aria-label="Calendar appearance" hidden><span>Calendar appearance <small>(switching refreshes slots)</small></span><div><button type="button" data-cal-theme="light" aria-pressed="false">Light</button><button type="button" data-cal-theme="dark" aria-pressed="true">Dark</button></div></div><div id="cal-inline" data-cal-link="{escape(cal_link)}" role="region" aria-label="Cal.com discovery-call booking calendar"><p class="cal-loading" role="status">Loading available times…</p></div><p id="cal-fallback" class="fine">If the calendar does not load, use the booking link below.</p><a class="textlink" href="{escape(url)}" target="_blank" rel="noopener">Open Cal.com booking page ↗</a></div>'
   if embed:
    return f'<div class="bookinglive"><iframe title="Book a 30-minute discovery call with Kumar" src="{escape(embed)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><a class="textlink" href="{escape(url or embed)}" target="_blank" rel="noopener">Open booking calendar in a new tab ↗</a></div>'
   if url:
