@@ -45,21 +45,9 @@ if(dateGrid){
 const calContainer=document.getElementById('cal-inline');
 if(calContainer){
  (function(C,A,L){const push=function(fn,args){fn.q.push(args);};const d=C.document;C.Cal=C.Cal||function(){const cal=C.Cal;const args=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];const script=d.createElement('script');script.src=A;script.onerror=()=>{const note=document.getElementById('cal-fallback');note.textContent='The booking calendar could not load. Please use the Cal.com link below.';note.setAttribute('role','alert');const loading=calContainer.querySelector('.cal-loading');if(loading)loading.textContent='Calendar unavailable in this browser.';};d.head.appendChild(script);cal.loaded=true;}if(args[0]===L){const api=function(){push(api,arguments);};const namespace=args[1];api.q=api.q||[];if(typeof namespace==='string'){cal.ns[namespace]=cal.ns[namespace]||api;push(cal.ns[namespace],args);push(cal,['initNamespace',namespace]);}else push(cal,args);return;}push(cal,args);};})(window,'https://cal.com/embed/embed.js','init');
- const bookingCard=calContainer.closest('.bookingcard');
- const themeControls=document.querySelector('.calendar-theme');
- let calendarTheme='dark';
- try{const saved=localStorage.getItem('sitesutra-calendar-theme');if(saved==='light'||saved==='dark')calendarTheme=saved;}catch{}
- function applyCalendarTheme(theme){
-  const changed=calendarTheme!==theme;
-  calendarTheme=theme;bookingCard.dataset.calendarTheme=theme;
-  if(changed){const frame=calContainer.querySelector('iframe');if(frame){const url=new URL(frame.src);url.searchParams.set('theme',theme);frame.src=url.href;}}
-  themeControls.querySelectorAll('[data-cal-theme]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.calTheme===theme)));
-  window.Cal('ui',{theme,styles:{branding:{brandColor:'#244CFF'}},hideEventTypeDetails:false,layout:'month_view'});
- }
  window.Cal('init',{origin:'https://cal.com'});
- window.Cal('inline',{elementOrSelector:'#cal-inline',calLink:calContainer.dataset.calLink,config:{layout:'month_view',theme:calendarTheme}});
- applyCalendarTheme(calendarTheme);themeControls.hidden=false;
- themeControls.querySelectorAll('[data-cal-theme]').forEach(button=>button.addEventListener('click',()=>{applyCalendarTheme(button.dataset.calTheme);try{localStorage.setItem('sitesutra-calendar-theme',calendarTheme);}catch{}}));
+ window.Cal('inline',{elementOrSelector:'#cal-inline',calLink:calContainer.dataset.calLink,config:{layout:'month_view',theme:'light'}});
+ window.Cal('ui',{theme:'light',styles:{branding:{brandColor:'#244CFF'}},hideEventTypeDetails:false,layout:'month_view'});
  const observer=new MutationObserver(()=>{if(calContainer.querySelector('iframe')){calContainer.querySelector('iframe').title='Book a '+window.SITESUTRA_CONFIG.bookingDurationMinutes+'-minute discovery call with Kumar on Cal.com';calContainer.querySelector('.cal-loading')?.remove();observer.disconnect();}});observer.observe(calContainer,{childList:true,subtree:true});
 }
 // A standard disclosure navigation: regular links, keyboard focus and Escape.
