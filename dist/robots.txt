@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Sitemap: https://chapter-studio-demo-141026.ochre-yew-5025.chatgpt.site/sitemap.xml
