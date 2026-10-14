@@ -9,7 +9,7 @@ class Scan(HTMLParser):
    assert target.is_file() or (target/'index.html').is_file(),str(target)
 for p in Path('dist').rglob('index.html'):
  s=p.read_text();Scan().feed(s);assert s.count('<h1>')==1;assert 'rel="canonical"' in s
-print('19 pages: internal links, canonical metadata, single H1 passed')
+print(str(len(list(Path('dist').rglob('index.html'))))+' pages: internal links, canonical metadata, single H1 passed')
 def lum(c):
  a=[int(c[i:i+2],16)/255 for i in (0,2,4)]
  a=[v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4 for v in a]
