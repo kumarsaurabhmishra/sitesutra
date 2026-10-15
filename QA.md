@@ -60,3 +60,13 @@
 ## Blog preview — 14 October 2026
 
 Added blog index and today's original comparison article, homepage/nav/footer discovery and BlogPosting markup. 21 total routes and 503 local references pass. Article uses the SiteSutra byline and date. The listed date is the draft date; adjust to actual release date before first production publication if approval is later. No daily post is automatically published. Candidate keyword phrases have no verified demand or outcome data.
+
+## Local agency content preview — 15 October 2026
+
+- Reviewed all five supplied pages; observations and candidate keyword destinations are in COMPETITOR-REVIEW.md and keyword-map.csv. No demand/performance data inferred.
+- Added one local overview route, stronger local homepage supporting copy and need-based service cards; expressive H1, palette and existing routes retained.
+- 22 routes and 563 local references pass. Local page has one H1, current-host canonical, Service/entity markup and sitemap entry. Existing service titles preserved; Organisation locality uses the owner-confirmed city.
+- Seven affected routes checked at 320, 390, 768 and 1440 px without horizontal overflow. New FAQ expands using keyboard; website service card reaches its existing route and booking CTA targets /#booking.
+- Supplied phone/WhatsApp links checked on home, contact and local overview at 320/768/1440 px. Link destinations are tel:+919555037373 and https://wa.me/919555037373. No calls/messages were sent and WhatsApp account availability was not independently verified.
+- No invented client projects, reviews, office address, rankings or metrics added. Native concept labels remain visible. No form delivery or search verification changes.
+- Production remains unchanged until preview approval.
