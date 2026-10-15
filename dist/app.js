@@ -60,7 +60,7 @@ if(menuButton){
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&header.classList.contains('nav-open'))setMenu(false,true);});
  document.addEventListener('pointerdown',e=>{if(!header.contains(e.target))setMenu(false);});
  header.addEventListener('focusout',()=>{setTimeout(()=>{if(!header.contains(document.activeElement))setMenu(false);},0);});
- window.matchMedia('(min-width: 901px)').addEventListener('change',()=>setMenu(false));
+ window.matchMedia('(min-width: 1101px)').addEventListener('change',()=>setMenu(false));
 }
 
 // Buyer-guide demonstrations never save or publish content.
