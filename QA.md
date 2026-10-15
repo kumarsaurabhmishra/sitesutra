@@ -70,3 +70,7 @@ Added blog index and today's original comparison article, homepage/nav/footer di
 - Supplied phone/WhatsApp links checked on home, contact and local overview at 320/768/1440 px. Link destinations are tel:+919555037373 and https://wa.me/919555037373. No calls/messages were sent and WhatsApp account availability was not independently verified.
 - No invented client projects, reviews, office address, rankings or metrics added. Native concept labels remain visible. No form delivery or search verification changes.
 - Production remains unchanged until preview approval.
+
+## Global layout refinement — 15 October 2026
+
+See LAYOUT-NOTES.md for research and scope. 22 routes/585 references pass. Audited every route at six widths (132 checks) without overflow/clipped headings and verified studio text-edge consistency in 60 additional checks. Menu open/Escape, keyboard FAQ and demo bag add/reset pass. Footer, service, homepage and demo placement refined; publication remains preview-only pending owner approval.

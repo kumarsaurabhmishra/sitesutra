@@ -1,0 +1,160 @@
+/* Shared studio layout: gutters, readable measures and a consistent spacing scale. */
+:root{
+ --page-width:1296px;
+ --gutter:clamp(20px,5vw,64px);
+ --page-inset:max(var(--gutter),calc((100vw - var(--page-width))/2));
+ --section-space:clamp(44px,5.5vw,80px);
+ --space-1:8px;--space-2:16px;--space-3:24px;--space-4:32px;--space-5:48px;
+ --reading-width:72ch;
+}
+body{line-height:1.7}
+main>section{max-width:none;margin:0;padding:var(--section-space) var(--page-inset)}
+main>section[class]{padding-inline:var(--page-inset)}
+body>header{max-width:none;padding:22px var(--page-inset);gap:24px}
+.logo{font-family:Manrope,Arial,sans-serif;line-height:1.2;white-space:nowrap}
+h1,h2,h3{overflow-wrap:normal;text-wrap:pretty}
+h2{line-height:1.16}h3{line-height:1.25;letter-spacing:-.035em}
+p{margin:0 0 var(--space-3)}
+.eyebrow{line-height:1.6;margin-bottom:20px}
+.pageintro{padding-top:clamp(40px,5vw,72px);padding-bottom:32px}
+.pageintro h1{max-width:22ch;font-size:clamp(38px,4.6vw,68px);line-height:1.1;margin-bottom:24px}
+.pageintro>p{max-width:68ch;font-size:clamp(16px,1.35vw,19px);margin-bottom:0}
+.pageintro .local-link{margin-top:20px;max-width:76ch}
+.pageintro+.reading,.pageintro+.workgallery,.pageintro+.guidegrid,.pageintro+.aboutfounder,
+.pageintro+.casetop,.pageintro+.local-start,.pageintro+section:not([class]){padding-top:24px}
+main>.reading{max-width:none;margin:0;padding-block:40px 56px}
+.reading>*{max-width:var(--reading-width)}
+.reading>h2{max-width:30ch;font-size:clamp(27px,2.5vw,36px);line-height:1.25;letter-spacing:-.04em;margin:48px 0 16px}
+.reading>h3{max-width:40ch;font-size:clamp(22px,2vw,27px);margin:32px 0 12px}
+.reading>:first-child{margin-top:0}
+.reading>.fine+nav{margin-top:20px}
+.reading>p{font-size:16px;line-height:1.8}
+.reading ul,.reading ol{padding-left:24px;margin:0 0 24px}
+.reading li{padding-left:4px;margin:10px 0;line-height:1.75}
+.reading a:not(.btn){text-decoration:underline;text-underline-offset:3px}
+.reading+.reading{padding-top:8px}
+.reading .tablewrap,.reading .guide-demo,.reading .actions{width:100%;max-width:800px}
+.reading .tablewrap{margin:24px 0 32px}
+.reading .actions{gap:12px;margin:24px 0}
+.reading .actions .btn{align-items:center;justify-content:center;min-height:48px}
+.reading>.fine{font-size:13px;line-height:1.7}
+.sectionhead{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px;align-items:end;margin-bottom:32px}
+.sectionhead>div:first-child{max-width:none}
+.sectionhead>div:last-child:not(:first-child){max-width:440px}
+.sectionhead h2{margin:0;max-width:22ch}
+.sectionhead .eyebrow{margin-bottom:16px}
+.sectionhead p{max-width:48ch;margin:0 0 16px;font-size:15px}
+.sectionhead>.textlink,.sectionhead>div>.textlink{display:inline-flex;align-items:center;min-height:40px}
+.hero{gap:clamp(32px,5vw,72px);align-items:start;padding-top:64px;padding-bottom:48px}
+.hero h1{font-size:clamp(44px,5.1vw,76px);line-height:1.08;max-width:13ch;margin-bottom:24px}
+.hero>div:first-child>p{max-width:56ch;font-size:16px;line-height:1.75}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;align-items:stretch}
+.hero .actions .btn{min-height:52px;white-space:normal;align-items:center;justify-content:space-between;line-height:1.45;padding:14px 18px}
+.hero .local-contact-links{padding:0;margin-top:12px;gap:8px 20px}
+.heronote{margin-top:20px;font-size:11px;line-height:1.7;letter-spacing:.3px}
+.callsummary{padding:32px;margin:0;width:100%;max-width:none}
+.calllength{font-family:Manrope,Arial,sans-serif;font-size:72px;margin:20px 0 24px}
+.callsummary h2{font-size:34px;line-height:1.2;letter-spacing:-.04em;margin-bottom:16px}
+.callsummary ul{margin:20px 0;padding-left:20px}.callsummary li{margin:8px 0}
+.callsummary p{line-height:1.75;margin-bottom:16px}
+main>.landingbooking,main>.bookingcontact{padding-top:8px;padding-bottom:48px}
+.landingbooking .bookingcard,.bookingcontact .bookingcard{padding:32px;max-width:none}
+.bookingcard>h2{font-size:clamp(30px,3vw,40px);line-height:1.2;margin-bottom:16px}
+.bookingcard .bookingintro{max-width:70ch;font-size:14px;line-height:1.75;margin-bottom:28px}
+.bookingcard .eyebrow{margin-bottom:16px}.calbooking>.textlink{line-height:1.6;min-height:44px}
+.local-contact-links{max-width:none;margin:0;padding:0 var(--page-inset) 24px;gap:8px 24px}
+.pageintro .local-contact-links{padding:12px 0 0}
+main>.local-start{padding-top:24px}
+.servicegrid{grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:20px}
+.servicecard{min-width:0;padding:28px;gap:0}
+.servicecard small{margin-bottom:28px;line-height:1.6;min-height:32px}
+.servicecard h3{font-size:25px;line-height:1.25;letter-spacing:-.035em;margin:0 0 16px}
+.servicecard p{font-size:14px;line-height:1.75;margin:0 0 24px}
+.servicecard>span{padding-top:16px;line-height:1.6}
+.process{grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:24px;margin:32px 0 0}
+.process h3{font-size:16px;line-height:1.35;margin:20px 0 12px;width:auto}
+.process p{font-size:13px;line-height:1.7;max-width:none;width:auto;margin:0}
+.process+ p{margin:24px 0 0}
+.guidegrid,.relatedgrid{gap:24px}
+.guidecard,.relatedexample{display:flex;flex-direction:column;align-items:start;padding:32px;min-width:0}
+.guidecard small{font-size:11px;line-height:1.65}
+.guidecard h2{font-size:clamp(27px,2.4vw,34px);line-height:1.22;margin:24px 0 16px}
+.guidecard p,.relatedexample p{line-height:1.75;margin:0 0 24px;max-width:60ch}
+.guidecard>span,.relatedexample>span:last-child{margin-top:auto;padding-top:12px}
+.examplecards{gap:24px}.examplebody{padding:28px}
+.examplebody h3{line-height:1.2;margin-bottom:16px}.examplebody p{line-height:1.75}
+.exampleactions{gap:16px}.exampleactions .btn{align-items:center;min-height:48px}
+.exampleactions .textlink{min-height:44px;display:inline-flex;align-items:center}
+.casebrief{gap:48px}.casebrief>div{min-width:0}.casebrief p{max-width:66ch}
+.casetop{max-width:none;margin:0}.casetop>.projectvisual{max-width:1000px}
+.decisiongrid{gap:24px}.decisiongrid h3{line-height:1.3;margin:20px 0 14px}
+.decisiongrid p{line-height:1.75}.fullcaptures h2{max-width:24ch}
+.capturegrid{gap:32px;align-items:start}.capturegrid>div{min-width:0}
+.previewpair{gap:32px}.previewpair h3{margin-bottom:16px}
+.comparison .comparecontrols{gap:12px;margin:24px 0}.comparison [data-comparison]{max-width:960px}
+.faqs{max-width:900px}.faqs summary{align-items:start;gap:24px;font-size:16px;line-height:1.6}
+.faqs summary span{flex:none;line-height:1.2}.faqs p{max-width:72ch;line-height:1.8;margin-top:16px}
+.founder{gap:clamp(32px,5vw,72px);align-items:start}.founder h2{line-height:1.18}
+.founder p{max-width:64ch;line-height:1.8}.founderart{min-width:0}
+.editorialclosing{padding-block:56px}.editorialclosing h2{font-size:clamp(32px,3.5vw,48px);max-width:23ch;margin-bottom:20px}
+.editorialclosing p{max-width:68ch;line-height:1.8;margin-bottom:24px}
+.editorialclosing .btn{align-items:center;min-height:48px}.bookingfallback{margin-top:16px;min-height:40px;display:flex;align-items:center;width:fit-content}
+.contactsection{gap:clamp(32px,6vw,88px);align-items:start}.contactsection form{min-width:0;width:100%;max-width:640px}
+.contactsection h2{font-size:clamp(30px,3vw,44px);line-height:1.2}
+.contactsection label{line-height:1.6;margin-bottom:24px;font-size:13px}
+.contactsection input,.contactsection select,.contactsection textarea{min-height:48px;font-size:16px;padding:12px 0}
+.contactsection .fine{font-size:12px;line-height:1.75;margin-top:20px}.formrow{gap:24px}
+.email{overflow-wrap:anywhere}.local-scenarios{gap:24px}.local-scenarios article{padding:28px}
+.local-scenarios h3{margin-bottom:16px;line-height:1.25}.local-scenarios p{line-height:1.75;margin-bottom:0}
+footer{display:grid;grid-template-columns:minmax(180px,1fr) minmax(0,2fr);gap:16px 48px;align-items:start;padding:40px var(--page-inset)}
+footer>.footer-identity{grid-column:1;grid-row:1;display:flex;flex-direction:column;align-items:start;gap:12px}footer>.footer-identity p{line-height:1.7;max-width:26ch}
+footer>div{grid-column:2;grid-row:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 20px;font-size:12px}
+footer>div a{display:flex;align-items:center;min-height:40px;line-height:1.6}
+footer>div span{grid-column:1/-1;font-size:11px;margin-top:16px}
+@media(min-width:1101px){body>header{flex-wrap:nowrap}header nav{order:0;width:auto;gap:20px;flex-wrap:nowrap}.headerbtn{order:0}header nav a{white-space:nowrap}}
+@media(max-width:1100px){
+ body>header{position:sticky;top:0;z-index:30;background:var(--ivory);padding-block:14px;gap:12px}
+ .nav-ready{flex-wrap:nowrap}.nav-ready .logo{margin-right:auto;flex:none}
+ .nav-ready .menu-toggle{display:inline-flex;order:3;flex:none}
+ .headerbtn{order:2;min-height:44px;padding:11px 13px;gap:9px;white-space:nowrap;font-size:12px}
+ .headerbtn .desktop-label{display:none}.headerbtn .mobile-label{display:inline}
+ .nav-ready>nav{display:none;position:absolute;top:100%;left:0;right:0;width:100%;padding:12px var(--page-inset) 20px;margin:0;background:var(--ivory);border-bottom:1px solid #171c2820;box-shadow:0 14px 20px #171c2808}
+ .nav-ready.nav-open>nav{display:grid;grid-template-columns:1fr;gap:0}
+ .nav-ready>nav a{display:flex;align-items:center;min-height:48px;padding:10px 0;border-bottom:1px solid #171c2815;font-size:15px}
+ .nav-ready>nav a:last-child{border:0}
+ .servicegrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .hero{grid-template-columns:1fr 1fr;gap:32px}.hero h1{font-size:clamp(44px,5.3vw,60px)}
+ .callsummary{padding:28px}.callsummary h2{font-size:29px}.calllength{font-size:60px}
+ .process{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.process:before{display:none}.process>div{display:grid;grid-template-columns:40px minmax(0,1fr);gap:8px 20px}.process span{grid-row:1/3}.process h3{margin:7px 0 0;padding:0}.process p{grid-column:2;font-size:13px;margin:0}
+}
+@media(max-width:760px){
+ :root{--gutter:20px;--section-space:48px}
+ .hero{grid-template-columns:1fr;padding-top:36px;gap:28px}
+ .hero h1{font-size:clamp(39px,8vw,54px);max-width:15ch}.hero>div:first-child>p{font-size:16px}
+ .hero .actions{display:grid;grid-template-columns:1fr;width:100%;margin-top:24px}
+ .hero .actions .btn{width:100%;font-size:14px;min-height:50px}
+ .callsummary{padding:24px}.callsummary h2{font-size:30px}.calllength{font-size:54px;letter-spacing:-2px}
+ .sectionhead{grid-template-columns:1fr;gap:20px}.sectionhead h2{font-size:34px}.sectionhead p{margin-bottom:12px}
+ .pageintro{padding-top:36px;padding-bottom:24px}.pageintro h1{font-size:clamp(34px,7.7vw,48px);max-width:22ch;line-height:1.15}
+ .pageintro+.reading{padding-top:16px}.reading>h2{font-size:28px;margin-top:36px}.reading>h3{font-size:23px;margin-top:28px}
+ main>.reading{padding-block:28px 40px}.reading>p{font-size:16px;line-height:1.8}
+ .landingbooking .bookingcard,.bookingcontact .bookingcard{padding:24px 16px}
+ .bookingcard>h2,.landingbooking .bookingcard>h2{font-size:32px;line-height:1.2}
+ .servicegrid,.guidegrid,.relatedgrid,.marketinggrid,.partnershipgrid,.local-scenarios{grid-template-columns:1fr;gap:20px}
+ .servicecard{padding:24px}.servicecard small{margin-bottom:20px;min-height:0}.servicecard h3{font-size:26px;max-width:none}
+ .guidecard,.relatedexample,.examplebody{padding:24px}.guidecard h2{font-size:28px}
+ .process{grid-template-columns:1fr;gap:24px}.process>div{display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:20px;row-gap:8px}
+ .process span{grid-row:1/3}.process h3{grid-column:2;margin:7px 0 0;padding:0;font-size:17px;width:auto}
+ .process p{grid-column:2;margin:0;padding:0;width:auto;max-width:none;font-size:14px}
+ .process:before{top:0;bottom:0;left:19px;width:2px;height:auto;right:auto}
+ .casebrief,.decisiongrid,.founder{grid-template-columns:1fr;gap:28px}
+ .exampleactions{display:grid;grid-template-columns:1fr;gap:12px}.exampleactions .btn{font-size:14px}.exampleactions .textlink{width:fit-content}
+ .previewpair{grid-template-columns:1fr}.formrow{grid-template-columns:1fr;gap:0}
+ .faqs summary{font-size:15px}.faqs details{padding:20px 0}
+ .editorialclosing h2{font-size:34px;line-height:1.2}.editorialclosing .btn{width:100%;justify-content:space-between}
+ .contactsection{grid-template-columns:1fr;gap:32px}.contactsection .btn{min-height:48px;width:100%}
+ .local-contact-links{gap:8px 20px;padding-inline:var(--page-inset)}.hero .local-contact-links,.pageintro .local-contact-links{padding-inline:0}
+ footer{grid-template-columns:1fr;gap:16px;padding-block:32px}footer>.footer-identity,footer>div{grid-column:1;grid-row:auto}
+ footer>div{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px}footer>p{max-width:none}
+}
+@media(max-width:360px){:root{--gutter:16px}.nav-ready .logo{font-size:22px}.nav-ready .logo i{font-size:26px}.menu-toggle{padding:9px;font-size:11px}.headerbtn{padding:10px;font-size:11px}.hero h1{font-size:39px}.sectionhead h2{font-size:31px}}

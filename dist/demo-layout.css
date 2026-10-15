@@ -1,0 +1,33 @@
+/* Shared demo spacing, while retaining each concept's typography and palette. */
+:root{--demo-inset:max(20px,calc((100vw - 1248px)/2));--demo-space:clamp(44px,6vw,80px)}
+.demobanner,body>header,main>section,body>footer{padding-inline:var(--demo-inset)}
+main>section{padding-block:var(--demo-space)}
+body>header{padding-block:24px}.demobanner{align-items:center;line-height:1.6;padding-block:12px}
+.demobanner>div{align-items:center;flex-wrap:wrap;gap:12px 20px}
+section p{line-height:1.8}section h2{line-height:1.18}section h3{line-height:1.25}
+.sectiontitle{gap:24px;align-items:end;margin-bottom:32px}.sectiontitle h2{margin-bottom:0}.sectiontitle p{max-width:48ch;margin-bottom:0}
+.productgrid{align-items:stretch;gap:28px}.product{display:flex;flex-direction:column;min-width:0}
+.productart{flex:none}.product h3{line-height:1.2;margin:12px 0 16px}.product>p{line-height:1.8}
+.product>button{margin-top:auto;min-height:48px}.product details{margin:16px 0 24px}.product details p{margin-bottom:8px}
+.materials{gap:48px}.materials p{max-width:64ch}.bag{max-width:none}.bag>h2,.bag>p,.bag>div{max-width:850px}
+.architecture .archheading{align-items:start;gap:24px 40px}.archheading .kicker{margin-bottom:0}.archheading h1{max-width:16ch;margin:0}
+.archheading p{padding-top:8px;max-width:38ch;line-height:1.8}.archactions{margin:0 0 24px;align-items:center;gap:24px}
+.archactions a{min-height:40px;display:inline-flex;align-items:center}.architecturehero figure{margin-top:24px}
+.architecture figcaption{line-height:1.7}.architectureproject{gap:48px;margin:40px 0 64px;align-items:start}
+.architectureproject h3{margin-bottom:20px}.architectureproject p{line-height:1.8;max-width:64ch}
+.approachgrid{gap:32px}.approachgrid h3{line-height:1.3;margin-bottom:16px}.approachgrid p{line-height:1.8}
+.consultation{gap:56px;align-items:start}.consultation p{max-width:62ch}.consultation input,.consultation select,.consultation textarea{font-size:16px;min-height:48px}
+.consultation label{margin-bottom:24px;line-height:1.7}.consultation button{min-height:48px}
+body>footer{align-items:start;line-height:1.8;padding-block:32px}
+@media(max-width:760px){
+ .demobanner{align-items:start;flex-direction:column;gap:8px}body>header{align-items:start;flex-wrap:wrap;gap:24px}
+ header nav{width:100%;display:flex;flex-wrap:wrap;gap:12px 24px}header nav a{min-height:40px;display:inline-flex;align-items:center;font-size:12px}
+ .retailhero,.materials,.consultation,.architecture .archheading,.architectureproject,.approachgrid{grid-template-columns:1fr;gap:28px}
+ .retail h1{font-size:clamp(40px,10vw,58px);line-height:1.1}.architecture h1{font-size:clamp(40px,10vw,60px);line-height:1.12;letter-spacing:-2px}
+ .retail h2,.architecture h2{font-size:34px;line-height:1.2}.sectiontitle{display:grid;grid-template-columns:1fr;gap:16px}
+ .productgrid{grid-template-columns:1fr;gap:40px}.product{margin:0}.filters{gap:10px;margin-bottom:24px}.filters button{min-height:44px}
+ .archheading p{padding:0;max-width:62ch;margin:0}.architectureproject{margin:32px 0 48px}.architectureproject.reverse{direction:ltr}
+ .architectureproject img{height:260px}.approachgrid{margin-top:32px}.consultation button{width:100%}
+ .basketitem{align-items:start}.quantitycontrols{flex-wrap:wrap;gap:12px}.quantitycontrols button{min-width:44px;min-height:44px}
+ body>footer{flex-direction:column;gap:16px}
+}
