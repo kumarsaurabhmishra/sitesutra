@@ -17,3 +17,7 @@ Core audience: small businesses, especially businesses in Varanasi, plus agency 
 Potential next distinct buyer tasks: prepare a local service-business website brief; distinguish booking clicks from qualified enquiries; inventory old URLs before a redesign; approve an agency development handover; separate campaign budget from management scope. These are topic candidates, not promises of demand. Do not publish filler simply to meet a daily count. Review existing articles first.
 
 Research changeable claims from primary sources and link them directly. Never invent client work, testimonials, rankings, volumes, office details or outcomes. Label invented business examples hypothetical. Evidence should be inspectable; measurement separates search visibility, dated AI citation samples and real qualified enquiries.
+
+## Local agency reference review
+
+COMPETITOR-REVIEW.md and keyword-map.csv document the 15 October 2026 review of five reference agencies. Use the mapped buyer needs to select distinct useful topics, not to reproduce competitor copy or treat their claims as verified performance. Keep local agency/company variations together and preserve SiteSutra’s core website and white-label offers. Phone/WhatsApp is +91 95550 37373; no genuine client testimonials have been supplied.
