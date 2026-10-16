@@ -1,0 +1,6 @@
+channel,contact_action,received_evidence,qualification_rule,review_owner,test_status
+website form,Submit attempt,Confirm real destination receipt,Define service fit and next step,Assign owner,Not tested
+email,Open email draft,Confirm sent email received,Define service fit and next step,Assign owner,Not tested
+WhatsApp,Open chat link,Confirm actual message received,Define service fit and next step,Assign owner,Not tested
+phone,Tap call link,Confirm connected conversation,Define service fit and next step,Assign owner,Not tested
+booking,Open scheduler,Confirm booking record and calendar receipt,Review goal and service fit,Assign owner,Not tested
