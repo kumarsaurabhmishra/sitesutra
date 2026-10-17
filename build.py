@@ -2,6 +2,7 @@ from pathlib import Path
 import json,hashlib
 from html import escape
 from seo import enrich
+from favicon import icon_links
 P=Path('dist'); P.mkdir(exist_ok=True)
 config=json.loads(Path('site-config.json').read_text())
 origin=config['origin']
@@ -65,5 +66,5 @@ for route,(title,body) in pages.items():
  out.write_text(html)
 (P/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /private/\nDisallow: /admin/\nUser-agent: OAI-SearchBot\nAllow: /\nDisallow: /private/\nDisallow: /admin/\nSitemap: '+origin+'/sitemap.xml\n')
 (P/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+origin+r.replace('&','&amp;')+'</loc></url>' for r in pages)+'</urlset>')
-(P/'404.html').write_text('''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Page not found | SiteSutra</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/layout.css"></head><body><main id="main"><section class="pageintro"><span class="eyebrow">404 / PAGE NOT FOUND</span><h1>Let’s find your next step.</h1><p>This address does not have a page. Explore our services, read a guide, or book a conversation.</p><div class="actions"><a class="btn" href="/">Return home ↗</a><a class="textlink" href="/services/">Explore services ↗</a><a class="textlink" href="/blog/">Read the blog ↗</a></div></section></main></body></html>''')
+(P/'404.html').write_text('''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Page not found | SiteSutra</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/layout.css"></head><body><main id="main"><section class="pageintro"><span class="eyebrow">404 / PAGE NOT FOUND</span><h1>Let’s find your next step.</h1><p>This address does not have a page. Explore our services, read a guide, or book a conversation.</p><div class="actions"><a class="btn" href="/">Return home ↗</a><a class="textlink" href="/services/">Explore services ↗</a><a class="textlink" href="/blog/">Read the blog ↗</a></div></section></main></body></html>'''.replace('<head>', '<head>'+icon_links()))
 print('Built',len(pages),'pages')
