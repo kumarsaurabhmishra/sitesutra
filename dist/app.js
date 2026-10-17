@@ -44,11 +44,19 @@ if(dateGrid){
 // Official Cal.com embed queue; no booking or success state is fabricated locally.
 const calContainer=document.getElementById('cal-inline');
 if(calContainer){
+ function loadCalendar(){
  (function(C,A,L){const push=function(fn,args){fn.q.push(args);};const d=C.document;C.Cal=C.Cal||function(){const cal=C.Cal;const args=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];const script=d.createElement('script');script.src=A;script.onerror=()=>{const note=document.getElementById('cal-fallback');note.textContent='The booking calendar could not load. Please use the Cal.com link below.';note.setAttribute('role','alert');const loading=calContainer.querySelector('.cal-loading');if(loading)loading.textContent='Calendar unavailable in this browser.';};d.head.appendChild(script);cal.loaded=true;}if(args[0]===L){const api=function(){push(api,arguments);};const namespace=args[1];api.q=api.q||[];if(typeof namespace==='string'){cal.ns[namespace]=cal.ns[namespace]||api;push(cal.ns[namespace],args);push(cal,['initNamespace',namespace]);}else push(cal,args);return;}push(cal,args);};})(window,'https://cal.com/embed/embed.js','init');
  window.Cal('init',{origin:'https://cal.com'});
  window.Cal('inline',{elementOrSelector:'#cal-inline',calLink:calContainer.dataset.calLink,config:{layout:'month_view',theme:'light'}});
  window.Cal('ui',{theme:'light',styles:{branding:{brandColor:'#244CFF'}},hideEventTypeDetails:false,layout:'month_view'});
  const observer=new MutationObserver(()=>{if(calContainer.querySelector('iframe')){calContainer.querySelector('iframe').title='Book a '+window.SITESUTRA_CONFIG.bookingDurationMinutes+'-minute discovery call with Kumar on Cal.com';calContainer.querySelector('.cal-loading')?.remove();observer.disconnect();}});observer.observe(calContainer,{childList:true,subtree:true});
+ }
+ if('IntersectionObserver' in window){
+  const calendarVisibility=new IntersectionObserver(entries=>{
+   if(entries.some(entry=>entry.isIntersecting)){calendarVisibility.disconnect();loadCalendar();}
+  },{rootMargin:'200px'});
+  calendarVisibility.observe(calContainer);
+ }else{loadCalendar();}
 }
 // A standard disclosure navigation: regular links, keyboard focus and Escape.
 const menuButton=document.querySelector('.menu-toggle');
