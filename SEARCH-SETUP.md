@@ -24,3 +24,5 @@ Bing: https://www.bing.com/webmasters/help/how-to-verify-ownership-of-your-site-
 - Qualified enquiries: only real received email or confirmed booking counts. Record source (ask the visitor if unknown), business/agency fit, service, goal, timing, budget discussion and agreed next step. Avoid copying private enquiry details into this public repo. Booking CTA clicks are not booking confirmations. No analytics integration or automatic measurement has been installed.
 
 Review the three streams separately; none guarantees rankings, citations or sales. Keep baseline and follow-up dates explicit and report missing data as unavailable.
+
+Google sitemap follow-up, 17 October 2026: Search Console now reports “Sitemap processed successfully” and 23 discovered pages. This is discovery, not confirmation that those pages are indexed.
