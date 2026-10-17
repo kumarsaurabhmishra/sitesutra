@@ -82,3 +82,14 @@ redirect=json.loads(Path('vercel.json').read_text())['redirects'][0]
 assert redirect['has']==[{'type':'host','value':'sitesutra.vercel.app'}]
 assert redirect['destination']==origin+'/:path*' and redirect['permanent'] is True
 print('SEO checks passed:',len(indexable),'indexable URLs; unique metadata, schema, social assets, sitemap, robots and migration redirect')
+
+# Target ownership must survive future route and editorial changes.
+import csv
+with Path('keyword-map.csv').open() as f: targets=list(csv.DictReader(f))
+assert len(targets)==10 and len({row['keyword'] for row in targets})==10
+for row in targets:
+ assert row['priority']=='active' and row['demand_status'] in ('unverified','verified')
+ assert origin+row['canonical_path'] in indexable,row
+for route in {row['canonical_path'] for row in targets}:
+ assert any(route in scan.refs for path,scan in scans.items() if '/blog/' in str(path)),route
+print('Approved target map passed: 10 phrases, four canonical service destinations with blog links')

@@ -12,7 +12,7 @@ Use git branches and PRs; never push main directly. Rebuild with python3 build.p
 
 ## Topic direction
 
-Core audience: small businesses, especially businesses in Varanasi, plus agency partners seeking white-label implementation. Candidate phrases: best website agency; best digital marketing company in Varanasi; digital marketing company in Varanasi. Use 'best' to answer comparison intent, never as an unsupported SiteSutra accolade. No search demand has been verified. Closely related phrases belong in one substantial article, not duplicate doorway pages. Platform-specific capability claims require inspectable work.
+Core audience: small businesses, especially businesses in Varanasi, plus agency partners seeking white-label implementation. The only active acquisition keyword set is the 10 approved rows in keyword-map.csv (17 October 2026). Support those four canonical service groups with distinct buyer questions; do not add new acquisition keywords, location doorway pages or platform claims without a new decision. Older comparison articles remain useful but “best” phrases are no longer active targets. No search demand or difficulty has been verified. Closely related phrases belong on the mapped useful service page; supporting articles answer distinct tasks and link back to it.
 
 Potential next distinct buyer tasks: prepare a local service-business website brief; distinguish booking clicks from qualified enquiries; inventory old URLs before a redesign; approve an agency development handover; separate campaign budget from management scope. These are topic candidates, not promises of demand. Do not publish filler simply to meet a daily count. Review existing articles first.
 
@@ -20,4 +20,4 @@ Research changeable claims from primary sources and link them directly. Never in
 
 ## Local agency reference review
 
-COMPETITOR-REVIEW.md and keyword-map.csv document the 15 October 2026 review of five reference agencies. Use the mapped buyer needs to select distinct useful topics, not to reproduce competitor copy or treat their claims as verified performance. Keep local agency/company variations together and preserve SiteSutra’s core website and white-label offers. Phone/WhatsApp is +91 95550 37373; no genuine client testimonials have been supplied.
+COMPETITOR-REVIEW.md documents the historical 15 October 2026 review of five reference agencies. keyword-map.csv now contains the 10 user-approved active targets. Use the mapped buyer needs to select distinct useful topics, not to reproduce competitor copy or treat their claims as verified performance. Keep local agency/company variations together and preserve SiteSutra’s core website and white-label offers. Phone/WhatsApp is +91 95550 37373; no genuine client testimonials have been supplied.

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-17",
+  "timezone": "Asia/Kolkata",
+  "property": "sc-domain:sitesutra.in",
+  "google": {
+    "performance_status": "Processing data, please check again in a day or so",
+    "selected_period": "3 months",
+    "clicks": null,
+    "impressions": null,
+    "ctr": null,
+    "average_position": null,
+    "sitemap_discovered_pages": 23,
+    "indexed_pages": null,
+    "inspected_url": {
+      "url": "https://sitesutra.in/services/website-development/",
+      "index_status": "Discovered \u2013 currently not indexed",
+      "live_test": "URL is available to Google; page can be indexed",
+      "breadcrumbs": "1 valid item detected",
+      "indexing_request": "Accepted; added to priority crawl queue",
+      "tested_date": "2026-10-17"
+    }
+  },
+  "bing": {
+    "sitemap_status": "Submitted / Processing",
+    "indexed_pages": null
+  },
+  "qualified_enquiries": {
+    "received_count": null,
+    "source": "No verified count supplied; no automatic enquiry tracking configured"
+  },
+  "ai_citations": {
+    "observed_count": null,
+    "source": "No dated citation sample collected"
+  }
+}
