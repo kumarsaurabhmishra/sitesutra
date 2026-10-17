@@ -9,7 +9,7 @@ def add_blog(g):
   post=json.loads(file.read_text());datetime.date.fromisoformat(post['date'])
   assert all(c in 'abcdefghijklmnopqrstuvwxyz0123456789-' for c in post['slug']),file
   posts.append(post)
- posts.sort(key=lambda post:post['date'],reverse=True)
+ posts.sort(key=lambda post:(post['date'],post.get('sequence',0),post['slug']),reverse=True)
  g['blog_posts']={}
  cards=[]
  for post in posts:
