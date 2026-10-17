@@ -1,6 +1,6 @@
 # Search verification and measurement
 
-Status checked 17 October 2026: Google Search Console domain ownership is verified for sitesutra.in under contactkumarsmishra@gmail.com via a public GoDaddy TXT record. Google confirmed submission of https://sitesutra.in/sitemap.xml. Indexing and performance are processing; no indexing or ranking result is established. Bing setup is in progress. Current production host: https://sitesutra.in/.
+Status checked 17 October 2026: Google Search Console domain ownership is verified for sitesutra.in under contactkumarsmishra@gmail.com via a public GoDaddy TXT record. Google confirmed submission of https://sitesutra.in/sitemap.xml. Indexing and performance are processing; no indexing or ranking result is established. Bing ownership is also verified via DNS CNAME in the account selected by the user. Bing accepted the sitemap and shows Submitted / Processing with no discovered URL count yet. The Bing account differs from the Google property owner. Current production host: https://sitesutra.in/.
 
 ## Ownership records and verification methods
 
