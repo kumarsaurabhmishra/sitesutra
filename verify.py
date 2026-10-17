@@ -40,3 +40,45 @@ for path,scan in scans.items():
   if u.fragment and target.suffix=='.html':assert unquote(u.fragment) in scans[target].ids,(path,ref)
   checks+=1
 print('Local assets and page anchors passed:',checks,'references')
+
+# Search foundations: metadata uniqueness, entity links, crawl policy and sitemap parity.
+import json, xml.etree.ElementTree as ET
+from html import unescape
+import re
+origin=json.loads(Path('site-config.json').read_text())['origin'].rstrip('/')
+titles=set();descriptions=set();indexable=set()
+for path in Path('dist').rglob('index.html'):
+ text=path.read_text(); scan=ReferenceScan();scan.feed(text)
+ title=unescape(re.search(r'<title>(.*?)</title>',text).group(1))
+ description=unescape(re.search(r'<meta name="description" content="([^"]+)"',text).group(1))
+ assert title not in titles,('duplicate title',path);titles.add(title)
+ assert description not in descriptions,('duplicate description',path);descriptions.add(description)
+ route='/' + str(path.parent.relative_to('dist')).strip('.') + '/';route=route.replace('//','/')
+ assert f'rel="canonical" href="{origin}{route}"' in text,path
+ assert len(description)>=50,path
+ if '/demos/' in route:
+  assert 'content="noindex,follow"' in text,path
+  continue
+ indexable.add(origin+route)
+ assert 'content="index,follow,max-image-preview:large"' in text,path
+ graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',text).group(1))['@graph']
+ ids={n['@id'] for n in graph if '@id' in n}
+ assert any(n['@type']=='WebSite' for n in graph),path
+ assert any(n['@type']=='Organization' for n in graph),path
+ for node in graph:
+  for key in ('publisher','isPartOf','breadcrumb','author','founder','mainEntityOfPage','mainEntity'):
+   if isinstance(node.get(key),dict) and '@id' in node[key]:assert node[key]['@id'] in ids,(path,key)
+ image=re.search(r'property="og:image" content="([^"]+)"',text).group(1)
+ assert image.startswith(origin+'/') and (Path('dist')/image[len(origin)+1:]).is_file(),path
+ assert f'property="og:url" content="{origin}{route}"' in text,path
+ assert 'name="twitter:card"' in text,path
+urls={n.text for n in ET.parse('dist/sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
+assert urls==indexable,(urls-indexable,indexable-urls)
+robots=Path('dist/robots.txt').read_text()
+assert 'User-agent: OAI-SearchBot\nAllow: /' in robots
+assert 'Disallow: /private/' in robots and 'Disallow: /admin/' in robots
+assert 'noindex,follow' in Path('dist/404.html').read_text()
+redirect=json.loads(Path('vercel.json').read_text())['redirects'][0]
+assert redirect['has']==[{'type':'host','value':'sitesutra.vercel.app'}]
+assert redirect['destination']==origin+'/:path*' and redirect['permanent'] is True
+print('SEO checks passed:',len(indexable),'indexable URLs; unique metadata, schema, social assets, sitemap, robots and migration redirect')
