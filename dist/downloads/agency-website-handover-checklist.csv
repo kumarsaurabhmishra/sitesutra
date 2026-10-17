@@ -1,0 +1,9 @@
+item,review_question,review_owner,evidence_reference,status
+Source release,Can we identify and reproduce the accepted revision?,,,Not reviewed
+Accounts,Are owner roles and renewal responsibilities documented?,,,Not reviewed
+Assets,Are approved copy permissions and editable files recorded?,,,Not reviewed
+Navigation,Have keyboard focus and menu behaviour been reviewed?,,,Not reviewed
+Responsive content,Have agreed page layouts and enlarged text been checked?,,,Not reviewed
+Integrations,Has the authorised recipient confirmed the agreed test?,,,Not reviewed
+Support,Are reporting boundaries and rollback responsibilities clear?,,,Not reviewed
+Release approval,Has the named approver authorised publication?,,,Not reviewed
