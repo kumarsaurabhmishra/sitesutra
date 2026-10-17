@@ -10,7 +10,15 @@
     "ctr": null,
     "average_position": null,
     "sitemap_discovered_pages": 23,
-    "indexed_pages": null
+    "indexed_pages": null,
+    "inspected_url": {
+      "url": "https://sitesutra.in/services/website-development/",
+      "index_status": "Discovered \u2013 currently not indexed",
+      "live_test": "URL is available to Google; page can be indexed",
+      "breadcrumbs": "1 valid item detected",
+      "indexing_request": "Accepted; added to priority crawl queue",
+      "tested_date": "2026-10-17"
+    }
   },
   "bing": {
     "sitemap_status": "Submitted / Processing",

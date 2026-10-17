@@ -19,7 +19,7 @@ def improve(g):
     insert(website, '''<h2>Website design and development in Varanasi</h2>
 <p>SiteSutra works directly with small businesses in Varanasi and remotely across India. Start with the service you sell, the people you need to reach and the action your website should make easy. Kumar handles the agreed design and development, with a preview to review before launch.</p>
 <h2>Small business website design in India: choose the right starting point</h2>
-<div class="tablewrap"><table><caption>Match the project to the business problem</caption><thead><tr><th>Your starting point</th><th>A useful scope</th><th>What we check</th></tr></thead><tbody>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Website scope comparison"><table><caption>Match the project to the business problem</caption><thead><tr><th>Your starting point</th><th>A useful scope</th><th>What we check</th></tr></thead><tbody>
 <tr><td>No business website</td><td>A focused set of service, about and enquiry pages using approved business information.</td><td>Can someone understand your offer and take the next step on a phone?</td></tr>
 <tr><td>An outdated website</td><td>Keep useful content, improve navigation and layouts, and plan old URL redirects.</td><td>Do important links and booking or enquiry paths still work?</td></tr>
 <tr><td>One campaign or offer</td><td>A landing page with one clear audience, offer and next action.</td><td>Does the page answer the promise made by the campaign?</td></tr>
@@ -53,7 +53,7 @@ def improve(g):
     insert(search, '''<h2>Technical SEO audit services in India</h2>
 <p>A useful audit connects a technical observation to a specific URL, a proposed fix and a way to verify it. SiteSutra reviews the agreed public website and the search accounts you authorise, then separates confirmed problems from questions that need more evidence.</p>
 <h3>What an audit finding looks like</h3>
-<div class="tablewrap"><table><caption>Hypothetical audit findings — examples of the handover format</caption><thead><tr><th>Observation</th><th>Recommended action</th><th>Acceptance evidence</th></tr></thead><tbody>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Example audit findings"><table><caption>Hypothetical audit findings — examples of the handover format</caption><thead><tr><th>Observation</th><th>Recommended action</th><th>Acceptance evidence</th></tr></thead><tbody>
 <tr><td>An old service URL returns an error after a redesign.</td><td>Check whether an equivalent page exists and agree the appropriate redirect.</td><td>The old URL reaches the agreed destination without a redirect chain.</td></tr>
 <tr><td>Two service pages have the same title but answer different buyer questions.</td><td>Write descriptive titles for the distinct page purposes.</td><td>The rendered titles match approved content and remain unique.</td></tr>
 <tr><td>A booking-link click is reported as a received enquiry.</td><td>Separate click activity from confirmed bookings and qualified conversations.</td><td>The report names each measure and its actual source.</td></tr>
