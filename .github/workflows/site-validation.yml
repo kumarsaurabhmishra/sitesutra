@@ -1,0 +1,24 @@
+name: Site validation
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  site-validation:
+    name: Build and SEO validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build and validate site
+        run: |
+          python3 build.py
+          python3 demos.py
+          python3 verify.py
+      - name: Check committed generated pages
+        run: git diff --exit-code -- dist

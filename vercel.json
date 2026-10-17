@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{"type": "host", "value": "sitesutra.vercel.app"}],
+      "destination": "https://sitesutra.in/:path*",
+      "permanent": true
+    }
+  ]
+}

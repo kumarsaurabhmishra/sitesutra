@@ -1,8 +1,12 @@
 # Search verification and measurement
 
-Status: prepared only. No Google or Bing verification, sitemap submission or indexing has been confirmed. Intended account owner: contactkumarsmishra@gmail.com. Current production host: https://sitesutra.in/.
+Status checked 17 October 2026: Google Search Console domain ownership is verified for sitesutra.in under contactkumarsmishra@gmail.com via a public GoDaddy TXT record. Google confirmed submission of https://sitesutra.in/sitemap.xml. Indexing and performance are processing; no indexing or ranking result is established. Bing ownership is also verified via DNS CNAME in the account selected by the user. Bing accepted the sitemap and shows Submitted / Processing with no discovered URL count yet. The Bing account differs from the Google property owner. Current production host: https://sitesutra.in/.
 
-## Verify after preview approval
+## Ownership records and verification methods
+
+Keep the Google TXT ownership record in DNS. Bing uses a CNAME ownership record pointing to verify.bing.com; retain it after successful verification. Public website meta-tag values remain empty because DNS verification is used. Do not add secret credentials to the repository.
+
+## Additional properties or recovery
 
 1. Sign into Google Search Console using the owner account. Add the URL-prefix property https://sitesutra.in/ (a Domain property requires control of domain DNS).
 2. Choose HTML tag verification and copy only the public content value into googleSiteVerification in site-config.json. It is emitted on the homepage and studio pages only when nonempty. Rebuild, review and merge through a PR. Click Verify in Search Console only after that tag is publicly served; record the confirmation.
@@ -20,3 +24,5 @@ Bing: https://www.bing.com/webmasters/help/how-to-verify-ownership-of-your-site-
 - Qualified enquiries: only real received email or confirmed booking counts. Record source (ask the visitor if unknown), business/agency fit, service, goal, timing, budget discussion and agreed next step. Avoid copying private enquiry details into this public repo. Booking CTA clicks are not booking confirmations. No analytics integration or automatic measurement has been installed.
 
 Review the three streams separately; none guarantees rankings, citations or sales. Keep baseline and follow-up dates explicit and report missing data as unavailable.
+
+Google sitemap follow-up, 17 October 2026: Search Console now reports “Sitemap processed successfully” and 23 discovered pages. This is discovery, not confirmation that those pages are indexed.
