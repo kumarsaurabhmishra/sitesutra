@@ -28,11 +28,11 @@ Rebuild both generators after editing content or configuration. `verify.py` chec
 
 ## Hosting and remaining setup
 
-The production site is https://sitesutra.vercel.app. Vercel serves the committed `dist` directory and deploys merges to `main`. The source repository is public. `.openai/hosting.json` retains the earlier Sites project identity.
+The preferred production domain is https://sitesutra.in. The existing https://sitesutra.vercel.app deployment remains available while DNS is connected. Vercel serves the committed `dist` directory and deploys merges to `main`. The source repository is public. `.openai/hosting.json` retains the earlier Sites project identity.
 
 Bookings use the configured Cal.com 15-minute event. Availability and calendar connections are managed in Cal.com. The project-brief form currently prepares an email draft; the visitor must send it. A real submission endpoint and notification delivery still need configuration.
 
-A custom domain, domain email, genuine professional-profile links and founder photograph can be supplied later. Update `origin` in `site-config.json` and rebuild when changing domains. Concept projects are demonstrations, not commissioned client work. See `SETUP.md` for further launch notes.
+Domain email, genuine professional-profile links and founder photograph can be supplied later. Update `origin` in `site-config.json` and rebuild when changing domains. Concept projects are demonstrations, not commissioned client work. See `SETUP.md` for further launch notes.
 
 ## Branch and pull request workflow
 

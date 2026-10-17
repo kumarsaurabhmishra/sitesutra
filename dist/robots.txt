@@ -6,4 +6,4 @@ User-agent: OAI-SearchBot
 Allow: /
 Disallow: /private/
 Disallow: /admin/
-Sitemap: https://sitesutra.vercel.app/sitemap.xml
+Sitemap: https://sitesutra.in/sitemap.xml
