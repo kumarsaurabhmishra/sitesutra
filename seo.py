@@ -1,5 +1,6 @@
 """Shared search metadata, using only verified site information."""
 from html import escape
+from favicon import icon_links
 
 def enrich(graph, origin, route, title, description, pages, post=None):
     entity, person, page = graph[:3]
@@ -28,5 +29,5 @@ def enrich(graph, origin, route, title, description, pages, post=None):
     if post: tags['article:published_time'] = post['date']
     result = '<meta name="robots" content="index,follow,max-image-preview:large">'
     result += ''.join('<meta property="' + k + '" content="' + escape(v, quote=True) + '">' for k, v in tags.items())
-    result += '<meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/assets/sitesutra-logo.svg" type="image/svg+xml">'
+    result += '<meta name="twitter:card" content="summary_large_image">' + icon_links()
     return result
