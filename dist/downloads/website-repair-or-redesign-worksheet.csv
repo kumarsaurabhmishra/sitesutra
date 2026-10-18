@@ -1,0 +1,9 @@
+record_type,page_or_component,observed_problem,evidence_to_collect,route_to_investigate,owner,acceptance_check,status
+hypothetical example,Contact page,Email link has an incorrect destination,Compare link with owner-approved email,Targeted repair,Assign owner,Approved link opens correct draft; authorised test received,Not reviewed
+hypothetical example,Service navigation,Visitors cannot identify the service category,Record navigation labels and observed user difficulty,Content and navigation improvement,Assign owner,Reviewer can find the agreed services using keyboard and mobile,Not reviewed
+hypothetical example,Shared layout,Content clips on phones,Record affected pages and viewport conditions,Component repair or wider redesign after diagnosis,Assign owner,Agreed pages and widths have readable content and working actions,Not reviewed
+hypothetical example,Publishing workflow,Owner cannot change essential service information,Record who edits what and current access,Editing-workflow or platform review,Assign owner,Named editor can complete an agreed update and approval task,Not reviewed
+your observation,,,,,,,Not reviewed
+your observation,,,,,,,Not reviewed
+your observation,,,,,,,Not reviewed
+your observation,,,,,,,Not reviewed
