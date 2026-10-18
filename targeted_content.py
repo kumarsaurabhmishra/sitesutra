@@ -76,6 +76,7 @@ def improve(g):
     })
 
     related = {
+        'website-redesign-or-targeted-fixes': [(website, 'Website redesign and development scope'), (search, 'Technical SEO audit services')],
         'website-development-varanasi-project-brief': [(website, 'Website design and development in Varanasi'), (search, 'Technical SEO audit scope')],
         'choosing-digital-marketing-company-varanasi': [(local, 'Digital marketing services in Varanasi'), (website, 'Small-business website design and development')],
         'website-clicks-vs-qualified-enquiries': [(search, 'Technical SEO audits and measurement planning'), (local, 'Local digital marketing scope')],
