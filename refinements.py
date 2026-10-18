@@ -57,3 +57,5 @@ def refine(g):
  g['descriptions']={r:re.sub('<[^>]*>','',t)+' — '+('Original working concept and annotated design case study by SiteSutra.' if r.startswith('/work/') else 'Founder-led website design, development and digital services from Varanasi, India.') for r,(t,b) in pages.items()}
  from demos import build_demos
  build_demos(P, g['origin'])
+ from ravi_demo import build_ravi_dental_demo
+ build_ravi_dental_demo(P, g['origin'])
