@@ -76,6 +76,7 @@ def improve(g):
     })
 
     related = {
+        'digital-marketing-varanasi-quote-scope': [(local, 'Digital marketing services in Varanasi'), (search, 'Technical SEO and search-marketing scope')],
         'website-redesign-or-targeted-fixes': [(website, 'Website redesign and development scope'), (search, 'Technical SEO audit services')],
         'website-development-varanasi-project-brief': [(website, 'Website design and development in Varanasi'), (search, 'Technical SEO audit scope')],
         'choosing-digital-marketing-company-varanasi': [(local, 'Digital marketing services in Varanasi'), (website, 'Small-business website design and development')],
