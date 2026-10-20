@@ -1,0 +1,11 @@
+review_area,scope_or_question,evidence_received,affected_urls_or_templates,priority_and_reason,implementation_owner,verification_step,review_status
+Audit boundary,"Domains, subdomains, platforms, environments and page types included",,,,,,Not reviewed
+Discovery,"Crawl source, sitemap comparison and internal-link paths",,,,,,Not reviewed
+Indexing controls,"Status codes, robots directives, canonicals and representative URL checks",,,,,,Not reviewed
+Site changes,"Redirect map, redirect-chain checks and broken-link evidence",,,,,,Not reviewed
+Page experience,"Field or lab source, test date, profile and representative templates",,,,,,Not reviewed
+Structured data,"Eligible page types, detected markup and validation evidence where relevant",,,,,,Not reviewed
+Priorities,"Impact, evidence, dependency and reason for ordering each finding",,,,,,Not reviewed
+Implementation,"Included fixes, exclusions, responsible owner and approval process",,,,,,Not reviewed
+Verification,"Live acceptance checks and items dependent on later crawl or field data",,,,,,Not reviewed
+Handover,"Finding register, relevant exports, access notes and review date",,,,,,Not reviewed
