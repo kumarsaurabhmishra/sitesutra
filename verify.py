@@ -93,3 +93,13 @@ for row in targets:
 for route in {row['canonical_path'] for row in targets}:
  assert any(route in scan.refs for path,scan in scans.items() if '/blog/' in str(path)),route
 print('Approved target map passed: 10 phrases, four canonical service destinations with blog links')
+
+# The homepage character is decorative, light, and coupled to the existing tab state.
+home=Path('dist/index.html').read_text()
+script=Path('dist/app.js').read_text()
+styles=Path('dist/style.css').read_text()
+assert 'data-sutra-spark' in home and 'aria-hidden="true"' in home
+assert 'data-spark-title' in home and 'spark.dataset.mode=mode' in script
+assert "const modes=['design','build','grow']" in script
+assert '@media(prefers-reduced-motion:reduce)' in styles
+print('Sutra Spark passed: decorative SVG, tab reactions and reduced-motion fallback')
