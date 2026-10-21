@@ -6,6 +6,8 @@ The 10 rows in ../keyword-map.csv are the active acquisition targets. Four exist
 
 17 October 2026: Google Search Console performance is processing. The Google sitemap has 23 discovered pages, which does not mean 23 indexed pages. Bing's sitemap is Submitted / Processing. Empty metrics in the baseline CSV and null JSON values mean unavailable, not zero.
 
+21 October 2026: the first Search Console performance rows are available for 16–18 October. See `gsc-observation-2026-10-21.json`. The sample is only 5 impressions and Page indexing is still processing, so use it as an early crawl/query signal rather than a trend or demand estimate.
+
 Keep future exports and private enquiry records outside this public repository. Publish aggregate observations only when approved; do not commit names, messages, bookings, account tokens or raw reports containing private data.
 
 ## A repeatable review

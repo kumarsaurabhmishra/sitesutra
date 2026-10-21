@@ -9,7 +9,7 @@ def improve(g):
  '/services/website-development/':'Small Business Website Design & Development',
  '/agency-partnerships/':'White-Label Web Development for Agencies',
  '/services/design/':'Brand Identity & Graphic Design Services',
- '/services/seo-marketing/':'Technical SEO Audits & Search Marketing'}
+ '/services/seo-marketing/':'Technical SEO Audit Services in India'}
  def listing(items):return '<ul>'+''.join('<li>'+s+'</li>' for s in items)+'</ul>'
  def part(title,copy):return '<h2>'+title+'</h2><p>'+copy+'</p>'
  def cta(label):return '<section class="editorialclosing"><h2>'+label+'</h2><p>Bring your current website, audience, priorities and any constraints. We’ll use the discovery call to decide whether the work is a good fit, then agree a written scope.</p><a class="btn orange" href="/#booking">Book a discovery call ↗</a><a class="bookingfallback" href="/contact/">Prefer email? Send a project enquiry ↗</a></section>'

@@ -50,7 +50,7 @@ def improve(g):
 <p>Read how to <a href="/blog/website-clicks-vs-qualified-enquiries/">separate website clicks from qualified enquiries</a>. For the website itself, explore <a href="/services/website-development/">website design and development in Varanasi</a>; for crawl and content issues, review <a href="/services/seo-marketing/">technical SEO audit services</a>.</p>
 ''')
 
-    insert(search, '''<h2>Technical SEO audit services in India</h2>
+    insert(search, '''<h2>A technical SEO audit tied to decisions</h2>
 <p>A useful audit connects a technical observation to a specific URL, a proposed fix and a way to verify it. SiteSutra reviews the agreed public website and the search accounts you authorise, then separates confirmed problems from questions that need more evidence.</p>
 <h3>What an audit finding looks like</h3>
 <div class="tablewrap" tabindex="0" role="region" aria-label="Example audit findings"><table><caption>Hypothetical audit findings — examples of the handover format</caption><thead><tr><th>Observation</th><th>Recommended action</th><th>Acceptance evidence</th></tr></thead><tbody>

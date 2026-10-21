@@ -1,5 +1,14 @@
 # SiteSutra search changes
 
+## 21 October 2026 — first Search Console query signal
+
+- Search Console reported 5 impressions, 0 clicks, 0% CTR and an average position of 80.2 for 16–18 October. The property is new and Page indexing is still processing, so this is an observation rather than a ranking trend.
+- The exact reported query `technical seo audit services india` received 3 impressions. The owning `/services/seo-marketing/` page received 4 impressions; `/blog/website-clicks-vs-qualified-enquiries/` received 1.
+- Align the owning service page title and H1 with the observed query: `Technical SEO Audit Services in India`. Preserve the page URL, canonical, description, useful audit scope, broader search-marketing context and related article links.
+- Record the aggregate Search Console snapshot in `measurement/gsc-observation-2026-10-21.json`. No raw export, account data or private enquiry information is committed.
+
+Publication status: implementation branch; record the deployment date and commit after the approved release.
+
 ## 17 October 2026 — targeting and measurement preview
 
 - Adopt exactly the 10 user-approved acquisition phrases in keyword-map.csv, grouped onto four existing service destinations. Broader competitor research remains historical context, not the active keyword programme.
