@@ -43,8 +43,8 @@ from local_content import add_local
 add_local(globals())
 from targeted_content import improve as target_services
 target_services(globals())
-from character import add_character
-add_character(globals())
+from character import add_hero_film
+add_hero_film(globals())
 asset_versions={name:hashlib.sha256((P/name).read_bytes()).hexdigest()[:10] for name in ['style.css','layout.css','app.js','site-config.js']}
 for route,(title,body) in pages.items():
  out=P/route.strip('/')/'index.html';out.parent.mkdir(parents=True,exist_ok=True)
