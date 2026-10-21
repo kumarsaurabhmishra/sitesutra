@@ -1,0 +1,43 @@
+{
+  "observed_date": "2026-10-21",
+  "timezone": "Asia/Kolkata",
+  "property": "sc-domain:sitesutra.in",
+  "source": "Google Search Console performance report",
+  "selected_period": "3 months",
+  "data_period": {
+    "start": "2026-10-16",
+    "end": "2026-10-18"
+  },
+  "last_update_displayed": "4.5 hours ago",
+  "totals": {
+    "clicks": 0,
+    "impressions": 5,
+    "ctr_percent": 0,
+    "average_position": 80.2
+  },
+  "queries": [
+    {
+      "query": "technical seo audit services india",
+      "clicks": 0,
+      "impressions": 3
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://sitesutra.in/services/seo-marketing/",
+      "clicks": 0,
+      "impressions": 4
+    },
+    {
+      "url": "https://sitesutra.in/blog/website-clicks-vs-qualified-enquiries/",
+      "clicks": 0,
+      "impressions": 1
+    }
+  ],
+  "page_indexing_status": "Processing data, please check again in a day or so",
+  "limitations": [
+    "Search Console can omit low-volume query rows, so the visible query impressions do not sum to the property total.",
+    "The sample is too small to infer keyword demand, CTR performance or a ranking trend.",
+    "No indexing count was available when observed."
+  ]
+}
