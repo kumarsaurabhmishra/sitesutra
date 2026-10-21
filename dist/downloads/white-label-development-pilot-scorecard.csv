@@ -1,0 +1,11 @@
+review_area,agreed_requirement,evidence_or_preview,agency_review_note,decision_owner,status
+Pilot decision,"Question this pilot must answer",,,,Not reviewed
+Approved inputs,"Designs, copy, assets, states and permissions supplied",,,,Not reviewed
+Responsive delivery,"Agreed narrow and wide conditions and content priorities",,,,Not reviewed
+Representative interaction,"Expected default, error, empty and success states where applicable",,,,Not reviewed
+Accessibility review,"Named keyboard, focus, structure and label checks within scope",,,,Not reviewed
+Feedback handling,"Reviewer, feedback route, included revision and change boundary",,,,Not reviewed
+Communication,"Questions, assumptions, dependencies and milestone changes recorded",,,,Not reviewed
+Source and handover,"Named revision, source access and setup or release notes",,,,Not reviewed
+Commercial terms,"Fee, currency, payment point, confidentiality and ownership agreed",,,,Not reviewed
+Next decision,"Larger project, another pilot, revised workflow or no further work",,,,Not reviewed

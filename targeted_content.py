@@ -76,6 +76,7 @@ def improve(g):
     })
 
     related = {
+        'white-label-web-development-paid-pilot': [(agency, 'White-label web development for agencies'), (website, 'Website design and development scope')],
         'technical-seo-audit-deliverables': [(search, 'Technical SEO audit services in India'), (website, 'Website redesign and development scope')],
         'digital-marketing-varanasi-quote-scope': [(local, 'Digital marketing services in Varanasi'), (search, 'Technical SEO and search-marketing scope')],
         'website-redesign-or-targeted-fixes': [(website, 'Website redesign and development scope'), (search, 'Technical SEO audit services')],
