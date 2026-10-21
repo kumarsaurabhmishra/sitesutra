@@ -1,23 +1,14 @@
 // Each tablist has its own keyboard navigation and panel ownership.
-const spark=document.querySelector('[data-sutra-spark]');
-const sparkMessages={design:'Shaping the idea',build:'Building the system',grow:'Connecting discovery'};
-function setSparkMode(mode){
- if(!spark)return;spark.dataset.mode=mode;
- const title=spark.querySelector('[data-spark-title]');if(title)title.textContent=sparkMessages[mode]||sparkMessages.design;
- spark.classList.remove('is-changing');void spark.offsetWidth;spark.classList.add('is-changing');
-}
-function updateSpark(tab){setSparkMode(tab.id.replace('tab-',''));}
+const heroFilm=document.querySelector('[data-sutra-film]');
 document.querySelectorAll('[role="tablist"]').forEach(list=>{
  const tabs=[...list.querySelectorAll('[role="tab"]')];
- function select(tab){tabs.forEach(t=>{const on=t===tab;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!on;});updateSpark(tab);}
+ function select(tab){tabs.forEach(t=>{const on=t===tab;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!on;});}
  tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>select(tab));tab.addEventListener('keydown',e=>{let n;if(e.key==='ArrowRight')n=(i+1)%tabs.length;if(e.key==='ArrowLeft')n=(i-1+tabs.length)%tabs.length;if(e.key==='Home')n=0;if(e.key==='End')n=tabs.length-1;if(n!==undefined){e.preventDefault();select(tabs[n]);tabs[n].focus();}});});
 });
-if(spark&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
- const modes=['design','build','grow'];let step=0,timer;
- const start=()=>{if(!timer)timer=setInterval(()=>{step=(step+1)%modes.length;setSparkMode(modes[step]);},3200);};
- const stop=()=>{clearInterval(timer);timer=undefined;};
- if('IntersectionObserver' in window){new IntersectionObserver(entries=>entries[0].isIntersecting?start():stop(),{threshold:.35}).observe(spark);}else start();
- document.addEventListener('visibilitychange',()=>document.hidden?stop():start());
+if(heroFilm&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+ const setPlaying=playing=>heroFilm.classList.toggle('is-playing',playing&&!document.hidden);
+ if('IntersectionObserver' in window){new IntersectionObserver(entries=>setPlaying(entries[0].isIntersecting),{threshold:.3}).observe(heroFilm);}else setPlaying(true);
+ document.addEventListener('visibilitychange',()=>setPlaying(!document.hidden));
 }
 document.querySelectorAll('[data-device]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-device]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));document.querySelector('[data-device-preview]').classList.toggle('mobile',btn.dataset.device==='mobile');}));
 document.querySelectorAll('[data-compare]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-compare]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));document.querySelectorAll('[data-comparison]').forEach(panel=>panel.hidden=panel.dataset.comparison!==btn.dataset.compare);}));
