@@ -94,12 +94,12 @@ for route in {row['canonical_path'] for row in targets}:
  assert any(route in scan.refs for path,scan in scans.items() if '/blog/' in str(path)),route
 print('Approved target map passed: 10 phrases, four canonical service destinations with blog links')
 
-# The homepage character is decorative, light, and coupled to the existing tab state.
+# The homepage film is decorative, code-native and pauses when it is not useful.
 home=Path('dist/index.html').read_text()
 script=Path('dist/app.js').read_text()
 styles=Path('dist/style.css').read_text()
-assert 'data-sutra-spark' in home and 'aria-hidden="true"' in home
-assert 'data-spark-title' in home and 'spark.dataset.mode=mode' in script
-assert "const modes=['design','build','grow']" in script
+assert 'data-sutra-film' in home and 'aria-hidden="true"' in home
+assert "heroFilm.classList.toggle('is-playing'" in script
+assert 'IntersectionObserver' in script and 'animation-play-state:paused' in styles
 assert '@media(prefers-reduced-motion:reduce)' in styles
-print('Sutra Spark passed: decorative SVG, tab reactions and reduced-motion fallback')
+print('Cinematic hero passed: decorative SVG, visibility pause and reduced-motion fallback')
