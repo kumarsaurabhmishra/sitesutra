@@ -1,0 +1,57 @@
+.founderphoto {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #cbb49e;
+}
+
+.founderphoto img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.founderphoto figcaption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 13px 15px;
+  border-radius: 7px;
+  color: #fff;
+  background: rgb(16 24 45 / 87%);
+  backdrop-filter: blur(8px);
+}
+
+.founderphoto figcaption span,
+.founderphoto figcaption small {
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.founderphoto figcaption small {
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .founderphoto figcaption {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .founderphoto figcaption small {
+    text-align: left;
+  }
+}
