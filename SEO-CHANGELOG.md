@@ -1,5 +1,16 @@
 # SiteSutra search changes
 
+## 23 October 2026 — query-led service-page refinement
+
+- Search Console reported 18 impressions, 0 clicks and an average position of 71.8 for 16–21 October. The sample covers six completed days, so it is an early matching signal rather than proof of demand or a trend.
+- Keep close technical SEO variations on `/services/seo-marketing/`, which received 10 impressions. Add a concrete audit output, direct-consultant involvement, implementation boundaries and retesting language around the observed India audit queries.
+- Answer the observed `digital marketing consultant in varanasi` query on the existing `/digital-marketing-company-varanasi/` page, which received 4 impressions. Explain the founder-led working model and when a larger channel team would need separate scope.
+- Improve the existing website-development page with a buyer decision checklist while leaving its target phrases marked as unverified; no matching website-development query appeared in the report.
+- Add accurate `serviceType` and `areaServed` properties to existing Service structured data. Do not add a new landing page, rating, client proof or local address.
+- Record the exact aggregate query and page rows in `measurement/gsc-observation-2026-10-23.json`. The irrelevant video DRM query is documented but not targeted.
+
+Publication status: preview only; deployment date will be recorded after approval and release.
+
 ## 21 October 2026 — first Search Console query signal
 
 - Search Console reported 5 impressions, 0 clicks, 0% CTR and an average position of 80.2 for 16–18 October. The property is new and Page indexing is still processing, so this is an observation rather than a ranking trend.

@@ -56,7 +56,10 @@ for route,(title,body) in pages.items():
  if route.startswith('/guides/') and route!='/guides/':
   graph.append({'@type':'Article','headline':title,'mainEntityOfPage':{'@id':page['@id']},'author':{'@id':person['@id']},'publisher':{'@id':entity['@id']}})
  if route.startswith('/services/') and route!='/services/' or route in ['/agency-partnerships/','/digital-marketing-company-varanasi/']:
-  graph.append({'@type':'Service','name':title,'url':origin+route,'provider':{'@id':entity['@id']},'description':descriptions[route]})
+  service={'@type':'Service','name':title,'serviceType':title,'url':origin+route,'provider':{'@id':entity['@id']},'description':descriptions[route], 'areaServed': {'@type':'Country','name':'India'}}
+  if route in ['/services/website-development/','/digital-marketing-company-varanasi/']:
+   service['areaServed']=[{'@type':'City','name':'Varanasi'},{'@type':'Country','name':'India'}]
+  graph.append(service)
  if route in blog_posts:
   graph.append({'@type':'BlogPosting','headline':title,'datePublished':blog_posts[route]['date'],'mainEntityOfPage':{'@id':page['@id']},'author':{'@id':entity['@id']},'publisher':{'@id':entity['@id']},'description':blog_posts[route]['description']})
  if route=='/blog/':page['@type']='CollectionPage'

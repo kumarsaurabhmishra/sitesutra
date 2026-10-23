@@ -1,0 +1,47 @@
+{
+  "observed_date": "2026-10-23",
+  "timezone": "Asia/Kolkata",
+  "property": "sc-domain:sitesutra.in",
+  "source": "Google Search Console performance report",
+  "search_type": "Web",
+  "selected_period": "3 months",
+  "data_period": {
+    "start": "2026-10-16",
+    "end": "2026-10-21"
+  },
+  "last_update_displayed": "4 hours ago",
+  "totals": {
+    "clicks": 0,
+    "impressions": 18,
+    "ctr_percent": 0,
+    "average_position": 71.8
+  },
+  "queries": [
+    {"query": "technical seo audit services india", "clicks": 0, "impressions": 4, "position": 90.0},
+    {"query": "digital marketing consultant in varanasi", "clicks": 0, "impressions": 3, "position": 86.3},
+    {"query": "professional video drm service in varanasi", "clicks": 0, "impressions": 1, "position": 60.0},
+    {"query": "seo audit company in india", "clicks": 0, "impressions": 1, "position": 66.0},
+    {"query": "technical seo audit consultant", "clicks": 0, "impressions": 1, "position": 84.0},
+    {"query": "technical seo audit services", "clicks": 0, "impressions": 1, "position": 87.0},
+    {"query": "technical seo audit consultancy", "clicks": 0, "impressions": 1, "position": 88.0},
+    {"query": "seo audit services in india", "clicks": 0, "impressions": 1, "position": 93.0}
+  ],
+  "pages": [
+    {"url": "https://sitesutra.in/services/seo-marketing/", "clicks": 0, "impressions": 10, "position": 86.9},
+    {"url": "https://sitesutra.in/digital-marketing-company-varanasi/", "clicks": 0, "impressions": 4, "position": 79.8},
+    {"url": "https://sitesutra.in/blog/website-clicks-vs-qualified-enquiries/", "clicks": 0, "impressions": 3, "position": 16.0},
+    {"url": "https://sitesutra.in/services/", "clicks": 0, "impressions": 1, "position": 57.0}
+  ],
+  "decisions": [
+    "Strengthen the existing technical SEO service page around audit deliverables, consultant involvement and retesting; keep one canonical page for close variants.",
+    "Answer the observed consultant-style Varanasi query on the existing local marketing page without creating a near-duplicate landing page.",
+    "Keep website-development terms on their existing service page; Search Console has not yet reported a matching query, so demand remains unverified.",
+    "Treat the video DRM query as irrelevant noise and do not change the offer to match it."
+  ],
+  "limitations": [
+    "The property is new and the report covers only six completed days.",
+    "Search Console can omit low-volume query rows, so visible query impressions do not sum to the property total.",
+    "The sample is too small to infer demand, CTR performance or a ranking trend.",
+    "Average position is an aggregate observation, not a fixed rank or a forecast."
+  ]
+}
