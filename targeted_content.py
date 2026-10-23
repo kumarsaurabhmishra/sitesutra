@@ -18,6 +18,8 @@ def improve(g):
 
     insert(website, '''<h2>Website design and development in Varanasi</h2>
 <p>SiteSutra works directly with small businesses in Varanasi and remotely across India. Start with the service you sell, the people you need to reach and the action your website should make easy. Kumar handles the agreed design and development, with a preview to review before launch.</p>
+<h3>What should a website development company help you decide?</h3>
+<p>Before choosing layouts or technology, agree which customers the website serves, which pages they need, what proof you can publish and how an enquiry will reach you. The proposal should name the pages, content owner, integrations, review stages, acceptance checks and handover. This gives a Varanasi business a concrete basis for comparing website developers without relying on a broad package label.</p>
 <h2>Small business website design in India: choose the right starting point</h2>
 <div class="tablewrap" tabindex="0" role="region" aria-label="Website scope comparison"><table><caption>Match the project to the business problem</caption><thead><tr><th>Your starting point</th><th>A useful scope</th><th>What we check</th></tr></thead><tbody>
 <tr><td>No business website</td><td>A focused set of service, about and enquiry pages using approved business information.</td><td>Can someone understand your offer and take the next step on a phone?</td></tr>
@@ -43,6 +45,9 @@ def improve(g):
 
     insert(local, '''<h2>Digital marketing services in Varanasi, starting with your enquiry journey</h2>
 <p>If you are comparing a digital marketing agency in Varanasi, ask what will actually change in your business: clearer service pages, a working booking route, a technical search review, a content plan or a campaign landing page. SiteSutra starts with that decision and agrees the work with you directly.</p>
+<h2>A founder-led digital marketing consultant in Varanasi</h2>
+<p>SiteSutra is a small founder-led studio, so you discuss the brief, priorities and review evidence directly with Kumar Saurabh Mishra. This can suit a business that wants one accountable point of contact for its website, search foundations and content plan. If your project needs daily social publishing, large paid-media operations or specialist production, those responsibilities and any additional partners must be agreed before work starts.</p>
+<p>The first conversation is used to identify a useful scope, not to prescribe every channel. Bring your current website, the service you want to sell, the enquiries you consider qualified and any search or campaign evidence you already have.</p>
 <h3>A practical starting plan for a local service business</h3>
 <p>Hypothetical example: a Varanasi home-repair business has a phone number and a dated website. The first scope could clarify its actual services and coverage, make contact actions easy on mobile, and repair any broken enquiry links. The next scope could improve service information and plan answers to real customer questions. Advertising is a separate decision once the offer, landing page and receiving process are ready.</p>
 <h3>What should a useful report tell you?</h3>
@@ -52,6 +57,10 @@ def improve(g):
 
     insert(search, '''<h2>A technical SEO audit tied to decisions</h2>
 <p>A useful audit connects a technical observation to a specific URL, a proposed fix and a way to verify it. SiteSutra reviews the agreed public website and the search accounts you authorise, then separates confirmed problems from questions that need more evidence.</p>
+<h2>Technical SEO audit services in India: what you receive</h2>
+<p>The scope can cover crawl access, response status, indexability, canonical signals, sitemap URLs, metadata, headings, internal links, structured data and redirect requirements. The handover groups findings by affected URL, evidence, business impact, recommended owner and retest method. It does not turn a crawler export into a list of unexplained errors.</p>
+<h3>One consultant from review through retesting</h3>
+<p>Kumar Saurabh Mishra conducts the agreed review and explains the findings directly. Implementation can be included or quoted separately after access and platform constraints are understood. A completed fix is retested against the acceptance evidence; Google indexing, rankings and traffic remain outcomes outside the audit's control.</p>
 <h3>What an audit finding looks like</h3>
 <div class="tablewrap" tabindex="0" role="region" aria-label="Example audit findings"><table><caption>Hypothetical audit findings — examples of the handover format</caption><thead><tr><th>Observation</th><th>Recommended action</th><th>Acceptance evidence</th></tr></thead><tbody>
 <tr><td>An old service URL returns an error after a redesign.</td><td>Check whether an equivalent page exists and agree the appropriate redirect.</td><td>The old URL reaches the agreed destination without a redirect chain.</td></tr>
@@ -71,8 +80,8 @@ def improve(g):
     g['descriptions'].update({
         website: 'Website design and development in Varanasi for small businesses across India. New websites, redesign, booking integrations and documented handover.',
         agency: 'White-label web development in India for design and marketing agencies. Approved briefs, scoped pilots, review previews and source handover.',
-        local: 'Founder-led digital marketing services in Varanasi: business websites, search foundations, useful content and campaign planning with a clear scope.',
-        search: 'Technical SEO audit services in India: URL-level evidence, crawl and indexability checks, prioritised fixes and an agreed implementation plan.',
+        local: 'Founder-led digital marketing consultant in Varanasi for business websites, search foundations, useful content and campaign planning with a clear scope.',
+        search: 'Technical SEO audit services in India with URL-level evidence, crawl and indexability checks, prioritised fixes, implementation options and retesting.',
     })
 
     related = {

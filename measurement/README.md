@@ -8,6 +8,8 @@ The 10 rows in ../keyword-map.csv are the active acquisition targets. Four exist
 
 21 October 2026: the first Search Console performance rows are available for 16–18 October. See `gsc-observation-2026-10-21.json`. The sample is only 5 impressions and Page indexing is still processing, so use it as an early crawl/query signal rather than a trend or demand estimate.
 
+23 October 2026: Search Console reports 18 impressions and no clicks for 16–21 October. Technical SEO audit variations account for the clearest visible query cluster, and the local marketing page has begun matching `digital marketing consultant in varanasi`. See `gsc-observation-2026-10-23.json` for the exact rows, positions and content decisions. Six days of data cannot establish demand or a ranking trend; website-development targets still have no reported query row.
+
 Keep future exports and private enquiry records outside this public repository. Publish aggregate observations only when approved; do not commit names, messages, bookings, account tokens or raw reports containing private data.
 
 ## A repeatable review
