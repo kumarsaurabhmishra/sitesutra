@@ -1,0 +1,9 @@
+checkpoint,page_url,report_or_test,observation,decision_or_action,owner,review_date,status
+Approved canonical page,https://example.com/service/,URL Inspection,Replace with verified indexed and live-test findings,Confirm whether the intended canonical is discoverable and indexable,Website owner,,Not reviewed
+Old redesign URL,https://example.com/old-service/,Browser and redirect map,Replace with actual response and destination,Keep repair or retire according to the approved redirect plan,Developer,,Not reviewed
+Sitemap coverage,https://example.com/sitemap.xml,Sitemaps report,Record submitted and discovered status without treating it as indexed,Compare sitemap URLs with approved canonical inventory,Website owner,,Not reviewed
+Relevant query group,https://example.com/service/,Performance queries and pages,Record clicks impressions CTR and average position for a completed period,Improve the owning page only when evidence supports a clear buyer need,Marketing owner,,Not reviewed
+Irrelevant query,https://example.com/services/,Performance queries and pages,Record the mismatch without adopting the service,Leave offer unchanged unless the business genuinely provides it,Business owner,,Not reviewed
+Search snippet,https://example.com/service/,Rendered page and search report,Compare title description and visible promise,Correct inaccurate or unclear wording without promising rankings,Content owner,,Not reviewed
+Enquiry route,https://example.com/contact/,Live visitor test,Record whether the message or booking actually arrives,Repair the journey before counting contact activity,Enquiry owner,,Not reviewed
+Comparable review period,Property level,Performance report,Record exact dates filters and deployment changes,Compare equal completed periods and document limitations,Measurement owner,,Not reviewed
