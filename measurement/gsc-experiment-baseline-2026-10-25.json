@@ -1,0 +1,56 @@
+{
+  "observed_date": "2026-10-25",
+  "timezone": "Asia/Kolkata",
+  "property": "sc-domain:sitesutra.in",
+  "source": "Google Search Console performance report",
+  "search_type": "Web",
+  "data_period": {
+    "start": "2026-10-16",
+    "end": "2026-10-22"
+  },
+  "last_update_displayed": "3.5 hours ago",
+  "totals": {
+    "clicks": 0,
+    "impressions": 22,
+    "ctr_percent": 0,
+    "average_position": 67.5
+  },
+  "queries": [
+    {"query": "technical seo audit services india", "clicks": 0, "impressions": 5, "position": 90.0},
+    {"query": "digital marketing consultant in varanasi", "clicks": 0, "impressions": 3, "position": 86.3},
+    {"query": "technical seo audit consultancy", "clicks": 0, "impressions": 2, "position": 88.0},
+    {"query": "professional video drm service in varanasi", "clicks": 0, "impressions": 1, "position": 60.0},
+    {"query": "seo audit company in india", "clicks": 0, "impressions": 1, "position": 66.0},
+    {"query": "technical seo audit consultant", "clicks": 0, "impressions": 1, "position": 84.0},
+    {"query": "technical seo audit services", "clicks": 0, "impressions": 1, "position": 87.0},
+    {"query": "seo audit services in india", "clicks": 0, "impressions": 1, "position": 93.0}
+  ],
+  "pages": [
+    {"url": "https://sitesutra.in/services/seo-marketing/", "clicks": 0, "impressions": 12, "position": 87.3},
+    {"url": "https://sitesutra.in/blog/website-clicks-vs-qualified-enquiries/", "clicks": 0, "impressions": 4, "position": 14.5},
+    {"url": "https://sitesutra.in/digital-marketing-company-varanasi/", "clicks": 0, "impressions": 4, "position": 79.8},
+    {"url": "https://sitesutra.in/about/", "clicks": 0, "impressions": 1, "position": 3.0},
+    {"url": "https://sitesutra.in/services/", "clicks": 0, "impressions": 1, "position": 57.0}
+  ],
+  "experiment": {
+    "planned_release_date": "2026-10-25",
+    "first_review_date": "2026-10-28",
+    "changes": [
+      "Tighten descriptions for the technical SEO, Varanasi marketing and website-development service pages.",
+      "Add descriptive internal links between the service pages and their strongest planning guides.",
+      "Shorten the enquiry-measurement article title and description while preserving its intent and URL."
+    ],
+    "review_questions": [
+      "Did the same pages receive additional impressions or their first click?",
+      "Did any new relevant queries appear for website development, digital marketing or technical SEO?",
+      "Did the enquiry-measurement article maintain its page-level visibility after the title change?",
+      "Were any observed changes large enough to justify another edit, given the reporting delay and small sample?"
+    ]
+  },
+  "limitations": [
+    "The property is new and the baseline contains only seven completed days.",
+    "A review after three calendar days may contain only part of the post-release period because Search Console data is delayed.",
+    "Visible query rows can omit low-volume data and do not sum to property totals.",
+    "No ranking, click or enquiry improvement is promised."
+  ]
+}

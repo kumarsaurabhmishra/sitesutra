@@ -31,6 +31,8 @@ def improve(g):
 <p>Use the <a href="/guides/redesign/">website redesign inventory and redirect-map example</a> to prepare. The <a href="/guides/costs/">website cost guide</a> explains how content, migration and integrations change a quote.</p>
 <h3>What do I need to supply?</h3><p>Your business name, services, genuine contact information, logo or brand assets, content owner and permission to use any photographs or project examples. For a redesign, include the current domain, website and account owners. If content is incomplete, we identify the missing decisions in the scope.</p>
 <h3>Can the website include WhatsApp or online booking?</h3><p>Yes, where agreed. SiteSutra itself demonstrates a phone link, WhatsApp link and Cal.com booking embed. A contact form needs a configured submission provider and a tested receiving address; displaying a confirmation message alone is not proof that a message arrived.</p>
+<h2>Plan the website, search review and handover together</h2>
+<p>A useful website scope records the pages and visitor journey before launch, then defines what will be checked afterwards. Prepare with the <a href="/blog/website-development-varanasi-project-brief/">Varanasi website project brief</a>, organise the homepage with the <a href="/blog/small-business-homepage-content-plan/">small-business content planner</a>, and use the <a href="/blog/search-console-first-28-days/">first 28 days Search Console review</a> after release.</p>
 ''')
 
     insert(agency, '''<h2>White-label web development in India, built around your agency</h2>
@@ -53,6 +55,8 @@ def improve(g):
 <h3>What should a useful report tell you?</h3>
 <p>Which pages were changed, what evidence prompted the change, what was tested and which decisions need your input. Search visibility belongs alongside real enquiry quality: a call or message should be reviewed for service fit, timing and the next step, rather than counted as useful merely because it happened.</p>
 <p>Read how to <a href="/blog/website-clicks-vs-qualified-enquiries/">separate website clicks from qualified enquiries</a>. For the website itself, explore <a href="/services/website-development/">website design and development in Varanasi</a>; for crawl and content issues, review <a href="/services/seo-marketing/">technical SEO audit services</a>.</p>
+<h2>Guides for planning the work before choosing channels</h2>
+<ul><li><a href="/blog/digital-marketing-varanasi-quote-scope/">Compare a Varanasi digital marketing quote and its responsibilities</a>.</li><li><a href="/blog/digital-marketing-varanasi-content-plan/">Build a useful local-business content plan</a>.</li><li><a href="/blog/website-clicks-vs-qualified-enquiries/">Separate website activity from received and qualified enquiries</a>.</li></ul>
 ''')
 
     insert(search, '''<h2>A technical SEO audit tied to decisions</h2>
@@ -69,6 +73,8 @@ def improve(g):
 </tbody></table></div>
 <h3>Which access is needed?</h3><p>A public crawl can start without account credentials. Search Console, Bing and analytics evidence require the account owner's approved access. Implementation also needs the relevant repository or platform access. Keep credentials in the provider's access controls, not a shared project brief.</p>
 <h3>Audit first, then agree implementation</h3><p>The handover records affected URLs, evidence, business impact, owner and how to retest. Fixes can be scoped separately from content, campaigns or a redesign. For a wider change, use the <a href="/guides/redesign/">redesign migration checklist</a>; local businesses can review the <a href="/digital-marketing-company-varanasi/">Varanasi digital marketing overview</a>.</p>
+<h2>Use the audit evidence after launch</h2>
+<p>Read the <a href="/blog/technical-seo-audit-deliverables/">technical SEO audit deliverables guide</a> before agreeing the handover. After a launch or approved implementation, use the <a href="/blog/search-console-first-28-days/">28-day Search Console review</a> to check important URLs, page and query signals, and the next evidence-supported action. Keep <a href="/blog/website-clicks-vs-qualified-enquiries/">qualified enquiry measurement</a> separate from impressions and clicks.</p>
 ''')
 
     # Remove internal keyword-planning notes from buyer-facing service copy.
@@ -78,10 +84,10 @@ def improve(g):
     pages[search] = (title, body[:start] + body[end:])
 
     g['descriptions'].update({
-        website: 'Website design and development in Varanasi for small businesses across India. New websites, redesign, booking integrations and documented handover.',
+        website: 'Website design and development in Varanasi for small businesses: new websites, redesigns, booking integrations and documented handover.',
         agency: 'White-label web development in India for design and marketing agencies. Approved briefs, scoped pilots, review previews and source handover.',
-        local: 'Founder-led digital marketing consultant in Varanasi for business websites, search foundations, useful content and campaign planning with a clear scope.',
-        search: 'Technical SEO audit services in India with URL-level evidence, crawl and indexability checks, prioritised fixes, implementation options and retesting.',
+        local: 'Founder-led digital marketing consultant in Varanasi for websites, SEO, useful content and campaign planning. Discuss a clear scope with SiteSutra.',
+        search: 'Technical SEO audit services in India with URL-level findings, indexability checks, prioritised fixes and retesting. Request a tailored audit scope.',
     })
 
     related = {
