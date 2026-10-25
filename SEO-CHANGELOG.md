@@ -1,5 +1,14 @@
 # SiteSutra search changes
 
+## 25 October 2026 — three-day search experiment
+
+- Record a pre-change Search Console baseline of 22 impressions, 0 clicks and average position 67.5 for 16–22 October. The technical SEO service page has the largest page-level sample; the enquiry-measurement article is the only content page near the first two result pages.
+- Preserve the existing service URLs, titles and intent ownership. Tighten their descriptions and add descriptive links to useful planning guides instead of creating more keyword pages.
+- Shorten the enquiry-measurement article title and description while preserving its URL and practical tracking intent.
+- Review the same query and page groups on 28 October. Treat that check as directional because the sample is small and Search Console reporting is delayed.
+
+Publication status: preview only; the experiment clock begins after an approved production release.
+
 ## 23 October 2026 — query-led service-page refinement
 
 - Search Console reported 18 impressions, 0 clicks and an average position of 71.8 for 16–21 October. The sample covers six completed days, so it is an early matching signal rather than proof of demand or a trend.
