@@ -1,0 +1,6 @@
+task,trigger_or_frequency,task_owner,approver,access_needed,acceptance_check,priority,commercial_treatment,last_review,status
+Check enquiry delivery,"Hypothetical example: after integration changes",Website provider,Receiving inbox owner,Form configuration and authorised test access,Valid test reaches configured inbox and error state remains accessible,Urgent when failed,Define in support agreement,,Not reviewed
+Update service dates,"Hypothetical example: when the business approves new dates",Business content owner,Business approver,Content editing or approved change request,Published page matches approved source and affected links work,Normal,Define included change allowance,,Not reviewed
+Review booking availability,"Hypothetical example: when operating hours change",Calendar owner,Business approver,Booking provider access,Public calendar shows approved slots and timezone,Normal,Business-managed unless scoped,,Not reviewed
+Review important Search Console pages,"Hypothetical example: monthly and after major site changes",Search reviewer,Business owner,Appropriate Search Console role,Review date and evidence-supported action recorded,Normal,Define in reporting scope,,Not reviewed
+,,,,,,,,,
