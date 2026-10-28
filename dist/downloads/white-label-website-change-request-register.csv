@@ -1,0 +1,5 @@
+request_id,location,category,current_result,expected_result,evidence,affected_scope,decision_owner,commercial_approval,preview_url,acceptance_check,status
+EXAMPLE-01,/contact/,Content correction,"Hypothetical example: old phone number displayed","Approved replacement number is displayed and linked","Approved business source required",Contact component and repeated footer,Agency reviewer,Not required if included,,Displayed value and tel link match approved source,Not started
+EXAMPLE-02,Mobile navigation,Defect,"Hypothetical example: menu overlaps heading at stated width","Navigation opens without covering required content","Viewport and reproduction steps",Shared navigation,Agency reviewer,Not required if it misses approved acceptance,,Retest menu keyboard use and target mobile widths,Not started
+EXAMPLE-03,Proof section,Scope change,"Hypothetical example: static section in approved brief","Review request for testimonial carousel","Permissioned content and interaction requirements",Component design development content and accessibility,Agency scope owner,Required,,Approve scope then test controls motion and responsive states,Awaiting decision
+,,,,,,,,,,,
