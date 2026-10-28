@@ -1,5 +1,16 @@
 # SiteSutra search changes
 
+## 28 October 2026 — delayed experiment review
+
+- Search Console reported 36 impressions, 0 clicks and an average position of 65.0 for 19–25 October. The report was delayed by 72 hours and ended on the day the three-day experiment reached production, so it does not contain a complete post-change period.
+- The technical SEO page received 18 impressions at average position 90.0. The local marketing page received 4 impressions at 79.8. These pages continue to match their intended query groups, but their positions are too low for the zero-click result to support snippet rewriting.
+- The enquiry-measurement article appeared 3 times at average position 6.0, and the website-development page appeared once at position 4.0. The corresponding low-volume queries are withheld by Search Console, so keep both pages stable until a larger sample is available.
+- Keep consultant, consultancy, company and agency variants on the existing technical SEO service page. Do not create additional near-duplicate landing pages or repeat those phrases unnaturally.
+- Google successfully read the submitted sitemap on 27 October and reported 31 discovered pages. Leave the existing sitemap submission in place. The separate Page indexing report was last updated on 16 October and conflicts with later performance evidence, so it is not treated as a current index count.
+- Record the exact visible query and page rows in `measurement/gsc-observation-2026-10-28.json`. Make no buyer-facing SEO changes in this review: the most recent service-page and internal-link updates have not yet had a fair observation window.
+
+Publication status: measurement review only; production content remains unchanged.
+
 ## 25 October 2026 — three-day search experiment
 
 - Record a pre-change Search Console baseline of 22 impressions, 0 clicks and average position 67.5 for 16–22 October. The technical SEO service page has the largest page-level sample; the enquiry-measurement article is the only content page near the first two result pages.
