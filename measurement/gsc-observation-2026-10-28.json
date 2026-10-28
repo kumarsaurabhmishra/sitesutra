@@ -1,0 +1,81 @@
+{
+  "observed_date": "2026-10-28",
+  "timezone": "Asia/Kolkata",
+  "property": "sc-domain:sitesutra.in",
+  "source": "Google Search Console performance, page indexing and sitemap reports",
+  "search_type": "Web",
+  "selected_period": "7 days",
+  "data_period": {
+    "start": "2026-10-19",
+    "end": "2026-10-25"
+  },
+  "last_update_displayed": "72 hours ago",
+  "totals": {
+    "clicks": 0,
+    "impressions": 36,
+    "ctr_percent": 0,
+    "average_position": 65.0
+  },
+  "queries": [
+    {"query": "technical seo audit services india", "clicks": 0, "impressions": 4, "position": 91.8},
+    {"query": "digital marketing consultant in varanasi", "clicks": 0, "impressions": 3, "position": 86.3},
+    {"query": "technical seo audit consultancy", "clicks": 0, "impressions": 3, "position": 88.7},
+    {"query": "website technical seo audit company", "clicks": 0, "impressions": 2, "position": 95.5},
+    {"query": "seo audit services in india", "clicks": 0, "impressions": 2, "position": 96.5},
+    {"query": "form space", "clicks": 0, "impressions": 1, "position": 41.0},
+    {"query": "form and space", "clicks": 0, "impressions": 1, "position": 51.0},
+    {"query": "professional video drm service in varanasi", "clicks": 0, "impressions": 1, "position": 60.0},
+    {"query": "seo audit company in india", "clicks": 0, "impressions": 1, "position": 66.0},
+    {"query": "technical seo audit consultant", "clicks": 0, "impressions": 1, "position": 84.0},
+    {"query": "technical seo audit agency", "clicks": 0, "impressions": 1, "position": 87.0},
+    {"query": "technical seo audit services", "clicks": 0, "impressions": 1, "position": 87.0},
+    {"query": "technical seo audit company", "clicks": 0, "impressions": 1, "position": 92.0},
+    {"query": "seo audits services in india", "clicks": 0, "impressions": 1, "position": 95.0}
+  ],
+  "pages": [
+    {"url": "https://sitesutra.in/services/seo-marketing/", "clicks": 0, "impressions": 18, "position": 90.0},
+    {"url": "https://sitesutra.in/digital-marketing-company-varanasi/", "clicks": 0, "impressions": 4, "position": 79.8},
+    {"url": "https://sitesutra.in/blog/website-clicks-vs-qualified-enquiries/", "clicks": 0, "impressions": 3, "position": 6.0},
+    {"url": "https://sitesutra.in/services/", "clicks": 0, "impressions": 3, "position": 25.0},
+    {"url": "https://sitesutra.in/", "clicks": 0, "impressions": 3, "position": 32.7},
+    {"url": "https://sitesutra.in/about/", "clicks": 0, "impressions": 2, "position": 10.5},
+    {"url": "https://sitesutra.in/work/form-space/", "clicks": 0, "impressions": 2, "position": 46.0},
+    {"url": "https://sitesutra.in/services/website-development/", "clicks": 0, "impressions": 1, "position": 4.0},
+    {"url": "https://sitesutra.in/contact/", "clicks": 0, "impressions": 1, "position": 38.0},
+    {"url": "https://sitesutra.in/privacy/", "clicks": 0, "impressions": 1, "position": 70.0}
+  ],
+  "sitemap": {
+    "url": "https://sitesutra.in/sitemap.xml",
+    "submitted": "2026-10-17",
+    "last_read": "2026-10-27",
+    "status": "Success",
+    "discovered_pages": 31
+  },
+  "page_indexing_report": {
+    "last_update": "2026-10-16",
+    "status": "stale relative to the performance and sitemap reports",
+    "note": "The report displayed zero indexed pages, but later Search performance impressions show that Google served multiple SiteSutra URLs. It is not used as the current index count."
+  },
+  "comparison": {
+    "previous_window": "2026-10-16 to 2026-10-22",
+    "previous_impressions": 22,
+    "previous_average_position": 67.5,
+    "current_impressions": 36,
+    "current_average_position": 65.0,
+    "interpretation": "The windows overlap and the current report ends on the experiment release date, so the difference is directional context rather than a before-and-after result."
+  },
+  "decisions": [
+    "Keep the existing technical SEO, local marketing and website-development canonical pages, titles and H1s stable until the report contains several completed post-release days.",
+    "Do not create separate pages for consultant, consultancy, company or agency variants; the existing technical SEO page already answers the shared audit intent.",
+    "Do not rewrite snippets to chase CTR while the main query group is appearing around positions 84 to 97; there is no meaningful click opportunity sample yet.",
+    "Treat the Form / Space queries as concept-name ambiguity and the video DRM query as irrelevant noise rather than expanding the service offer.",
+    "Leave the successful submitted sitemap in place; Google read it on 27 October and no resubmission is required for the same sitemap URL."
+  ],
+  "limitations": [
+    "Search Console reports were delayed by 72 hours and the performance window ended on 25 October.",
+    "The three-day experiment was merged to production on 25 October at 09:40 Asia/Kolkata, leaving no complete post-change period in this report.",
+    "The windows used for comparison overlap, so changes in impressions or position cannot be attributed to the experiment.",
+    "Search Console can omit low-volume query rows, so visible query impressions do not sum to the property total.",
+    "The sample is too small to infer keyword demand, CTR performance or a durable ranking trend."
+  ]
+}
