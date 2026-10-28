@@ -93,6 +93,9 @@ def improve(g):
     related = {
         'digital-marketing-varanasi-content-plan': [(local, 'Digital marketing services in Varanasi'), (website, 'Small-business website design and development')],
         'search-console-first-28-days': [(search, 'Technical SEO audit services in India'), (website, 'Small-business website design and development')],
+        'website-account-ownership-checklist': [(website, 'Small-business website design and development'), (agency, 'White-label web development for agencies')],
+        'website-redesign-url-inventory': [(website, 'Website redesign and development scope'), (search, 'Technical SEO audit services')],
+        'small-business-website-maintenance-plan': [(website, 'Small-business website design and development'), (search, 'Technical SEO audits and measurement planning')],
         'small-business-homepage-content-plan': [(website, 'Small-business website design and development'), (local, 'Digital marketing services in Varanasi')],
         'white-label-web-development-paid-pilot': [(agency, 'White-label web development for agencies'), (website, 'Website design and development scope')],
         'technical-seo-audit-deliverables': [(search, 'Technical SEO audit services in India'), (website, 'Website redesign and development scope')],

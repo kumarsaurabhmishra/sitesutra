@@ -1,0 +1,6 @@
+old_url,current_purpose,evidence_source,decision,new_url,reason,redirect_status,internal_links_updated,canonical_checked,sitemap_action,owner,test_result
+https://example.invalid/plumbing-services,Explain plumbing service and receive enquiries,"Hypothetical example: current sitemap",Move,https://example.invalid/services/plumbing,Clearer service structure,Planned,No,No,Replace with new URL,Unassigned,Not tested
+https://example.invalid/electrical-repair,Explain electrical repair service,"Hypothetical example: directory link record",Move,https://example.invalid/services/electrical-repair,Preserve useful service destination,Planned,No,No,Replace with new URL,Unassigned,Not tested
+https://example.invalid/contact-us,General contact route,"Hypothetical example: navigation",Merge,https://example.invalid/enquire,One approved enquiry journey,Planned,No,No,Remove old URL,Unassigned,Not tested
+https://example.invalid/old-price-list.pdf,Outdated price list,"Hypothetical example: content files",Retire,,No current equivalent; confirm removal response,Planned,No,Not applicable,Remove old URL,Unassigned,Not tested
+,,,,,,,,,,,
