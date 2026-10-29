@@ -1,0 +1,17 @@
+section,decision,approved_answer,owner,source,evidence_or_acceptance,status
+Instructions,How to use this worksheet,Replace the hypothetical example with verified business information and keep secrets out of this file,Project owner,Project brief,Every launch decision has an owner and acceptance check,To do
+Outcome,Primary business outcome,,Business owner,Approved campaign brief,One specific visitor action and qualification rule are agreed,To do
+Audience,Intended visitor,,Business owner,Customer evidence,Audience need location and exclusions are documented,To do
+Offer,Campaign offer,,Business owner,Approved service information,Page promise matches what the business can deliver,To do
+Destination,Final landing-page URL,,Website owner,Production site,URL loads on phone and desktop and matches the campaign domain,To do
+Action,Primary visitor action,,Business owner,Approved brief,Call message form or booking route is agreed,To do
+Delivery,Enquiry recipient and notification route,,Business owner,Provider configuration,A real test enquiry reaches the named recipient,To do
+Qualification,Qualified-enquiry criteria,,Business owner,Sales process,Received enquiries can be reviewed consistently,To do
+Accessibility,Form labels instructions and errors,,Website owner,Manual review,Keyboard focus labels required fields and error recovery are checked,To do
+Measurement,Activity stages and data sources,,Measurement owner,Analytics and business records,Clicks sessions actions received enquiries and qualified enquiries stay separate,To do
+Campaign tags,Source medium and campaign naming,,Campaign owner,Campaign URL plan,Final campaign link uses the approved consistent values,To do
+Commercial,Scope fees and media spend,,Business owner,Approved proposal,Landing-page work campaign management and media spend are separated,To do
+Permissions,Approved images logos reviews and claims,,Business owner,Permission records,Only verified and permissioned proof appears on the page,To do
+Hypothetical example,Audience,Varanasi residents within the fictional AC service area,Example business owner,Hypothetical planning example,Locality and service need are clear,Example only
+Hypothetical example,Primary action,Request a maintenance slot through a short enquiry form,Example business owner,Hypothetical planning example,Test submission reaches the named recipient,Example only
+Hypothetical example,Measurement stages,Ad click then page session then form action then received enquiry then qualified enquiry,Example measurement owner,Hypothetical planning example,Each stage has a separate source and definition,Example only
