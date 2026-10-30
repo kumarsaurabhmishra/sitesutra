@@ -100,6 +100,7 @@ def improve(g):
         'white-label-web-development-paid-pilot': [(agency, 'White-label web development for agencies'), (website, 'Website design and development scope')],
         'white-label-web-development-change-requests': [(agency, 'White-label web development for agencies'), (website, 'Website design and development scope')],
         'campaign-landing-page-brief-varanasi': [(local, 'Digital marketing services in Varanasi'), (website, 'Campaign landing-page design and development')],
+        'varanasi-service-page-content-brief': [(website, 'Website design and development in Varanasi'), (local, 'Digital marketing services in Varanasi')],
         'technical-seo-audit-deliverables': [(search, 'Technical SEO audit services in India'), (website, 'Website redesign and development scope')],
         'digital-marketing-varanasi-quote-scope': [(local, 'Digital marketing services in Varanasi'), (search, 'Technical SEO and search-marketing scope')],
         'website-redesign-or-targeted-fixes': [(website, 'Website redesign and development scope'), (search, 'Technical SEO audit services')],
