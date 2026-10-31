@@ -1,9 +1,14 @@
 """Original editorial articles stored as trusted repository content."""
 from pathlib import Path
 from html import escape
-import json,datetime
+import json,datetime,shutil
 
 def add_blog(g):
+ source_downloads=Path('content/downloads')
+ if source_downloads.exists():
+  destination=Path('dist/downloads');destination.mkdir(parents=True,exist_ok=True)
+  for source in source_downloads.iterdir():
+   if source.is_file():shutil.copyfile(source,destination/source.name)
  posts=[]
  for file in Path('content/blog').glob('*.json'):
   post=json.loads(file.read_text());datetime.date.fromisoformat(post['date'])
