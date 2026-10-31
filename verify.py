@@ -65,6 +65,9 @@ for path in Path('dist').rglob('index.html'):
  ids={n['@id'] for n in graph if '@id' in n}
  assert any(n['@type']=='WebSite' for n in graph),path
  assert any(n['@type']=='Organization' for n in graph),path
+ organization=next(n for n in graph if n['@type']=='Organization')
+ assert organization.get('contactPoint',{}).get('telephone')=='+919555037373',path
+ assert organization['contactPoint'].get('email')=='contactkumarsmishra@gmail.com',path
  for node in graph:
   for key in ('publisher','isPartOf','breadcrumb','author','founder','mainEntityOfPage','mainEntity'):
    if isinstance(node.get(key),dict) and '@id' in node[key]:assert node[key]['@id'] in ids,(path,key)
@@ -72,8 +75,19 @@ for path in Path('dist').rglob('index.html'):
  assert image.startswith(origin+'/') and (Path('dist')/image[len(origin)+1:]).is_file(),path
  assert f'property="og:url" content="{origin}{route}"' in text,path
  assert 'name="twitter:card"' in text,path
+ assert 'href="/services/website-development/">Website development</a>' in text,path
+ assert 'href="/services/seo-marketing/">Technical SEO audits</a>' in text,path
 urls={n.text for n in ET.parse('dist/sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 assert urls==indexable,(urls-indexable,indexable-urls)
+sitemap_root=ET.parse('dist/sitemap.xml').getroot()
+namespace='{http://www.sitemaps.org/schemas/sitemap/0.9}'
+for entry in sitemap_root.findall(namespace+'url'):
+ loc=entry.find(namespace+'loc').text
+ lastmod=entry.find(namespace+'lastmod')
+ if '/blog/' in loc and loc.rstrip('/') != origin+'/blog':
+  assert lastmod is not None and re.fullmatch(r'\d{4}-\d{2}-\d{2}',lastmod.text),loc
+ elif lastmod is not None:
+  raise AssertionError(('unverified static lastmod',loc))
 robots=Path('dist/robots.txt').read_text()
 assert 'User-agent: OAI-SearchBot\nAllow: /' in robots
 assert 'Disallow: /private/' in robots and 'Disallow: /admin/' in robots
@@ -93,6 +107,11 @@ for row in targets:
 for route in {row['canonical_path'] for row in targets}:
  assert any(route in scan.refs for path,scan in scans.items() if '/blog/' in str(path)),route
 print('Approved target map passed: 10 phrases, four canonical service destinations with blog links')
+
+seo_service=Path('dist/services/seo-marketing/index.html').read_text()
+assert 'href="/downloads/technical-seo-audit-review.csv" download' in seo_service
+assert Path('dist/downloads/technical-seo-audit-review.csv').is_file()
+print('Search-service evidence passed: downloadable audit review worksheet linked')
 
 # The homepage film is decorative, code-native and pauses when it is not useful.
 home=Path('dist/index.html').read_text()

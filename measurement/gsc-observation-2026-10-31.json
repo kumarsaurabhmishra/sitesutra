@@ -1,0 +1,76 @@
+{
+  "observed_date": "2026-10-31",
+  "timezone": "Asia/Kolkata",
+  "property": "sc-domain:sitesutra.in",
+  "source": "Google Search Console Web performance export, page indexing, Core Web Vitals, links and manual actions reports",
+  "selected_period": "Last 3 months",
+  "data_period": {
+    "start": "2026-10-16",
+    "end": "2026-10-28",
+    "first_nonzero_impression_date": "2026-10-18"
+  },
+  "totals": {
+    "clicks": 0,
+    "impressions": 54,
+    "ctr_percent": 0,
+    "average_position_weighted_from_export": 65.4
+  },
+  "leading_queries": [
+    {"query": "technical seo audit services india", "clicks": 0, "impressions": 10, "position": 90.2},
+    {"query": "technical seo site audit agency", "clicks": 0, "impressions": 3, "position": 56.67},
+    {"query": "digital marketing consultant in varanasi", "clicks": 0, "impressions": 3, "position": 86.33},
+    {"query": "technical seo audit consultancy", "clicks": 0, "impressions": 3, "position": 88.67},
+    {"query": "seo audit company in india", "clicks": 0, "impressions": 2, "position": 78.0}
+  ],
+  "leading_pages": [
+    {"url": "https://sitesutra.in/services/seo-marketing/", "clicks": 0, "impressions": 25, "position": 89.84},
+    {"url": "https://sitesutra.in/digital-marketing-company-varanasi/", "clicks": 0, "impressions": 6, "position": 80.83},
+    {"url": "https://sitesutra.in/blog/technical-seo-audit-deliverables/", "clicks": 0, "impressions": 5, "position": 68.4},
+    {"url": "https://sitesutra.in/blog/website-clicks-vs-qualified-enquiries/", "clicks": 0, "impressions": 4, "position": 14.5},
+    {"url": "https://sitesutra.in/", "clicks": 0, "impressions": 4, "position": 26.5}
+  ],
+  "geography": {
+    "india": {"clicks": 0, "impressions": 48, "position": 67.77},
+    "other_countries_combined_impressions": 6
+  },
+  "devices": {
+    "desktop": {"clicks": 0, "impressions": 49, "position": 69.35},
+    "mobile": {"clicks": 0, "impressions": 5, "position": 27.0}
+  },
+  "indexing": {
+    "report_last_updated": "2026-10-23",
+    "indexed_pages": 22,
+    "not_indexed_pages": 7,
+    "intentional_noindex_demo_pages": 1,
+    "discovered_currently_not_indexed": 6,
+    "validation_status": "Started"
+  },
+  "authority_and_experience": {
+    "external_links": 4,
+    "external_linking_sites": ["github.com"],
+    "internal_links_reported": 128,
+    "core_web_vitals": "Not enough Chrome UX Report usage data for mobile or desktop in the last 90 days",
+    "manual_actions": "No issues detected"
+  },
+  "interpretation": [
+    "The report contains eleven days with impressions. It is too early and too small to describe a durable ranking or CTR trend.",
+    "The observed commercial query group usually appears well below the first results page. Low rank and limited authority are the immediate visibility constraints; zero clicks does not yet demonstrate a snippet problem.",
+    "Technical crawl controls are not the main property-wide blocker: 22 pages are indexed, the sitemap is successful, public pages are indexable and no manual action is present.",
+    "The site has almost no independent external-link evidence. Authentic business citations, professional profiles, permissioned work and relevant editorial references require business-owner activity and cannot be created as technical markup.",
+    "Website-development demand is not established by this sample: its mapped service page has one impression. Keep its intent stable and collect more completed data."
+  ],
+  "implemented_follow_up": [
+    "Add crawlable sitewide footer links to the website-development and technical-SEO service pages.",
+    "Link the technical-SEO service directly to an editable audit review worksheet.",
+    "Add verified sales contact details to Organization structured data without claiming an unverified LocalBusiness address.",
+    "Add accurate article publication dates as sitemap lastmod values while omitting unverifiable dates for static pages.",
+    "Preserve existing titles, H1s and canonical ownership because the query sample does not support a new landing page or title experiment."
+  ],
+  "limitations": [
+    "Search Console reports can omit low-volume queries for privacy, so visible query rows do not sum to property totals.",
+    "Search Console data is delayed and groups dates in Pacific Time.",
+    "Average position is an aggregate observation, not a fixed rank or forecast.",
+    "The raw account export remains outside the repository; this file contains aggregate observations only.",
+    "Search visibility, AI citations and qualified enquiries are separate measures. No ranking, click or enquiry improvement is promised."
+  ]
+}

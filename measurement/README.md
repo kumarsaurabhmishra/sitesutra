@@ -12,6 +12,8 @@ The 10 rows in ../keyword-map.csv are the active acquisition targets. Four exist
 
 25 October 2026: the pre-change baseline is 22 impressions and no clicks for 16–22 October. See `gsc-experiment-baseline-2026-10-25.json`. The first review is planned for 28 October, but Search Console's reporting delay means that check may include only part of the post-release period. Treat it as a directional health check; retain a completed 28-day comparison for any stronger conclusion.
 
+31 October 2026: the Search Console export contains 54 impressions and no clicks for 16–28 October, with impressions beginning on 18 October and a weighted average position of 65.4. The leading technical-SEO query and service page still appear around position 90. Search Console reports 22 indexed pages, four external links from GitHub, no manual action and insufficient traffic for field Core Web Vitals. See `gsc-observation-2026-10-31.json` and `../SEO-AUDIT-2026-10-31.md`. This is evidence of early discovery, not a durable ranking or CTR trend.
+
 Keep future exports and private enquiry records outside this public repository. Publish aggregate observations only when approved; do not commit names, messages, bookings, account tokens or raw reports containing private data.
 
 ## A repeatable review
