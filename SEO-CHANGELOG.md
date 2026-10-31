@@ -1,5 +1,15 @@
 # SiteSutra search changes
 
+## 31 October 2026 — ranking and authority review
+
+- Export the current Search Console baseline: 54 impressions, 0 clicks and weighted average position 65.4 for 16–28 October, with the first impressions on 18 October. The leading technical-SEO service page and query appear around position 90, so low rank and limited authority are the immediate constraints; the sample does not establish a snippet CTR problem.
+- Record 22 indexed pages, six public URLs still in Google’s discovered queue, one intentional noindex concept demo, no manual action, and insufficient Chrome usage data for a Core Web Vitals field report.
+- Record four external links, all from GitHub. Treat authentic business citations, permissioned client proof, genuine professional profiles and editorial links as owner-led authority work rather than generating fake reviews or mass listings.
+- Add direct sitewide footer links to website development and technical SEO, link the SEO service to its editable audit worksheet, add the verified sales contact point to Organization structured data, and expose known article publication dates as sitemap `lastmod` values.
+- Preserve the four canonical service destinations and current titles. Do not create doorway pages for close query variants, add LocalBusiness markup without a verified eligible setup, or promise rankings.
+
+Publication status: preview only; the measurement and implementation are on a protected-branch PR and require human approval before production.
+
 ## 28 October 2026 — delayed experiment review
 
 - Search Console reported 36 impressions, 0 clicks and an average position of 65.0 for 19–25 October. The report was delayed by 72 hours and ended on the day the three-day experiment reached production, so it does not contain a complete post-change period.
