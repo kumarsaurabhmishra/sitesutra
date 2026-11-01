@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Two paths that shape a website launch</title>
+  <desc id="desc">A production path and a business decision path pass through five milestones and meet at a tested launch.</desc>
+  <rect width="1200" height="620" rx="40" fill="#10182d"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M110 188 C290 188 300 310 475 310 S670 188 840 188 S960 310 1090 310" stroke="#244cff" stroke-width="18"/>
+    <path d="M110 432 C285 432 305 310 475 310 S670 432 840 432 S960 310 1090 310" stroke="#ff8659" stroke-width="18"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#fafaf7">
+    <text x="110" y="96" font-size="24" font-weight="700" letter-spacing="3">PRODUCTION</text>
+    <text x="110" y="536" font-size="24" font-weight="700" letter-spacing="3">DECISIONS</text>
+    <text x="930" y="252" font-size="24" font-weight="700" letter-spacing="3">TESTED LAUNCH</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18" text-anchor="middle">
+    <g><circle cx="110" cy="188" r="28" fill="#e8edff"/><text x="110" y="194" fill="#10182d">01</text><text x="110" y="238" fill="#fafaf7">Brief</text></g>
+    <g><circle cx="360" cy="262" r="28" fill="#e8edff"/><text x="360" y="268" fill="#10182d">02</text><text x="360" y="226" fill="#fafaf7">Structure</text></g>
+    <g><circle cx="595" cy="253" r="28" fill="#e8edff"/><text x="595" y="259" fill="#10182d">03</text><text x="595" y="217" fill="#fafaf7">Design</text></g>
+    <g><circle cx="840" cy="188" r="28" fill="#e8edff"/><text x="840" y="194" fill="#10182d">04</text><text x="840" y="238" fill="#fafaf7">Build</text></g>
+    <g><circle cx="1090" cy="310" r="34" fill="#fafaf7"/><text x="1090" y="316" fill="#10182d">05</text></g>
+    <g><circle cx="110" cy="432" r="28" fill="#ffe2d6"/><text x="110" y="438" fill="#10182d">A</text><text x="110" y="392" fill="#fafaf7">Facts</text></g>
+    <g><circle cx="360" cy="358" r="28" fill="#ffe2d6"/><text x="360" y="364" fill="#10182d">B</text><text x="360" y="402" fill="#fafaf7">Content</text></g>
+    <g><circle cx="595" cy="367" r="28" fill="#ffe2d6"/><text x="595" y="373" fill="#10182d">C</text><text x="595" y="411" fill="#fafaf7">Approval</text></g>
+    <g><circle cx="840" cy="432" r="28" fill="#ffe2d6"/><text x="840" y="438" fill="#10182d">D</text><text x="840" y="392" fill="#fafaf7">Access</text></g>
+  </g>
+</svg>

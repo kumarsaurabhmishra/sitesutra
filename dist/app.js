@@ -82,3 +82,21 @@ const editHeading=document.getElementById('demo-heading');
 if(editHeading){const original=editHeading.value;function renderEdit(){document.getElementById('edited-heading').textContent=editHeading.value.trim()||'Your service heading';document.getElementById('edit-status').textContent='Local preview updated. Nothing is saved or published.';}editHeading.addEventListener('input',renderEdit);document.getElementById('reset-edit').addEventListener('click',()=>{editHeading.value=original;renderEdit();editHeading.focus();});}
 const maintenance=document.getElementById('maintenance-demo');
 if(maintenance){maintenance.addEventListener('change',()=>{const count=maintenance.querySelectorAll('input:checked').length;document.getElementById('maintenance-status').textContent=count+' of 4 review items marked.'+(count===4?' Demo checklist complete; actual release approval is still required.':'');});}
+
+// Article planning aid: local-only state, no schedule or delivery claim.
+const launchPlanner=document.querySelector('[data-launch-planner]');
+if(launchPlanner){
+ const inputs=[...launchPlanner.querySelectorAll('input[type="checkbox"]')];
+ const stages=[...launchPlanner.querySelectorAll('[data-launch-stage]')];
+ const result=launchPlanner.querySelector('[data-launch-result]');
+ const nextActions=['Confirm the audience, offer and primary visitor action.','Collect and approve the business facts and permitted media.','Name one person who can consolidate and approve feedback.','Confirm the domain, form destination and other service access.','Run the agreed mobile, keyboard, link and enquiry checks.'];
+ function renderLaunchPlan(){
+  const ready=inputs.filter(input=>input.checked).length;
+  stages.forEach((stage,index)=>stage.classList.toggle('is-ready',inputs[index].checked));
+  const nextIndex=inputs.findIndex(input=>!input.checked);
+  result.textContent=nextIndex===-1?'5 of 5 planning inputs marked ready. The project still needs an agreed scope and provider estimate before a launch date is approved.':ready+' of 5 planning inputs marked ready. Next planning action: '+nextActions[nextIndex];
+ }
+ launchPlanner.addEventListener('change',renderLaunchPlan);
+ launchPlanner.addEventListener('reset',()=>requestAnimationFrame(renderLaunchPlan));
+ renderLaunchPlan();
+}
