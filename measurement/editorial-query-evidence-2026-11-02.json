@@ -1,0 +1,30 @@
+{
+  "observed_date": "2026-11-01",
+  "property": "sc-domain:sitesutra.in",
+  "source": "Google Search Console Web performance report",
+  "query_evidence": [
+    {
+      "query": "technical seo audit consultancy",
+      "clicks": 0,
+      "impressions": 7,
+      "average_position": 77.0
+    },
+    {
+      "query": "technical seo audit services india",
+      "clicks": 0,
+      "impressions": 11,
+      "average_position": 90.1
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "Do I need a one-time technical SEO audit, an implementation project or ongoing consultancy?",
+    "distinct_task": "Choose the engagement model from the decision currently blocked.",
+    "canonical_service_path": "/services/seo-marketing/",
+    "supporting_article_path": "/blog/technical-seo-audit-or-consultancy/"
+  },
+  "limitations": [
+    "The query wording is evidence that the question appeared, not verified search demand, volume or difficulty.",
+    "The article supports a distinct buyer decision and does not replace the canonical service page.",
+    "Search visibility, AI citations and qualified enquiries remain separate measures."
+  ]
+}

@@ -100,3 +100,22 @@ if(launchPlanner){
  launchPlanner.addEventListener('reset',()=>requestAnimationFrame(renderLaunchPlan));
  renderLaunchPlan();
 }
+
+// Article engagement aid: a local-only scope prompt, never a diagnosis or saved result.
+const seoEngagementPlanner=document.querySelector('[data-seo-engagement-planner]');
+if(seoEngagementPlanner){
+ const result=seoEngagementPlanner.querySelector('[data-seo-engagement-result]');
+ const checked=name=>seoEngagementPlanner.elements[name]?.checked;
+ function renderSeoEngagement(){
+  let message='Start by recording the observed problem, affected business journey and evidence already available.';
+  if(checked('unknown'))message='Likely next conversation: a bounded technical SEO audit to diagnose the cause, affected URLs, priorities and implementation effort.';
+  if(checked('findings')||checked('implementation'))message='Likely next conversation: an implementation project with approved findings, named owners, release controls and acceptance checks.';
+  if(checked('verification'))message='Likely next conversation: independent verification of the live changes, with later search observations recorded separately.';
+  if(checked('recurring'))message='Likely next conversation: ongoing consultancy with a defined release cadence, decision log, response boundary and exit condition.';
+  if(checked('unknown')&&(checked('implementation')||checked('recurring')))message='Split the work: diagnose the uncertain issues first, then scope implementation or recurring review only for accepted findings.';
+  result.textContent=message;
+ }
+ seoEngagementPlanner.addEventListener('change',renderSeoEngagement);
+ seoEngagementPlanner.addEventListener('reset',()=>requestAnimationFrame(renderSeoEngagement));
+ renderSeoEngagement();
+}
