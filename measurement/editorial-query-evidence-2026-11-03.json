@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-03",
+  "source": "Current Google search-result question language reviewed for a distinct buyer task after available Search Console query themes were already covered",
+  "query_evidence": [
+    {
+      "query": "how many pages should a small business website have",
+      "interpretation": "Evidence that buyers ask about website page count; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "How many pages does a small-business website need?",
+    "distinct_task": "Decide page boundaries from visitor tasks, evidence, actions and maintenance ownership instead of choosing a universal page count.",
+    "canonical_service_path": "/services/website-development/",
+    "supporting_article_path": "/blog/how-many-pages-small-business-website/"
+  },
+  "limitations": [
+    "The wording confirms that the question exists; it does not establish search demand or commercial value.",
+    "The article supports an information-architecture decision and does not replace the canonical website-development service page.",
+    "Search visibility, AI citations and qualified enquiries remain separate measures."
+  ]
+}

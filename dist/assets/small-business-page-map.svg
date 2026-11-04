@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">A visitor-task map for deciding small-business website pages</title>
+  <desc id="desc">Four visitor questions branch from a homepage. Related tasks share a page while distinct decisions lead to service, trust and contact pages.</desc>
+  <rect width="1200" height="680" rx="36" fill="#171c28"/>
+  <path d="M600 208v70M600 278H215v72M600 278H475v72M600 278h125v72M600 278h385v72" fill="none" stroke="#8ca2ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="410" y="72" width="380" height="136" rx="24" fill="#f7f5ef"/>
+  <text x="600" y="124" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-size="19" font-weight="700" fill="#244cff">HOME</text>
+  <text x="600" y="164" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-size="28" font-weight="700" fill="#171c28">Route the visitor’s task</text>
+  <g font-family="Manrope,Arial,sans-serif">
+    <rect x="65" y="350" width="300" height="214" rx="22" fill="#eef1ff"/>
+    <circle cx="105" cy="392" r="14" fill="#e5613b"/>
+    <text x="135" y="399" font-size="19" font-weight="700" fill="#171c28">What can you repair?</text>
+    <text x="105" y="450" font-size="15" fill="#535a69">Shared audience + shared action</text>
+    <text x="105" y="482" font-size="15" fill="#535a69">can begin on one overview.</text>
+    <rect x="105" y="512" width="212" height="32" rx="16" fill="#244cff"/>
+    <text x="211" y="534" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">SERVICES OVERVIEW</text>
+    <rect x="390" y="350" width="300" height="214" rx="22" fill="#f7f5ef"/>
+    <circle cx="430" cy="392" r="14" fill="#e5613b"/>
+    <text x="460" y="399" font-size="19" font-weight="700" fill="#171c28">How does repair work?</text>
+    <text x="430" y="450" font-size="15" fill="#535a69">Distinct process + evidence</text>
+    <text x="430" y="482" font-size="15" fill="#535a69">may earn a focused page.</text>
+    <rect x="430" y="512" width="212" height="32" rx="16" fill="#244cff"/>
+    <text x="536" y="534" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">REPAIR SERVICE</text>
+    <rect x="715" y="350" width="210" height="214" rx="22" fill="#eef1ff"/>
+    <circle cx="755" cy="392" r="14" fill="#e5613b"/>
+    <text x="785" y="399" font-size="19" font-weight="700" fill="#171c28">Can I trust you?</text>
+    <text x="755" y="450" font-size="15" fill="#535a69">Real process, team</text>
+    <text x="755" y="482" font-size="15" fill="#535a69">and permitted proof.</text>
+    <rect x="755" y="512" width="130" height="32" rx="16" fill="#244cff"/>
+    <text x="820" y="534" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">ABOUT</text>
+    <rect x="950" y="350" width="185" height="214" rx="22" fill="#f7f5ef"/>
+    <circle cx="990" cy="392" r="14" fill="#e5613b"/>
+    <text x="1020" y="399" font-size="19" font-weight="700" fill="#171c28">What next?</text>
+    <text x="990" y="450" font-size="15" fill="#535a69">Instructions, fields</text>
+    <text x="990" y="482" font-size="15" fill="#535a69">and alternatives.</text>
+    <rect x="990" y="512" width="105" height="32" rx="16" fill="#244cff"/>
+    <text x="1042" y="534" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">CONTACT</text>
+    <text x="600" y="628" text-anchor="middle" font-size="16" fill="#d6d9e2">Separate a page when the visitor needs a distinct promise, evidence, action or owner.</text>
+  </g>
+</svg>

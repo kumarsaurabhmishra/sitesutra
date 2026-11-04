@@ -100,3 +100,41 @@ if(launchPlanner){
  launchPlanner.addEventListener('reset',()=>requestAnimationFrame(renderLaunchPlan));
  renderLaunchPlan();
 }
+
+// Article engagement aid: a local-only scope prompt, never a diagnosis or saved result.
+const seoEngagementPlanner=document.querySelector('[data-seo-engagement-planner]');
+if(seoEngagementPlanner){
+ const result=seoEngagementPlanner.querySelector('[data-seo-engagement-result]');
+ const checked=name=>seoEngagementPlanner.elements[name]?.checked;
+ function renderSeoEngagement(){
+  let message='Start by recording the observed problem, affected business journey and evidence already available.';
+  if(checked('unknown'))message='Likely next conversation: a bounded technical SEO audit to diagnose the cause, affected URLs, priorities and implementation effort.';
+  if(checked('findings')||checked('implementation'))message='Likely next conversation: an implementation project with approved findings, named owners, release controls and acceptance checks.';
+  if(checked('verification'))message='Likely next conversation: independent verification of the live changes, with later search observations recorded separately.';
+  if(checked('recurring'))message='Likely next conversation: ongoing consultancy with a defined release cadence, decision log, response boundary and exit condition.';
+  if(checked('unknown')&&(checked('implementation')||checked('recurring')))message='Split the work: diagnose the uncertain issues first, then scope implementation or recurring review only for accepted findings.';
+  result.textContent=message;
+ }
+ seoEngagementPlanner.addEventListener('change',renderSeoEngagement);
+ seoEngagementPlanner.addEventListener('reset',()=>requestAnimationFrame(renderSeoEngagement));
+ renderSeoEngagement();
+}
+
+// Article page-boundary aid: local-only guidance, never a ranking or conversion estimate.
+const pageBoundaryPlanner=document.querySelector('[data-page-boundary-planner]');
+if(pageBoundaryPlanner){
+ const inputs=[...pageBoundaryPlanner.querySelectorAll('input[type="checkbox"]')];
+ const result=pageBoundaryPlanner.querySelector('[data-page-boundary-result]');
+ function renderPageBoundary(){
+  const count=inputs.filter(input=>input.checked).length;
+  let message='No signals marked. Begin by writing the visitor question and the decision this content should support.';
+  if(count===1)message='1 of 5 signals marked. This topic may work as a section on a broader page unless stronger distinct evidence emerges.';
+  if(count===2)message='2 of 5 signals marked. Compare the topic with nearby pages before choosing a URL; avoid repeating the same decision.';
+  if(count>=3&&count<5)message=count+' of 5 signals marked. This is a credible separate-page candidate. Confirm useful content, overlap and maintenance ownership.';
+  if(count===5)message='5 of 5 signals marked. The topic has a strong page case, but a human still needs to review accuracy, overlap and the complete site map.';
+  result.textContent=message;
+ }
+ pageBoundaryPlanner.addEventListener('change',renderPageBoundary);
+ pageBoundaryPlanner.addEventListener('reset',()=>requestAnimationFrame(renderPageBoundary));
+ renderPageBoundary();
+}
