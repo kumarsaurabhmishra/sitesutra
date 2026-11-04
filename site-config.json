@@ -5,7 +5,16 @@
   "bookingUrl": "https://cal.com/kumar-saurabh-mishra/15min",
   "bookingTimezone": "Asia/Kolkata",
   "domainEmail": "",
-  "profileLinks": [],
+  "profileLinks": [
+    {
+      "label": "LinkedIn profile ↗",
+      "url": "https://in.linkedin.com/in/contactkumarsaurabh"
+    },
+    {
+      "label": "GitHub profile ↗",
+      "url": "https://github.com/kumarsaurabhmishra"
+    }
+  ],
   "formProvider": "",
   "retentionPolicy": "",
   "bookingDurationMinutes": 15,
