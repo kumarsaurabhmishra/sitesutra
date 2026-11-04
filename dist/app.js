@@ -138,3 +138,23 @@ if(pageBoundaryPlanner){
  pageBoundaryPlanner.addEventListener('reset',()=>requestAnimationFrame(renderPageBoundary));
  renderPageBoundary();
 }
+
+// Article link-opportunity aid: local-only review, never an outreach or ranking promise.
+const linkOpportunityPlanner=document.querySelector('[data-link-opportunity-planner]');
+if(linkOpportunityPlanner){
+ const inputs=[...linkOpportunityPlanner.querySelectorAll('input[type="checkbox"]')];
+ const result=linkOpportunityPlanner.querySelector('[data-link-opportunity-result]');
+ function renderLinkOpportunity(){
+  const count=inputs.filter(input=>input.checked).length;
+  let message='No checks marked. Start with the audience and the reader problem.';
+  if(count===1)message='1 of 5 checks supported. Do not contact the publisher yet; clarify the reader benefit and evidence.';
+  if(count===2)message='2 of 5 checks supported. Review the destination and relationship before deciding on outreach.';
+  if(count===3)message='3 of 5 checks supported. This may deserve human review, but unresolved permission or commercial details still matter.';
+  if(count===4)message='4 of 5 checks supported. Resolve the remaining check before sending a specific, respectful note.';
+  if(count===5)message='5 of 5 checks supported. Credible outreach candidate; the publisher still controls whether and how it references the page.';
+  result.textContent=message;
+ }
+ linkOpportunityPlanner.addEventListener('change',renderLinkOpportunity);
+ linkOpportunityPlanner.addEventListener('reset',()=>requestAnimationFrame(renderLinkOpportunity));
+ renderLinkOpportunity();
+}
