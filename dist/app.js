@@ -158,3 +158,23 @@ if(linkOpportunityPlanner){
  linkOpportunityPlanner.addEventListener('reset',()=>requestAnimationFrame(renderLinkOpportunity));
  renderLinkOpportunity();
 }
+
+// Article cadence aid: local-only guidance, never a publishing or ranking estimate.
+const cadencePlanner=document.querySelector('[data-cadence-planner]');
+if(cadencePlanner){
+ const inputs=[...cadencePlanner.querySelectorAll('input[type="checkbox"]')];
+ const result=cadencePlanner.querySelector('[data-cadence-result]');
+ function renderCadence(){
+  const count=inputs.filter(input=>input.checked).length;
+  let message='No checks marked. Record the buyer question before assigning a publication date.';
+  if(count===1)message='1 of 5 checks supported. Keep researching; this topic has not earned a new page yet.';
+  if(count===2)message='2 of 5 checks supported. Check whether an existing page should be updated or consolidated.';
+  if(count===3)message='3 of 5 checks supported. A useful idea may exist, but resolve overlap, evidence and ownership before publishing.';
+  if(count===4)message='4 of 5 checks supported. Resolve the remaining editorial requirement, then review the complete draft.';
+  if(count===5)message='5 of 5 checks supported. The topic is ready for human editorial review; publication and search outcomes remain separate decisions.';
+  result.textContent=message;
+ }
+ cadencePlanner.addEventListener('change',renderCadence);
+ cadencePlanner.addEventListener('reset',()=>requestAnimationFrame(renderCadence));
+ renderCadence();
+}
