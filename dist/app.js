@@ -178,3 +178,23 @@ if(cadencePlanner){
  cadencePlanner.addEventListener('reset',()=>requestAnimationFrame(renderCadence));
  renderCadence();
 }
+
+// Article access aid: local-only review, never a permission grant or provider-role decision.
+const accessPlanner=document.querySelector('[data-access-planner]');
+if(accessPlanner){
+ const inputs=[...accessPlanner.querySelectorAll('input[type="checkbox"]')];
+ const result=accessPlanner.querySelector('[data-access-result]');
+ function renderAccessReview(){
+  const count=inputs.filter(input=>input.checked).length;
+  let message='No checks marked. Begin with the exact system and task.';
+  if(count===1)message='1 of 5 checks supported. Do not grant access yet; identify the recipient, role and review boundary.';
+  if(count===2)message='2 of 5 checks supported. The request still needs a task-specific role and accountable owner.';
+  if(count===3)message='3 of 5 checks supported. Resolve the remaining identity, expiry or information-handling gaps first.';
+  if(count===4)message='4 of 5 checks supported. Complete the final control before the owner reviews the invitation.';
+  if(count===5)message='5 of 5 checks supported. Ready for owner review in the live provider; verify the role after granting and revoke it when the task ends.';
+  result.textContent=message;
+ }
+ accessPlanner.addEventListener('change',renderAccessReview);
+ accessPlanner.addEventListener('reset',()=>requestAnimationFrame(renderAccessReview));
+ renderAccessReview();
+}
