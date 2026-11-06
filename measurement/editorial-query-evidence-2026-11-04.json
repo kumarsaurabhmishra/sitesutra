@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-04",
+  "source": "Direct customer question received by SiteSutra",
+  "query_evidence": [
+    {
+      "query": "How will I get external authority?",
+      "interpretation": "Evidence of a buyer question about earning third-party references; it is not verified search demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "How can a small-business website earn trustworthy links?",
+    "distinct_task": "Assess legitimate link opportunities, create a reference-worthy destination and avoid paid or automated link schemes.",
+    "canonical_service_path": "/services/seo-marketing/",
+    "supporting_article_path": "/blog/earn-trustworthy-links-small-business/"
+  },
+  "limitations": [
+    "The wording confirms that one prospective buyer asked the question; it does not establish wider demand or commercial value.",
+    "The article supports a link-opportunity decision and does not replace the canonical technical SEO service page.",
+    "Search visibility, AI citations and qualified enquiries remain separate measures."
+  ]
+}

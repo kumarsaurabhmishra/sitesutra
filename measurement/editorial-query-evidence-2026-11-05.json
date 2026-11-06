@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-05",
+  "source": "Current search-result question language reviewed after available Search Console query themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "how often should a small business publish blog posts for SEO",
+      "interpretation": "Evidence that small-business owners ask about publishing cadence; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "How often should a small business publish blog posts?",
+    "distinct_task": "Set a sustainable publish, update, consolidate or skip cadence from buyer decisions, evidence and maintenance capacity instead of choosing an arbitrary frequency.",
+    "canonical_service_path": "/services/seo-marketing/",
+    "supporting_article_path": "/blog/how-often-small-business-publish-blog-posts/"
+  },
+  "limitations": [
+    "The wording confirms that the question exists; it does not establish search demand or commercial value.",
+    "Current Search Console themes were reviewed first, but their distinct technical-audit, planning and ownership tasks are already covered.",
+    "Search visibility, AI citations and qualified enquiries remain separate measures."
+  ]
+}

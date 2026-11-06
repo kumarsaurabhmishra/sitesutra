@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-06",
+  "source": "Current search-result question language reviewed after available Search Console query themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "what access should I give a web developer",
+      "interpretation": "Evidence that website buyers ask how to grant project access; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "What access should you give a website developer?",
+    "distinct_task": "Approve task-specific access for a website project while preserving business ownership, avoiding shared credentials and planning revocation.",
+    "canonical_service_path": "/services/website-development/",
+    "supporting_article_path": "/blog/what-access-give-website-developer/"
+  },
+  "limitations": [
+    "The wording confirms that the question exists; it does not establish search demand or commercial value.",
+    "The article covers delivery access rather than duplicating the existing account-ownership and handover guides.",
+    "Exact roles vary by provider and must be checked against current official documentation."
+  ]
+}

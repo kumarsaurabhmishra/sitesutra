@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">A safe website access request moves from task to temporary permission and revocation</title>
+  <desc id="desc">Five connected cards show the business retaining ownership, naming the task, granting the minimum role, verifying the work and removing access.</desc>
+  <rect width="1200" height="680" rx="28" fill="#e8edff"/>
+  <g font-family="Arial, sans-serif">
+    <text x="70" y="70" fill="#171c28" font-size="18" font-weight="700" letter-spacing="2">ACCESS FOLLOWS THE TASK</text>
+    <path d="M130 330h940" stroke="#244cff" stroke-width="8" stroke-linecap="round"/>
+    <g text-anchor="middle">
+      <g transform="translate(35 170)"><rect width="190" height="320" rx="22" fill="#10182d"/><text x="95" y="62" fill="#fff" font-size="15" font-weight="700">01 / OWN</text><text x="95" y="130" fill="#fff" font-size="24" font-weight="700">Business keeps</text><text x="95" y="162" fill="#fff" font-size="24" font-weight="700">ownership</text><text x="95" y="226" fill="#d6d9e2" font-size="15">Billing, recovery</text><text x="95" y="250" fill="#d6d9e2" font-size="15">and owner roles</text></g>
+      <g transform="translate(270 170)"><rect width="190" height="320" rx="22" fill="#fff"/><text x="95" y="62" fill="#171c28" font-size="15" font-weight="700">02 / NAME</text><text x="95" y="130" fill="#171c28" font-size="24" font-weight="700">Exact system</text><text x="95" y="162" fill="#171c28" font-size="24" font-weight="700">and task</text><text x="95" y="226" fill="#5b606b" font-size="15">One property, one</text><text x="95" y="250" fill="#5b606b" font-size="15">responsible person</text></g>
+      <g transform="translate(505 120)"><rect width="190" height="420" rx="22" fill="#244cff"/><text x="95" y="62" fill="#fff" font-size="15" font-weight="700">03 / GRANT</text><text x="95" y="142" fill="#fff" font-size="24" font-weight="700">Minimum role</text><text x="95" y="174" fill="#fff" font-size="24" font-weight="700">for the task</text><circle cx="95" cy="292" r="54" fill="#ff8659"/><path d="M68 292h54m-17-18 18 18-18 18" fill="none" stroke="#171c28" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <g transform="translate(740 170)"><rect width="190" height="320" rx="22" fill="#fff"/><text x="95" y="62" fill="#171c28" font-size="15" font-weight="700">04 / VERIFY</text><text x="95" y="130" fill="#171c28" font-size="24" font-weight="700">Review the</text><text x="95" y="162" fill="#171c28" font-size="24" font-weight="700">approved change</text><text x="95" y="226" fill="#5b606b" font-size="15">Preview, logs and</text><text x="95" y="250" fill="#5b606b" font-size="15">acceptance evidence</text></g>
+      <g transform="translate(975 170)"><rect width="190" height="320" rx="22" fill="#10182d"/><text x="95" y="62" fill="#fff" font-size="15" font-weight="700">05 / REVOKE</text><text x="95" y="130" fill="#fff" font-size="24" font-weight="700">Remove or</text><text x="95" y="162" fill="#fff" font-size="24" font-weight="700">reduce access</text><text x="95" y="226" fill="#d6d9e2" font-size="15">Confirm at handover</text><text x="95" y="250" fill="#d6d9e2" font-size="15">or scope change</text></g>
+    </g>
+    <text x="70" y="625" fill="#171c28" font-size="16" letter-spacing="1.5">ORIGINAL SITESUTRA ACCESS DIAGRAM · PROVIDER ROLES MUST BE CHECKED IN THE LIVE ACCOUNT</text>
+  </g>
+</svg>
