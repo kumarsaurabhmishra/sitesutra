@@ -32,7 +32,7 @@ The preferred production domain is https://sitesutra.in. The existing https://si
 
 Bookings use the configured Cal.com 15-minute event. Availability and calendar connections are managed in Cal.com. The project-brief form currently prepares an email draft; the visitor must send it. A real submission endpoint and notification delivery still need configuration.
 
-Domain email, genuine professional-profile links and founder photograph can be supplied later. Update `origin` in `site-config.json` and rebuild when changing domains. Concept projects are demonstrations, not commissioned client work. See `SETUP.md` for further launch notes.
+Domain email can be supplied later. The configured LinkedIn and GitHub profiles are published on the founder page and in its structured entity data. Update `origin` in `site-config.json` and rebuild when changing domains. Concept projects are demonstrations, not commissioned client work. See `SETUP.md` for further launch notes.
 
 ## Branch and pull request workflow
 

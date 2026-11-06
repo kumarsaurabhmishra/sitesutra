@@ -52,6 +52,8 @@ asset_versions={name:hashlib.sha256((P/name).read_bytes()).hexdigest()[:10] for 
 for route,(title,body) in pages.items():
  out=P/route.strip('/')/'index.html';out.parent.mkdir(parents=True,exist_ok=True)
  person={'@type':'Person','@id':origin+'/about/#founder','name':'Kumar Saurabh Mishra','url':origin+'/about/','image':origin+'/assets/kumar-saurabh-mishra-founder.jpg','jobTitle':'Founder of SiteSutra'}
+ profile_urls=[item['url'] for item in config.get('profileLinks',[]) if item.get('url')]
+ if profile_urls:person['sameAs']=profile_urls
  entity={'@type':'Organization','@id':origin+'/#studio','name':'SiteSutra','url':origin+'/','email':config['email'],'founder':{'@id':person['@id']},'address':{'@type':'PostalAddress','addressLocality':'Varanasi','addressCountry':'IN'}}
  page={'@type':'WebPage','@id':origin+route+'#page','url':origin+route,'name':title,'publisher':{'@id':entity['@id']}}
  graph=[entity,person,page]
