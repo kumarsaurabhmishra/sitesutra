@@ -1,0 +1,6 @@
+System or property,Task requiring access,Business owner,Named recipient,Requested role,Why this role is sufficient,Start date,Review or end date,Approval owner,Revocation confirmed,Notes
+Website repository,Submit reviewed code changes,Business or agency,Named developer,Write on project repository,Allows a branch and pull request without changing organisation ownership,,,Project lead,No,Hypothetical row — confirm current provider roles
+Search Console,Inspect queries and indexing,Business,Named specialist,Restricted or full user as required,Owner status is not required for routine inspection,,,Verified owner,No,Hypothetical row — check exact feature needs
+Domain DNS,Add approved verification record,Business,No standing developer access,Business owner performs one approved change,The owner can complete the bounded task from supplied values,,,Business owner,Not applicable,Hypothetical row — use provider delegation only when needed
+Production hosting,Release an approved build,Business or agency,Named release owner,Deployment role for the project only,Separates release from billing and account ownership,,,Project lead,No,Hypothetical row — verify staging first
+Customer database,None for presentation-layer redesign,Business,None,None,The approved task does not require customer records,,,Data owner,Not applicable,Hypothetical row — exclude data from the brief

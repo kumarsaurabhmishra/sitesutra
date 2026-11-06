@@ -138,3 +138,63 @@ if(pageBoundaryPlanner){
  pageBoundaryPlanner.addEventListener('reset',()=>requestAnimationFrame(renderPageBoundary));
  renderPageBoundary();
 }
+
+// Article link-opportunity aid: local-only review, never an outreach or ranking promise.
+const linkOpportunityPlanner=document.querySelector('[data-link-opportunity-planner]');
+if(linkOpportunityPlanner){
+ const inputs=[...linkOpportunityPlanner.querySelectorAll('input[type="checkbox"]')];
+ const result=linkOpportunityPlanner.querySelector('[data-link-opportunity-result]');
+ function renderLinkOpportunity(){
+  const count=inputs.filter(input=>input.checked).length;
+  let message='No checks marked. Start with the audience and the reader problem.';
+  if(count===1)message='1 of 5 checks supported. Do not contact the publisher yet; clarify the reader benefit and evidence.';
+  if(count===2)message='2 of 5 checks supported. Review the destination and relationship before deciding on outreach.';
+  if(count===3)message='3 of 5 checks supported. This may deserve human review, but unresolved permission or commercial details still matter.';
+  if(count===4)message='4 of 5 checks supported. Resolve the remaining check before sending a specific, respectful note.';
+  if(count===5)message='5 of 5 checks supported. Credible outreach candidate; the publisher still controls whether and how it references the page.';
+  result.textContent=message;
+ }
+ linkOpportunityPlanner.addEventListener('change',renderLinkOpportunity);
+ linkOpportunityPlanner.addEventListener('reset',()=>requestAnimationFrame(renderLinkOpportunity));
+ renderLinkOpportunity();
+}
+
+// Article cadence aid: local-only guidance, never a publishing or ranking estimate.
+const cadencePlanner=document.querySelector('[data-cadence-planner]');
+if(cadencePlanner){
+ const inputs=[...cadencePlanner.querySelectorAll('input[type="checkbox"]')];
+ const result=cadencePlanner.querySelector('[data-cadence-result]');
+ function renderCadence(){
+  const count=inputs.filter(input=>input.checked).length;
+  let message='No checks marked. Record the buyer question before assigning a publication date.';
+  if(count===1)message='1 of 5 checks supported. Keep researching; this topic has not earned a new page yet.';
+  if(count===2)message='2 of 5 checks supported. Check whether an existing page should be updated or consolidated.';
+  if(count===3)message='3 of 5 checks supported. A useful idea may exist, but resolve overlap, evidence and ownership before publishing.';
+  if(count===4)message='4 of 5 checks supported. Resolve the remaining editorial requirement, then review the complete draft.';
+  if(count===5)message='5 of 5 checks supported. The topic is ready for human editorial review; publication and search outcomes remain separate decisions.';
+  result.textContent=message;
+ }
+ cadencePlanner.addEventListener('change',renderCadence);
+ cadencePlanner.addEventListener('reset',()=>requestAnimationFrame(renderCadence));
+ renderCadence();
+}
+
+// Article access aid: local-only review, never a permission grant or provider-role decision.
+const accessPlanner=document.querySelector('[data-access-planner]');
+if(accessPlanner){
+ const inputs=[...accessPlanner.querySelectorAll('input[type="checkbox"]')];
+ const result=accessPlanner.querySelector('[data-access-result]');
+ function renderAccessReview(){
+  const count=inputs.filter(input=>input.checked).length;
+  let message='No checks marked. Begin with the exact system and task.';
+  if(count===1)message='1 of 5 checks supported. Do not grant access yet; identify the recipient, role and review boundary.';
+  if(count===2)message='2 of 5 checks supported. The request still needs a task-specific role and accountable owner.';
+  if(count===3)message='3 of 5 checks supported. Resolve the remaining identity, expiry or information-handling gaps first.';
+  if(count===4)message='4 of 5 checks supported. Complete the final control before the owner reviews the invitation.';
+  if(count===5)message='5 of 5 checks supported. Ready for owner review in the live provider; verify the role after granting and revoke it when the task ends.';
+  result.textContent=message;
+ }
+ accessPlanner.addEventListener('change',renderAccessReview);
+ accessPlanner.addEventListener('reset',()=>requestAnimationFrame(renderAccessReview));
+ renderAccessReview();
+}
