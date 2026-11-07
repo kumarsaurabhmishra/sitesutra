@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-07",
+  "source": "Current search-result question language reviewed after available Search Console query themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "WhatsApp vs contact form for small business website",
+      "interpretation": "Evidence that small-business owners compare website enquiry routes; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "Should a small-business website use WhatsApp, a contact form or calendar booking?",
+    "distinct_task": "Route quick questions, structured project requests and ready-to-schedule consultations into suitable working channels.",
+    "canonical_service_path": "/services/website-development/",
+    "supporting_article_path": "/blog/whatsapp-form-or-booking-small-business-website/"
+  },
+  "limitations": [
+    "The wording confirms that the comparison question exists; it does not establish search demand or commercial value.",
+    "The article covers enquiry routing rather than repeating the existing measurement, project-brief or landing-page articles.",
+    "No channel is presented as universally better or as a guaranteed source of conversions."
+  ]
+}
