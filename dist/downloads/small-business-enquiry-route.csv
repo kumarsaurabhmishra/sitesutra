@@ -1,0 +1,5 @@
+Visitor task,Recommended route,Information needed,Response owner,Published response expectation,Fallback,Delivery test,Qualified outcome definition,Status
+Confirm service area,WhatsApp,Area and short question,Business owner,Reply during stated working hours,Phone,Open link and confirm correct number and prefilled topic,Service area matches and visitor wants a relevant service,Draft
+Request a tailored project review,Contact form,Name reply address service current situation goal and timeline,Project lead,Acknowledge after successful delivery,Direct email,Submit from mobile and confirm notification and accessible success state,Request contains enough context for a scoped next step,Draft
+Reserve a project-fit call,Calendar booking,Timezone available time and short context note,Consultation owner,Immediate booking confirmation,Contact form,Book reschedule and cancel a test slot,Attendee meets the stated call purpose,Draft
+Send supporting document,Direct email,Reply address document purpose and relevant context,Project lead,Publish a realistic response window,Phone,Send a safe test file and confirm receipt,Document relates to an in-scope request,Draft
