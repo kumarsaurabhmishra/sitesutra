@@ -9,7 +9,13 @@ def update(g):
  cal_link=c.get('calLink','')
  def widget():
   if c.get('bookingProvider')=='cal.com' and cal_link:
-   return f'<div class="bookinglive calbooking"><div id="cal-inline" data-cal-link="{escape(cal_link)}" role="region" aria-label="Cal.com discovery-call booking calendar"><p class="cal-loading" role="status">Loading available times…</p></div><p id="cal-fallback" class="fine">If the calendar does not load, use the booking link below.</p><a class="textlink" href="{escape(url)}" target="_blank" rel="noopener">Open Cal.com booking page ↗</a></div>'
+   return f'''<div class="mobile-booking-panel" aria-label="Book a discovery call">
+    <div class="mobile-booking-meta"><span>{duration} minutes</span><span>Google Meet</span><span>Your timezone</span></div>
+    <h3>Choose a time on the live booking page.</h3>
+    <p>See current availability, select a slot and receive the meeting details from Cal.com.</p>
+    <a class="btn" href="{escape(url)}" target="_blank" rel="noopener">View live availability <span aria-hidden="true">↗</span></a>
+    <small>Opens Cal.com in a new tab. Your appointment is confirmed only after you complete the booking there.</small>
+   </div><div class="bookinglive calbooking"><div id="cal-inline" data-cal-link="{escape(cal_link)}" role="region" aria-label="Cal.com discovery-call booking calendar"><p class="cal-loading" role="status">Loading available times…</p></div><p id="cal-fallback" class="fine">If the calendar does not load, use the Cal.com link below.</p><a class="textlink" href="{escape(url)}" target="_blank" rel="noopener">Open Cal.com booking page ↗</a></div>'''
   if embed:
    return f'<div class="bookinglive"><iframe title="Book a 30-minute discovery call with Kumar" src="{escape(embed)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><a class="textlink" href="{escape(url or embed)}" target="_blank" rel="noopener">Open booking calendar in a new tab ↗</a></div>'
   if url:

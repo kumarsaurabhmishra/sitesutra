@@ -28,6 +28,28 @@ if(taglineReveal){
   taglineObserver.observe(taglineReveal);
  }
 }
+
+// The delivery path remains complete in the document, then gains a restrained
+// sequential reveal when motion is welcome.
+const processFlow=document.querySelector('[data-process-flow]');
+if(processFlow){
+ const steps=[...processFlow.children];
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(reduced||!('IntersectionObserver' in window)){
+  processFlow.classList.add('is-progressing');
+  steps.forEach(step=>step.classList.add('is-active'));
+ }else{
+  processFlow.classList.add('process-animated');
+  const flowObserver=new IntersectionObserver(entries=>{
+   if(entries.some(entry=>entry.isIntersecting)){
+    flowObserver.disconnect();
+    processFlow.classList.add('is-progressing');
+    steps.forEach((step,index)=>window.setTimeout(()=>step.classList.add('is-active'),index*110));
+   }
+  },{threshold:.2});
+  flowObserver.observe(processFlow);
+ }
+}
 document.querySelectorAll('[data-device]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-device]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));document.querySelector('[data-device-preview]').classList.toggle('mobile',btn.dataset.device==='mobile');}));
 document.querySelectorAll('[data-compare]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-compare]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));document.querySelectorAll('[data-comparison]').forEach(panel=>panel.hidden=panel.dataset.comparison!==btn.dataset.compare);}));
 const form=document.getElementById('enquiry');
@@ -67,7 +89,7 @@ if(dateGrid){
 }
 // Official Cal.com embed queue; no booking or success state is fabricated locally.
 const calContainer=document.getElementById('cal-inline');
-if(calContainer){
+if(calContainer&&!window.matchMedia('(max-width: 700px)').matches){
  function loadCalendar(){
  (function(C,A,L){const push=function(fn,args){fn.q.push(args);};const d=C.document;C.Cal=C.Cal||function(){const cal=C.Cal;const args=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];const script=d.createElement('script');script.src=A;script.onerror=()=>{const note=document.getElementById('cal-fallback');note.textContent='The booking calendar could not load. Please use the Cal.com link below.';note.setAttribute('role','alert');const loading=calContainer.querySelector('.cal-loading');if(loading)loading.textContent='Calendar unavailable in this browser.';};d.head.appendChild(script);cal.loaded=true;}if(args[0]===L){const api=function(){push(api,arguments);};const namespace=args[1];api.q=api.q||[];if(typeof namespace==='string'){cal.ns[namespace]=cal.ns[namespace]||api;push(cal.ns[namespace],args);push(cal,['initNamespace',namespace]);}else push(cal,args);return;}push(cal,args);};})(window,'https://cal.com/embed/embed.js','init');
  window.Cal('init',{origin:'https://cal.com'});
