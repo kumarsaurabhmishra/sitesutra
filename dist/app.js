@@ -218,3 +218,23 @@ if(enquiryRoutePlanner){
  enquiryRoutePlanner.addEventListener('reset',()=>requestAnimationFrame(renderEnquiryRoute));
  renderEnquiryRoute();
 }
+
+// Article campaign-readiness aid: local-only review, never a performance forecast.
+const campaignReadinessPlanner=document.querySelector('[data-campaign-readiness-planner]');
+if(campaignReadinessPlanner){
+ const inputs=[...campaignReadinessPlanner.querySelectorAll('input[type="checkbox"]')];
+ const result=campaignReadinessPlanner.querySelector('[data-campaign-readiness-result]');
+ function renderCampaignReadiness(){
+  const count=inputs.filter(input=>input.checked).length;
+  let message='No checks marked. Begin with the exact offer and visitor decision.';
+  if(count===1)message='1 of 5 checks supported. Resolve the offer and destination foundations before planning wider traffic.';
+  if(count===2)message='2 of 5 checks supported. The destination still has blocking evidence gaps; assign them to an owner.';
+  if(count===3)message='3 of 5 checks supported. Complete the action, mobile and measurement checks before a launch decision.';
+  if(count===4)message='4 of 5 checks supported. Resolve and retest the remaining dependency before the team approves the destination.';
+  if(count===5)message='5 of 5 checks supported. Ready for a human launch review; campaign performance and qualified enquiries remain unproven.';
+  result.textContent=message;
+ }
+ campaignReadinessPlanner.addEventListener('change',renderCampaignReadiness);
+ campaignReadinessPlanner.addEventListener('reset',()=>requestAnimationFrame(renderCampaignReadiness));
+ renderCampaignReadiness();
+}

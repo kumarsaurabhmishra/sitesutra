@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-08",
+  "source": "Current search-result question language reviewed after available Search Console query themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "is my website ready for digital marketing campaign small business",
+      "interpretation": "Evidence that small-business owners ask whether the website foundation should be checked before campaign work; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "Is your website ready for digital marketing?",
+    "distinct_task": "Decide whether one campaign destination has the offer, message match, working action, mobile task and measurement needed for a controlled launch.",
+    "canonical_service_path": "/digital-marketing-company-varanasi/",
+    "supporting_article_path": "/blog/website-ready-for-digital-marketing-campaign/"
+  },
+  "limitations": [
+    "The wording confirms that the readiness question exists; it does not establish search demand or commercial value.",
+    "The article reviews the website before a campaign rather than repeating the existing provider-selection, content-plan or landing-page-brief articles.",
+    "No campaign, conversion, enquiry or ranking outcome is promised."
+  ]
+}
