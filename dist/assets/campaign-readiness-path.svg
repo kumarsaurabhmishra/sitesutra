@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Five website checks before a digital marketing campaign</title>
+  <desc id="desc">A path connects a clear offer, matched landing page, working action, usable mobile journey and meaningful measurement before a controlled campaign launch.</desc>
+  <rect width="1200" height="680" rx="28" fill="#10182d"/>
+  <g font-family="Arial, sans-serif">
+    <text x="72" y="72" fill="#fff" font-size="18" font-weight="700" letter-spacing="2">WEBSITE CAMPAIGN-READINESS PATH</text>
+    <path d="M115 280h930" stroke="#8ca2ff" stroke-width="8" stroke-linecap="round"/>
+    <g fill="#f7f5ef" stroke="#244cff" stroke-width="4"><circle cx="115" cy="280" r="68"/><circle cx="350" cy="280" r="68"/><circle cx="585" cy="280" r="68"/><circle cx="820" cy="280" r="68"/><circle cx="1055" cy="280" r="68"/></g>
+    <g fill="#171c28" font-size="17" text-anchor="middle" font-weight="700">
+      <text x="115" y="270"><tspan x="115">CLEAR</tspan><tspan x="115" dy="23">OFFER</tspan></text>
+      <text x="350" y="270"><tspan x="350">MESSAGE</tspan><tspan x="350" dy="23">MATCH</tspan></text>
+      <text x="585" y="270"><tspan x="585">WORKING</tspan><tspan x="585" dy="23">ACTION</tspan></text>
+      <text x="820" y="270"><tspan x="820">MOBILE</tspan><tspan x="820" dy="23">TASK</tspan></text>
+      <text x="1055" y="270"><tspan x="1055">MEANINGFUL</tspan><tspan x="1055" dy="23">MEASURE</tspan></text>
+    </g>
+    <path d="M585 365v78" stroke="#ff8659" stroke-width="5" stroke-linecap="round"/>
+    <rect x="395" y="443" width="380" height="86" rx="16" fill="#ff8659"/>
+    <text x="585" y="479" fill="#171c28" font-size="17" text-anchor="middle" font-weight="700">CONTROLLED LAUNCH DECISION</text>
+    <text x="585" y="505" fill="#171c28" font-size="14" text-anchor="middle">Unresolved evidence returns to its owner before wider traffic</text>
+    <text x="72" y="615" fill="#d6d9e2" font-size="16" letter-spacing="1.4">VISITS · COMPLETED ACTIONS · QUALIFIED ENQUIRIES REMAIN SEPARATE MEASURES</text>
+  </g>
+</svg>
