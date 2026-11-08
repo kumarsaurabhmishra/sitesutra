@@ -57,6 +57,14 @@ def improve(g):
     marker_at = body.index(marker, film_start)
     body = body[:marker_at] + '</section>' + tagline + '<section class="landingbooking">' + body[marker_at + len(marker):]
 
+    # Turn the existing delivery stages into a progressive visual flow. The
+    # JavaScript enhancement adds motion only after the static content exists.
+    body = body.replace(
+        '<div class="process">',
+        '<div class="process process-flow" data-process-flow>',
+        1,
+    )
+
     pages['/'] = (title, body)
 
     # The persistent header button already owns the booking action.
