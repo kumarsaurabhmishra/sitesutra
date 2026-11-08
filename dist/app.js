@@ -198,3 +198,23 @@ if(accessPlanner){
  accessPlanner.addEventListener('reset',()=>requestAnimationFrame(renderAccessReview));
  renderAccessReview();
 }
+
+// Article enquiry-route aid: local-only guidance, never a conversion estimate.
+const enquiryRoutePlanner=document.querySelector('[data-enquiry-route-planner]');
+if(enquiryRoutePlanner){
+ const options=[...enquiryRoutePlanner.querySelectorAll('input[name="route"]')];
+ const result=enquiryRoutePlanner.querySelector('[data-enquiry-route-result]');
+ const messages={
+  quick:'Recommended route: WhatsApp. Use a pre-filled topic, publish monitored hours and keep phone or email visible as a fallback.',
+  brief:'Recommended route: a short contact form. Collect only the context needed for the next decision, then test validation, real delivery and confirmation.',
+  call:'Recommended route: calendar booking. State the call purpose and duration, respect the visitor\'s timezone and test confirmation, rescheduling and cancellation.',
+  fallback:'Recommended route: direct email or phone. Keep it easy to find and assign a real response owner instead of forcing every visitor through one interface.'
+ };
+ function renderEnquiryRoute(){
+  const selected=options.find(option=>option.checked);
+  result.textContent=selected?messages[selected.value]:'Choose a visitor task to review its route.';
+ }
+ enquiryRoutePlanner.addEventListener('change',renderEnquiryRoute);
+ enquiryRoutePlanner.addEventListener('reset',()=>requestAnimationFrame(renderEnquiryRoute));
+ renderEnquiryRoute();
+}
