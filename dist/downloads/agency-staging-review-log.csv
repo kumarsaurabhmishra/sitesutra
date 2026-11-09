@@ -1,0 +1,6 @@
+page_or_flow,device_or_browser,check,expected,observed,severity,owner,status,evidence_link,retest_date
+Homepage,Small-screen phone,Primary action opens the approved enquiry route,Approved route opens and remains usable,Replace with the real observation,Blocker,Agency reviewer,Open,Add screenshot or recording,
+Project enquiry,Desktop browser,Valid submission reaches the monitored destination,Notification arrives and confirmation reflects the real outcome,Replace with the real observation,Blocker,Delivery partner,Open,Add test reference,
+Service page,Keyboard only,All controls are reachable and focus remains visible,Visitor completes the task without a mouse,Replace with the real observation,Major,Delivery partner,Open,Add recording,
+All approved pages,Responsive review,Content matches the signed-off brief and no placeholder remains,Approved content and assets appear in the correct locations,Replace with the real observation,Major,Agency reviewer,Open,Add marked brief,
+Launch preparation,Technical review,Canonical robots and sitemap choices match the release plan,Staging restrictions and production settings are documented separately,Replace with the real observation,Blocker,Technical owner,Open,Add release note,
