@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-09",
+  "source": "Current search-result question language reviewed after available Search Console query themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "what should an agency test before showing a website to a client",
+      "interpretation": "Evidence that agencies look for a practical staging-review process; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "What should an agency test before showing a website to a client?",
+    "distinct_task": "Run a first-review gate on staging before client presentation, separating brief mismatches, broken visitor tasks and release hygiene from later client preference feedback.",
+    "canonical_service_path": "/agency-partnerships/",
+    "supporting_article_path": "/blog/agency-website-staging-review-checklist/"
+  },
+  "limitations": [
+    "The wording confirms that the question exists; it does not establish search demand or commercial value.",
+    "The article covers the agency's first staging review rather than repeating the existing final handover checklist or change-request classification article.",
+    "The review gate does not claim complete accessibility conformance, security assurance, browser coverage or defect-free delivery."
+  ]
+}
