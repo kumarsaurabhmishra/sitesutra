@@ -11,6 +11,10 @@ def improve(g):
 
     def insert(route, content):
         title, body = pages[route]
+        # The dedicated agency pilot page already contains its complete sales
+        # argument and should not receive the older generic service preface.
+        if route == agency and 'class="agency-hero"' in body:
+            return
         # Place useful decision content before the existing delivery details.
         marker = '<section class="reading">'
         assert marker in body, route
