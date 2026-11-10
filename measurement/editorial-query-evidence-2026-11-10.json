@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-10",
+  "source": "Current search-result question language reviewed after available Search Console query themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "who should write website content business owner or web designer",
+      "interpretation": "Evidence that small-business buyers ask who should own and produce website copy; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "Who should write a small-business website's content?",
+    "distinct_task": "Assign factual input, drafting, page structure, implementation and final approval before website production begins.",
+    "canonical_service_path": "/services/website-development/",
+    "supporting_article_path": "/blog/who-should-write-small-business-website-content/"
+  },
+  "limitations": [
+    "The wording confirms that the question exists; it does not establish search demand or commercial value.",
+    "The article assigns content responsibilities rather than repeating the existing homepage plan, service-page brief or website timeline articles.",
+    "The workflow does not replace legal, medical, financial or other specialist review where claims require it."
+  ]
+}
