@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-11",
+  "source": "Current search-result question language reviewed after available Search Console query themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "should I put prices on my service business website",
+      "interpretation": "Evidence that service-business owners ask how much pricing context to publish; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "Should a service business show prices on its website?",
+    "distinct_task": "Choose an honest pricing format for a service page: fixed price, starting condition, example scope or tailored quote with visible cost factors.",
+    "canonical_service_path": "/services/website-development/",
+    "supporting_article_path": "/blog/should-service-business-show-prices-website/"
+  },
+  "limitations": [
+    "The wording confirms that the question exists; it does not establish search demand or commercial value.",
+    "The article helps a business decide what pricing context to publish; it does not repeat the buyer-side guide to website project costs.",
+    "The framework is not legal, tax or financial advice and does not prescribe a price."
+  ]
+}
