@@ -1,0 +1,4 @@
+service,customer_decision,deliverable_is_standardised,main_scope_variables,pricing_format,inclusions,exclusions,recurring_costs_or_dependencies,next_action,content_owner,review_trigger
+Example consultation,Choose and book a defined session,Yes,Location or specialist availability,Fixed price,Session length and stated follow-up,Additional work outside the session,State any applicable booking or payment condition,Book the session,Business owner,Price scope or booking condition changes
+Example design service,Decide whether to request a scoped proposal,No,Number of spaces site conditions deliverables and review rounds,Tailored quote with cost factors,Discovery and the deliverables named in the proposal,Printing travel and third-party purchases unless included,State any ongoing licence maintenance or supplier cost,Submit the project brief,Service lead,Scope process or supplier cost changes
+Your service,,,,,,,,,,
