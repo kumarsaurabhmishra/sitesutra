@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-12",
+  "source": "Current search-result question language reviewed after available Search Console query themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "what should an agency send a white-label web developer",
+      "interpretation": "Evidence that agencies ask what inputs a delivery partner needs before development; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "What should an agency include in a white-label development brief?",
+    "distinct_task": "Translate a client-approved website promise into build inputs, responsibilities, acceptance checks and secure access boundaries before implementation begins.",
+    "canonical_service_path": "/agency-partnerships/",
+    "supporting_article_path": "/blog/white-label-development-brief-agencies/"
+  },
+  "limitations": [
+    "The wording confirms that the question exists; it does not establish search demand or commercial value.",
+    "The article prepares the implementation brief before kickoff; existing articles separately cover supplier pilots, change requests, staging review and final handover.",
+    "The workflow does not replace the agency's contract, confidentiality review, security review or client approval process."
+  ]
+}
