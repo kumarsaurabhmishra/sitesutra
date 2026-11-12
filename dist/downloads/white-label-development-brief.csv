@@ -1,0 +1,6 @@
+brief_area,client_promise,approved_source,delivery_requirement,acceptance_evidence,agency_owner,developer_owner,status,open_question
+Page structure,Approved pages and visitor journey,Signed sitemap and current copy,Implement the named pages with crawlable navigation,Every approved page is reachable and matches the source,Agency producer,Development lead,Not started,
+Responsive design,Approved layouts and content priority,Design source with narrow and wide references,Define behaviour between supplied layouts,Review agreed widths and content states,Design lead,Development lead,Not started,
+Enquiry journey,Where a real enquiry must arrive,Approved form fields and configured destination,Validation error and real delivery path,Test submission reaches the named destination,Account owner,Development lead,Not started,
+Access,Task that requires platform access,Account owner and approved permission route,Use the least access required for the task,Access is attributable removable and recorded,Agency producer,Named authorised user,Not started,
+Release,What approval permits publication,Acceptance record and release owner,Publish only the accepted revision,Release record names revision owner and rollback route,Agency approver,Release owner,Not started,
