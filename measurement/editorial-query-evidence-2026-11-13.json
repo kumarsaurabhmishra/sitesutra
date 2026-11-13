@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-13",
+  "source": "Current search-result question language reviewed after available Search Console query themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "can Instagram replace a website for a small business",
+      "interpretation": "Evidence that small-business owners compare a social profile with a dedicated website; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "Can Instagram replace a website for a small business?",
+    "distinct_task": "Assign Instagram, the business website and direct messaging separate jobs across discovery, evaluation and enquiry instead of asking one channel to carry the whole journey.",
+    "canonical_service_path": "/services/website-development/",
+    "supporting_article_path": "/blog/can-instagram-replace-small-business-website/"
+  },
+  "limitations": [
+    "The wording confirms that the question exists; it does not establish search demand or commercial value.",
+    "The article maps channel roles and does not repeat the existing Google Business Profile comparison or the enquiry-route guide.",
+    "The framework does not claim that any channel will produce visibility, followers, rankings or enquiries."
+  ]
+}
