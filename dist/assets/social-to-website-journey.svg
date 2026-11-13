@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Social profile, website and conversation channel journey</title>
+  <desc id="desc">A five-stage customer path assigns discovery to social content, service explanation and comparison to the website, and situation-specific questions to a direct conversation route.</desc>
+  <rect width="1200" height="680" rx="36" fill="#f5f0e6"/>
+  <g font-family="Manrope, sans-serif">
+    <text x="72" y="82" fill="#1547ff" font-size="22" font-weight="700" letter-spacing="3">ONE JOURNEY, DIFFERENT CHANNEL JOBS</text>
+    <text x="72" y="132" fill="#171c28" font-size="36" font-weight="700">Let each channel do the work it explains best.</text>
+    <path d="M132 358H1056" fill="none" stroke="#1547ff" stroke-width="8" stroke-linecap="round"/>
+    <path d="m1034 335 28 23-28 23" fill="none" stroke="#1547ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(72 226)">
+      <rect width="190" height="270" rx="22" fill="#1547ff"/>
+      <circle cx="38" cy="38" r="21" fill="#f5f0e6"/><text x="38" y="46" text-anchor="middle" fill="#1547ff" font-size="20" font-weight="700">1</text>
+      <text x="24" y="100" fill="#fff" font-size="23" font-weight="700">Discover</text>
+      <text x="24" y="144" fill="#fff" font-size="16">Recent work, useful</text><text x="24" y="172" fill="#fff" font-size="16">ideas and a reason</text><text x="24" y="200" fill="#fff" font-size="16">to look closer.</text>
+      <text x="24" y="242" fill="#fff" font-size="13" font-weight="700">SOCIAL CONTENT</text>
+    </g>
+    <g transform="translate(288 226)">
+      <rect width="190" height="270" rx="22" fill="#fff" stroke="#1547ff" stroke-width="4"/>
+      <circle cx="38" cy="38" r="21" fill="#1547ff"/><text x="38" y="46" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">2</text>
+      <text x="24" y="100" fill="#171c28" font-size="23" font-weight="700">Understand</text>
+      <text x="24" y="144" fill="#414754" font-size="16">Service, audience,</text><text x="24" y="172" fill="#414754" font-size="16">process, location</text><text x="24" y="200" fill="#414754" font-size="16">and boundaries.</text>
+      <text x="24" y="242" fill="#1547ff" font-size="13" font-weight="700">SERVICE PAGE</text>
+    </g>
+    <g transform="translate(504 226)">
+      <rect width="190" height="270" rx="22" fill="#fff" stroke="#171c28" stroke-width="3"/>
+      <circle cx="38" cy="38" r="21" fill="#171c28"/><text x="38" y="46" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">3</text>
+      <text x="24" y="100" fill="#171c28" font-size="23" font-weight="700">Compare</text>
+      <text x="24" y="144" fill="#414754" font-size="16">Relevant proof,</text><text x="24" y="172" fill="#414754" font-size="16">inclusions, exclusions</text><text x="24" y="200" fill="#414754" font-size="16">and pricing context.</text>
+      <text x="24" y="242" fill="#171c28" font-size="13" font-weight="700">WEBSITE EVIDENCE</text>
+    </g>
+    <g transform="translate(720 226)">
+      <rect width="190" height="270" rx="22" fill="#fff" stroke="#b43a17" stroke-width="3"/>
+      <circle cx="38" cy="38" r="21" fill="#b43a17"/><text x="38" y="46" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">4</text>
+      <text x="24" y="100" fill="#171c28" font-size="23" font-weight="700">Ask</text>
+      <text x="24" y="144" fill="#414754" font-size="16">A real question about</text><text x="24" y="172" fill="#414754" font-size="16">fit, availability or</text><text x="24" y="200" fill="#414754" font-size="16">the next step.</text>
+      <text x="24" y="242" fill="#b43a17" font-size="13" font-weight="700">DIRECT CONVERSATION</text>
+    </g>
+    <g transform="translate(936 226)">
+      <rect width="192" height="270" rx="22" fill="#171c28"/>
+      <circle cx="38" cy="38" r="21" fill="#f5f0e6"/><text x="38" y="46" text-anchor="middle" fill="#171c28" font-size="20" font-weight="700">5</text>
+      <text x="24" y="100" fill="#fff" font-size="23" font-weight="700">Enquire</text>
+      <text x="24" y="144" fill="#fff" font-size="16">A delivered brief,</text><text x="24" y="172" fill="#fff" font-size="16">confirmed booking or</text><text x="24" y="200" fill="#fff" font-size="16">received message.</text>
+      <text x="24" y="242" fill="#fff" font-size="13" font-weight="700">BUSINESS OUTCOME</text>
+    </g>
+    <text x="72" y="584" fill="#b43a17" font-size="20" font-weight="700">A follower, visit, click and qualified enquiry are different observations.</text>
+  </g>
+</svg>
