@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-16",
+  "source": "Current search-result question language reviewed after available Search Console themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "what should a monthly digital marketing report include for a small business",
+      "interpretation": "Evidence that small-business owners ask how to review provider reporting; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "What should a monthly digital marketing report include?",
+    "distinct_task": "Connect agreed delivery, source-account activity, commercial inputs, qualified enquiries and the next owned decision without merging unlike metrics.",
+    "canonical_service_path": "/digital-marketing-company-varanasi/",
+    "supporting_article_path": "/blog/monthly-digital-marketing-report-small-business/"
+  },
+  "limitations": [
+    "The wording confirms that the reporting question exists; it does not establish search demand or commercial value.",
+    "The article structures provider accountability rather than repeating the existing guide that defines website clicks and qualified enquiries.",
+    "Search visibility, advertising activity, AI citation samples and qualified enquiries remain separate; no outcome is promised."
+  ]
+}
