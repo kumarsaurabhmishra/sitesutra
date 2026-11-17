@@ -1,0 +1,6 @@
+planning_item,real_business_fact,evidence_to_show,route_order,privacy_risk,owner,ready_status
+"Example only: Business model","Service area business; customers are not served at the operating address","Use the requirements Google currently shows for this profile","Before recording","Do not imply a public storefront","Business owner","Replace with verified facts"
+"Example only: Operating location","Real operating address confirmed privately with the owner","Street sign, building number or nearby location marker","1","Avoid faces, neighbouring homes and private conversations","Business owner","Not reviewed"
+"Example only: Business existence","The profile accurately describes the real service","Professional tools, equipment, workspace or accurate branded material","2","Hide customer records, screens and serial numbers","Business owner","Not reviewed"
+"Example only: Management","Recorder manages or represents the business","Unlock secured equipment or business vehicle; use only a permitted non-sensitive document if needed","3","Cover tax, bank, identity, account and customer information","Profile owner","Not reviewed"
+"Replace with your real plan","","","","","",""

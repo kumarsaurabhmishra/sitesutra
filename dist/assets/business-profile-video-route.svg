@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Business Profile video verification route</title>
+  <desc id="desc">A four stage route covers real location evidence, business operations, management proof and a privacy check before recording and upload.</desc>
+  <rect width="1200" height="680" rx="24" fill="#f4f0e6"/>
+  <text x="72" y="82" fill="#171c28" font-family="Manrope, sans-serif" font-size="38" font-weight="700">Plan the proof before recording</text>
+  <text x="72" y="122" fill="#596173" font-family="Manrope, sans-serif" font-size="20">One genuine route. One continuous recording.</text>
+  <path d="M170 360 C320 210 450 210 594 360 S875 510 1030 360" fill="none" stroke="#c9c4b8" stroke-width="8" stroke-linecap="round"/>
+  <g font-family="Manrope, sans-serif">
+    <circle cx="170" cy="360" r="70" fill="#244cff"/>
+    <text x="170" y="351" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">01</text>
+    <text x="170" y="382" text-anchor="middle" fill="#fff" font-size="18">Location</text>
+    <text x="170" y="468" text-anchor="middle" fill="#171c28" font-size="21" font-weight="700">Show the real area</text>
+    <text x="170" y="498" text-anchor="middle" fill="#596173" font-size="16">Signs or nearby markers</text>
+    <circle cx="450" cy="282" r="70" fill="#171c28"/>
+    <text x="450" y="273" text-anchor="middle" fill="#ff8659" font-size="22" font-weight="700">02</text>
+    <text x="450" y="304" text-anchor="middle" fill="#fff" font-size="18">Operations</text>
+    <text x="450" y="175" text-anchor="middle" fill="#171c28" font-size="21" font-weight="700">Show the business</text>
+    <text x="450" y="205" text-anchor="middle" fill="#596173" font-size="16">Tools, workspace or signage</text>
+    <circle cx="750" cy="438" r="70" fill="#244cff"/>
+    <text x="750" y="429" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">03</text>
+    <text x="750" y="460" text-anchor="middle" fill="#fff" font-size="18">Management</text>
+    <text x="750" y="552" text-anchor="middle" fill="#171c28" font-size="21" font-weight="700">Show authorised access</text>
+    <text x="750" y="582" text-anchor="middle" fill="#596173" font-size="16">Unlock a business only asset</text>
+    <circle cx="1030" cy="360" r="70" fill="#fff" stroke="#ff694f" stroke-width="5"/>
+    <text x="1030" y="351" text-anchor="middle" fill="#ad2f1b" font-size="22" font-weight="700">04</text>
+    <text x="1030" y="382" text-anchor="middle" fill="#171c28" font-size="18">Privacy</text>
+    <text x="1030" y="468" text-anchor="middle" fill="#171c28" font-size="21" font-weight="700">Remove private details</text>
+    <text x="1030" y="498" text-anchor="middle" fill="#596173" font-size="16">No faces or sensitive numbers</text>
+  </g>
+</svg>

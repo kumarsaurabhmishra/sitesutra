@@ -1,0 +1,30 @@
+{
+  "observed_date": "2026-11-17",
+  "source": "Current search result question language reviewed because current Google Search Console query data was not available in the open browser session",
+  "query_evidence": [
+    {
+      "query": "what should I ask a web development company before hiring them",
+      "observed_in": [
+        "Current web search result wording from multiple web development provider guides",
+        "Current small business discussion wording about questions and warning signs before hiring"
+      ],
+      "interpretation": "Evidence that prospective buyers ask how to evaluate a website provider; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "What should you ask a web development company before hiring?",
+    "distinct_task": "Evaluate a provider before appointment by connecting claims to relevant evidence, written scope, acceptance checks, ownership and support.",
+    "canonical_service_path": "/services/website-development/",
+    "supporting_article_path": "/blog/questions-ask-web-development-company/"
+  },
+  "overlap_review": [
+    "The website project brief guide helps a buyer prepare requirements; this article helps the buyer evaluate provider answers.",
+    "The account ownership guide covers access in depth; this article uses ownership as one provider selection gate.",
+    "The timeline, maintenance, content and page plan articles retain their separate buyer decisions."
+  ],
+  "limitations": [
+    "Search result wording confirms that the question exists but does not establish demand or commercial value.",
+    "No claim is made that the article or service page will rank for the wording.",
+    "Search visibility, AI citation samples and qualified enquiries remain separate measures."
+  ]
+}

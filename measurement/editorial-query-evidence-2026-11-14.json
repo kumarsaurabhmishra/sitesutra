@@ -1,0 +1,21 @@
+{
+  "observed_date": "2026-11-14",
+  "source": "Current search-result question language reviewed after available Search Console query themes were already covered by existing articles",
+  "query_evidence": [
+    {
+      "query": "SEO or Google Ads which is better for small business",
+      "interpretation": "Evidence that small-business owners compare organic and paid search as a starting decision; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "Should a small business start with SEO or Google Ads?",
+    "distinct_task": "Choose a first search-channel experiment from offer urgency, landing-page readiness, response capacity and measurement instead of treating SEO and Google Ads as universal rivals.",
+    "canonical_service_path": "/digital-marketing-company-varanasi/",
+    "supporting_article_path": "/blog/seo-or-google-ads-small-business/"
+  },
+  "limitations": [
+    "The wording confirms that the comparison question exists; it does not establish search demand or commercial value.",
+    "The article chooses channel sequence rather than repeating the existing campaign-readiness, quote-scope or Search Console review guides.",
+    "No channel is presented as a guaranteed source of visibility, rankings, clicks, enquiries or revenue."
+  ]
+}
