@@ -1,0 +1,6 @@
+question,business_answer,provider_answer,evidence_or_link,in_scope,acceptance_check,owner,unresolved_decision
+"Example only: What visitor task are we improving?","A suitable visitor should understand the service and use one tested enquiry route","Replace with the provider's answer","Link to the approved brief","Yes / No / Clarify","Visitor can complete the key journey on agreed devices","Business approver and provider",""
+"Example only: What is included and excluded?","List pages, content, integrations, reviews and dependencies","Replace with the provider's answer","Link to written scope","Yes / No / Clarify","Every deliverable has an owner and review method","Project owners",""
+"Example only: How will the work be tested?","Name important devices, browsers, journeys and accessibility checks","Replace with the provider's answer","Link to acceptance checklist","Yes / No / Clarify","Issues are recorded, fixed and retested before sign off","Testing owner",""
+"Example only: What will the business own?","Domain, accounts, content, source or export and reporting access","Replace with the provider's answer","Link to ownership and access list","Yes / No / Clarify","Business access is confirmed and provider access can be revoked","Business owner",""
+"Replace with a real provider question","","","","","","",""
