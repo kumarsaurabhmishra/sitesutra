@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Website photo purpose map</title>
+  <desc id="desc">Five connected stages show how photos help a visitor recognise the business, understand the offer, trust the process, judge fit and take action.</desc>
+  <rect width="1200" height="680" rx="24" fill="#f4f0e6"/>
+  <text x="70" y="82" fill="#171c28" font-family="Manrope, sans-serif" font-size="38" font-weight="700">Give every photo a visitor question</text>
+  <text x="70" y="122" fill="#596173" font-family="Manrope, sans-serif" font-size="20">Plan purpose first, then subject, crop, permission and description.</text>
+  <g font-family="Manrope, sans-serif">
+    <path d="M126 330h948" stroke="#c9c4b8" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(120 250)"><circle cx="0" cy="80" r="66" fill="#244cff"/><text x="0" y="72" text-anchor="middle" fill="#fff" font-size="21" font-weight="700">01</text><text x="0" y="103" text-anchor="middle" fill="#fff" font-size="17">Recognise</text><text x="0" y="182" text-anchor="middle" fill="#171c28" font-size="19" font-weight="700">Right business?</text></g>
+    <g transform="translate(360 250)"><circle cx="0" cy="80" r="66" fill="#171c28"/><text x="0" y="72" text-anchor="middle" fill="#ff8659" font-size="21" font-weight="700">02</text><text x="0" y="103" text-anchor="middle" fill="#fff" font-size="17">Understand</text><text x="0" y="182" text-anchor="middle" fill="#171c28" font-size="19" font-weight="700">What is offered?</text></g>
+    <g transform="translate(600 250)"><circle cx="0" cy="80" r="66" fill="#244cff"/><text x="0" y="72" text-anchor="middle" fill="#fff" font-size="21" font-weight="700">03</text><text x="0" y="103" text-anchor="middle" fill="#fff" font-size="17">Trust</text><text x="0" y="182" text-anchor="middle" fill="#171c28" font-size="19" font-weight="700">How is it done?</text></g>
+    <g transform="translate(840 250)"><circle cx="0" cy="80" r="66" fill="#171c28"/><text x="0" y="72" text-anchor="middle" fill="#ff8659" font-size="21" font-weight="700">04</text><text x="0" y="103" text-anchor="middle" fill="#fff" font-size="17">Choose</text><text x="0" y="182" text-anchor="middle" fill="#171c28" font-size="19" font-weight="700">Is it suitable?</text></g>
+    <g transform="translate(1080 250)"><circle cx="0" cy="80" r="66" fill="#fff" stroke="#ff694f" stroke-width="5"/><text x="0" y="72" text-anchor="middle" fill="#ad2f1b" font-size="21" font-weight="700">05</text><text x="0" y="103" text-anchor="middle" fill="#171c28" font-size="17">Act</text><text x="0" y="182" text-anchor="middle" fill="#171c28" font-size="19" font-weight="700">What happens next?</text></g>
+  </g>
+</svg>

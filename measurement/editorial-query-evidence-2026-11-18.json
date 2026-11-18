@@ -1,0 +1,30 @@
+{
+  "observed_date": "2026-11-18",
+  "source": "Current search result question language reviewed after the latest repository Search Console observation was found to be older than the current editorial date",
+  "query_evidence": [
+    {
+      "query": "what photos do I need for my business website",
+      "observed_in": [
+        "Current website photography guide title and FAQ wording",
+        "Current small business website guide wording about which images to provide"
+      ],
+      "interpretation": "Evidence that small business owners ask how to prepare website photography; it is not verified demand, volume or difficulty."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "What photos does a small business website need?",
+    "distinct_task": "Turn an existing photo library or planned shoot into a page specific brief covering visitor purpose, composition, permission, file handover and alternative text.",
+    "canonical_service_path": "/services/website-development/",
+    "supporting_article_path": "/blog/small-business-website-photo-brief/"
+  },
+  "overlap_review": [
+    "The homepage content plan decides what the homepage must explain; this article plans the images that support those messages.",
+    "The website content ownership article assigns writing and approval responsibilities; this article assigns photo purpose, permission and delivery notes.",
+    "The website project brief remains a broader project input; this article supplies a dedicated visual asset worksheet."
+  ],
+  "limitations": [
+    "The wording confirms that the question exists but does not establish search demand or commercial value.",
+    "No fixed photo count, search ranking, click or enquiry outcome is claimed.",
+    "Search visibility, AI citation samples and qualified enquiries remain separate measures."
+  ]
+}
