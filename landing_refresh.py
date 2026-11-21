@@ -48,9 +48,7 @@ def improve(g):
     tagline = (
         '<section class="tagline-reveal" data-tagline-reveal>'
         '<span class="eyebrow">WHAT THE WEBSITE SHOULD DO</span>'
-        '<p aria-label="A website should explain your business, earn the right enquiry, and stay clear after launch.">'
-        '<span aria-hidden="true">'+spans+'</span>'
-        '</p></section>'
+        '<p>'+spans+'</p></section>'
     )
     marker = '</section><section class="landingbooking">'
     film_start = body.index('<section class="hero-film-band">')
