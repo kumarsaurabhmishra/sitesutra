@@ -1,0 +1,7 @@
+Planning field,Question to answer,Owner,Evidence or dependency,Milestone,Acceptance check,Status
+Audit question,"What decision should this work enable?",Business owner,"Examples of the reported symptom and why it matters",Diagnosis,"Question is specific enough to investigate",Unreviewed
+Coverage,"Which domains, subdomains, templates and environments are included?",Business owner + auditor,"Approved URL and template inventory",Diagnosis,"Coverage and exclusions are written",Unreviewed
+Access,"Which reports, staging areas or logs are required and when?",Account owner,"Minimum read or task based access",Diagnosis,"Required evidence is available or the limitation is recorded",Unreviewed
+Handoff,"What will the team receive at the audit deadline?",Auditor,"Finding register and implementation specifications",Diagnosis,"Each finding includes evidence owner priority and acceptance check",Unreviewed
+Implementation,"Who will make and release accepted changes?",Developer or provider,"Approved findings release workflow and rollback boundary",Implementation,"Live deployment is recorded and immediate checks pass",Unreviewed
+Verification,"Which checks happen immediately and which need later search observations?",Reviewer,"Representative URLs deployment record and complete reporting period",Verification,"Technical results and later search observations are recorded separately",Unreviewed
