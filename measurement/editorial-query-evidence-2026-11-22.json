@@ -1,0 +1,30 @@
+{
+  "observed_date": "2026-11-22",
+  "source": "Current search-result question wording reviewed after the latest Search Console query set was found to map to existing SiteSutra service and article destinations",
+  "query_evidence": [
+    {
+      "query": "how long does a technical SEO audit take",
+      "observed_in": [
+        "Current technical SEO provider FAQ headings",
+        "Current search-result titles and answer excerpts"
+      ],
+      "interpretation": "Evidence that buyers ask about audit timing; it does not establish search demand, volume, difficulty or the accuracy of provider timelines."
+    }
+  ],
+  "editorial_decision": {
+    "buyer_question": "How long does a technical SEO audit take?",
+    "distinct_task": "Separate diagnosis, implementation and verification milestones so a buyer can compare schedules with different scope and dependencies.",
+    "canonical_service_path": "/services/seo-marketing/",
+    "supporting_article_path": "/blog/how-long-technical-seo-audit-take/"
+  },
+  "overlap_review": [
+    "The audit-deliverables article defines what a useful report contains; this article defines milestone boundaries and schedule dependencies.",
+    "The audit-or-consultancy article chooses the engagement type; this article compares timing only after the engagement and ownership boundaries are defined.",
+    "The first-28-days Search Console article covers post-launch observation; this article separates that observation from audit delivery and implementation."
+  ],
+  "limitations": [
+    "No universal audit duration, price, ranking result or demand estimate is claimed.",
+    "Third-party answer excerpts were used only as evidence that the wording exists; technical claims link to primary Google documentation.",
+    "Search visibility, external citations and qualified enquiries remain separate measures."
+  ]
+}
