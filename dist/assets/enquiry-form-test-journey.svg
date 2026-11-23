@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Enquiry form test journey</title>
+  <desc id="desc">Five connected stages show visitor input, useful validation, accepted submission, confirmed receipt and follow-up ownership.</desc>
+  <rect width="1200" height="680" rx="40" fill="#f7f5ef"/>
+  <text x="72" y="92" fill="#171c28" font-family="Manrope,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="3">ONE TEST · FOUR MATCHING RECORDS</text>
+  <text x="72" y="150" fill="#171c28" font-family="Manrope,Arial,sans-serif" font-size="42" font-weight="800">Follow the enquiry beyond the button</text>
+  <path d="M157 344H1044" fill="none" stroke="#244cff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1024 324l28 20-28 20" fill="none" stroke="#244cff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Manrope,Arial,sans-serif">
+    <g transform="translate(72 230)">
+      <rect width="185" height="230" rx="24" fill="#171c28"/>
+      <circle cx="92" cy="114" r="32" fill="#ff8659"/>
+      <text x="92" y="124" fill="#171c28" font-size="28" font-weight="800" text-anchor="middle">1</text>
+      <text x="92" y="52" fill="#ffffff" font-size="18" font-weight="800" text-anchor="middle">INPUT</text>
+      <text x="92" y="183" fill="#ffffff" font-size="16" text-anchor="middle">Recognisable</text>
+      <text x="92" y="207" fill="#ffffff" font-size="16" text-anchor="middle">test details</text>
+    </g>
+    <g transform="translate(292 230)">
+      <rect width="185" height="230" rx="24" fill="#ffffff" stroke="#171c28" stroke-width="3"/>
+      <circle cx="92" cy="114" r="32" fill="#e8edff"/>
+      <text x="92" y="124" fill="#244cff" font-size="28" font-weight="800" text-anchor="middle">2</text>
+      <text x="92" y="52" fill="#171c28" font-size="18" font-weight="800" text-anchor="middle">VALIDATE</text>
+      <text x="92" y="183" fill="#171c28" font-size="16" text-anchor="middle">Specific, usable</text>
+      <text x="92" y="207" fill="#171c28" font-size="16" text-anchor="middle">error guidance</text>
+    </g>
+    <g transform="translate(512 230)">
+      <rect width="185" height="230" rx="24" fill="#244cff"/>
+      <circle cx="92" cy="114" r="32" fill="#ffffff"/>
+      <text x="92" y="124" fill="#244cff" font-size="28" font-weight="800" text-anchor="middle">3</text>
+      <text x="92" y="52" fill="#ffffff" font-size="18" font-weight="800" text-anchor="middle">SUBMIT</text>
+      <text x="92" y="183" fill="#ffffff" font-size="16" text-anchor="middle">Accurate success</text>
+      <text x="92" y="207" fill="#ffffff" font-size="16" text-anchor="middle">or failure state</text>
+    </g>
+    <g transform="translate(732 230)">
+      <rect width="185" height="230" rx="24" fill="#ffffff" stroke="#171c28" stroke-width="3"/>
+      <circle cx="92" cy="114" r="32" fill="#e8edff"/>
+      <text x="92" y="124" fill="#244cff" font-size="28" font-weight="800" text-anchor="middle">4</text>
+      <text x="92" y="52" fill="#171c28" font-size="18" font-weight="800" text-anchor="middle">RECEIVE</text>
+      <text x="92" y="183" fill="#171c28" font-size="16" text-anchor="middle">Matching message</text>
+      <text x="92" y="207" fill="#171c28" font-size="16" text-anchor="middle">in destination</text>
+    </g>
+    <g transform="translate(952 230)">
+      <rect width="176" height="230" rx="24" fill="#171c28"/>
+      <circle cx="88" cy="114" r="32" fill="#ff8659"/>
+      <text x="88" y="124" fill="#171c28" font-size="28" font-weight="800" text-anchor="middle">5</text>
+      <text x="88" y="52" fill="#ffffff" font-size="18" font-weight="800" text-anchor="middle">OWN</text>
+      <text x="88" y="183" fill="#ffffff" font-size="16" text-anchor="middle">Named review and</text>
+      <text x="88" y="207" fill="#ffffff" font-size="16" text-anchor="middle">follow-up owner</text>
+    </g>
+    <rect x="72" y="516" width="1056" height="94" rx="24" fill="#e8edff"/>
+    <text x="600" y="555" fill="#244cff" font-size="18" font-weight="800" text-anchor="middle">APPROVAL RULE</text>
+    <text x="600" y="587" fill="#171c28" font-size="22" font-weight="700" text-anchor="middle">Match input + interface + receipt + ownership before launch</text>
+  </g>
+</svg>
