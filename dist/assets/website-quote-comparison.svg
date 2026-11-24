@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Website quote comparison process</title>
+  <desc id="desc">One website brief leads to three different proposals, which are reorganised into a shared comparison matrix before a decision.</desc>
+  <rect width="1200" height="680" rx="40" fill="#f7f5ef"/>
+  <g font-family="Manrope,Arial,sans-serif">
+    <text x="70" y="82" fill="#171c28" font-size="21" font-weight="700" letter-spacing="3">COMPARE THE WORK · THEN THE TOTAL</text>
+    <text x="70" y="138" fill="#171c28" font-size="42" font-weight="800">Turn different proposals into one decision</text>
+    <rect x="70" y="218" width="218" height="240" rx="28" fill="#171c28"/>
+    <text x="179" y="270" fill="#ffffff" font-size="18" font-weight="800" text-anchor="middle">ONE BRIEF</text>
+    <circle cx="179" cy="345" r="43" fill="#ff8659"/>
+    <path d="M158 345h42M179 324v42" stroke="#171c28" stroke-width="7" stroke-linecap="round"/>
+    <text x="179" y="424" fill="#ffffff" font-size="16" text-anchor="middle">Tasks · scope · owners</text>
+    <path d="M304 337h92" stroke="#244cff" stroke-width="7" stroke-linecap="round"/>
+    <path d="M376 317l27 20-27 20" fill="none" stroke="#244cff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(420 196)">
+      <rect width="210" height="118" rx="22" fill="#ffffff" stroke="#171c28" stroke-width="3"/>
+      <text x="105" y="49" fill="#171c28" font-size="18" font-weight="800" text-anchor="middle">PROPOSAL A</text>
+      <text x="105" y="81" fill="#606571" font-size="15" text-anchor="middle">Pages + one total</text>
+    </g>
+    <g transform="translate(420 337)">
+      <rect width="210" height="118" rx="22" fill="#244cff"/>
+      <text x="105" y="49" fill="#ffffff" font-size="18" font-weight="800" text-anchor="middle">PROPOSAL B</text>
+      <text x="105" y="81" fill="#ffffff" font-size="15" text-anchor="middle">Build + client content</text>
+    </g>
+    <g transform="translate(420 478)">
+      <rect width="210" height="118" rx="22" fill="#ffffff" stroke="#171c28" stroke-width="3"/>
+      <text x="105" y="49" fill="#171c28" font-size="18" font-weight="800" text-anchor="middle">PROPOSAL C</text>
+      <text x="105" y="81" fill="#606571" font-size="15" text-anchor="middle">Workshop + handover</text>
+    </g>
+    <path d="M650 395h92" stroke="#244cff" stroke-width="7" stroke-linecap="round"/>
+    <path d="M722 375l27 20-27 20" fill="none" stroke="#244cff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="770" y="196" width="360" height="400" rx="28" fill="#e8edff"/>
+    <text x="950" y="248" fill="#244cff" font-size="18" font-weight="800" text-anchor="middle">ONE COMPARISON MATRIX</text>
+    <g fill="#ffffff">
+      <rect x="810" y="284" width="280" height="48" rx="12"/>
+      <rect x="810" y="344" width="280" height="48" rx="12"/>
+      <rect x="810" y="404" width="280" height="48" rx="12"/>
+      <rect x="810" y="464" width="280" height="48" rx="12"/>
+    </g>
+    <g fill="#171c28" font-size="16" font-weight="700">
+      <text x="836" y="315">Scope + responsibilities</text>
+      <text x="836" y="375">Evidence + acceptance</text>
+      <text x="836" y="435">Ownership + handover</text>
+      <text x="836" y="495">Running costs + exclusions</text>
+    </g>
+    <rect x="810" y="536" width="280" height="40" rx="20" fill="#171c28"/>
+    <text x="950" y="562" fill="#ffffff" font-size="15" font-weight="800" text-anchor="middle">NOT STATED ≠ INCLUDED</text>
+  </g>
+</svg>

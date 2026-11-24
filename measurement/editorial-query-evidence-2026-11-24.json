@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-24",
+  "source": "Current search-result question language reviewed after the latest repository Search Console query observations were found to be older than the editorial date",
+  "query_evidence": [
+    {
+      "query": "what should a website development quote include",
+      "observed_as": "current search-result guide and question wording",
+      "interpretation": "evidence that prospective website buyers ask how to interpret and compare proposals; not evidence of search volume, difficulty or demand"
+    }
+  ],
+  "canonical_service": "/services/website-development/",
+  "distinct_buyer_task": "Normalise multiple website development proposals into one comparison covering scope, responsibilities, continuing costs, ownership, acceptance evidence and exclusions before comparing totals.",
+  "overlap_review": [
+    {
+      "path": "/blog/website-development-varanasi-project-brief/",
+      "owns": "what a buyer should send before requesting a website proposal",
+      "boundary": "today's article starts after proposals arrive and compares their written responses"
+    },
+    {
+      "path": "/blog/questions-for-web-development-company/",
+      "owns": "how to interview a provider and assess working fit before hiring",
+      "boundary": "today's article owns side-by-side scope and commercial comparison"
+    },
+    {
+      "path": "/blog/digital-marketing-varanasi-quote-scope/",
+      "owns": "how to read a digital marketing quote with channel responsibilities and media spend",
+      "boundary": "today's article concerns a finite website design and development proposal"
+    }
+  ],
+  "primary_sources": [
+    "https://www.w3.org/WAI/planning-and-managing/plan/",
+    "https://developers.google.com/search/docs/essentials",
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+  ],
+  "limitations": [
+    "No search volume, keyword difficulty or ranking opportunity is claimed.",
+    "No provider price, legal conclusion, client identity, testimonial or outcome is invented.",
+    "Website acceptance, search visibility, AI citations and qualified enquiries remain separate measures."
+  ]
+}
