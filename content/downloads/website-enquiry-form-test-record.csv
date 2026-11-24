@@ -1,0 +1,14 @@
+Section,Test item,Expected result,Observed evidence,Owner,Status,Retest trigger
+Scope,Public form URL,Exact production or approved preview URL is recorded,,,Not reviewed,Form URL or route changes
+Scope,Receiving destination,Approved inbox or system and access owner are named,,,Not reviewed,Provider or recipient changes
+Input,Unique test reference,Reference contains no customer or confidential data,,,Not reviewed,Each test run
+Validation,Required fields,Each required field gives specific findable guidance,,,Not reviewed,Field rules change
+Validation,Invalid email,Invalid format is explained and other values remain,,,Not reviewed,Validation code changes
+Accessibility,Labels and keyboard,Every field has a usable label and keyboard path,,,Not reviewed,Form markup or styling changes
+Submission,Valid request,Service accepts one valid request and shows an accurate result,,,Not reviewed,Submission integration changes
+Failure,Unavailable submission,Safe test shows an honest error and fallback route,,,Not reviewed,Error handling changes
+Receipt,Matching message,Test reference and all expected values reach the agreed destination,,,Not reviewed,Email or provider routing changes
+Reply,Reply destination,A reply uses the visitor-controlled test address,,,Not reviewed,Notification template changes
+Measurement,Configured event,Event represents the agreed successful action and is observed in testing,,,Not reviewed,Analytics configuration changes
+Operations,Review owner,Named person or role checks and responds to new enquiries,,,Not reviewed,Team responsibility changes
+Maintenance,Retest schedule,Form is retested after material changes and at an agreed interval,,,Not reviewed,Launch approval

@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-23",
+  "source": "Current search-result question language reviewed after no live Search Console tab was available and the latest repository Search Console observations were older than the editorial date",
+  "query_evidence": [
+    {
+      "query": "how to test a contact form before launch",
+      "observed_as": "current search-result guide and question wording",
+      "interpretation": "evidence that buyers and delivery teams ask about pre-launch form testing; not evidence of search volume, difficulty or demand"
+    }
+  ],
+  "canonical_service": "/services/website-development/",
+  "distinct_buyer_task": "Prove that a website enquiry journey works from accessible visitor input through validation and submission to confirmed receipt, operational ownership and accurately scoped measurement.",
+  "overlap_review": [
+    {
+      "path": "/blog/website-clicks-vs-qualified-enquiries/",
+      "owns": "how to distinguish contact interactions, received enquiries and qualified business opportunities",
+      "boundary": "today's article owns pre-launch functional acceptance and end-to-end delivery testing"
+    },
+    {
+      "path": "/blog/whatsapp-contact-form-or-booking/",
+      "owns": "how to choose the suitable enquiry route",
+      "boundary": "today's article assumes a form is chosen and tests whether that route works"
+    },
+    {
+      "path": "/blog/is-your-website-ready-for-digital-marketing/",
+      "owns": "whether the wider destination and measurement are ready before a campaign",
+      "boundary": "today's article gives a detailed acceptance method for one enquiry form"
+    }
+  ],
+  "primary_sources": [
+    "https://www.w3.org/WAI/test-evaluate/preliminary/",
+    "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation",
+    "https://support.google.com/analytics/answer/12946393"
+  ],
+  "limitations": [
+    "No search volume, keyword difficulty or ranking opportunity is claimed.",
+    "The fictional business and test record contain no client identity, testimonial or outcome.",
+    "The article separates submission, receipt, qualification, search visibility, AI citations and commercial enquiries."
+  ]
+}
