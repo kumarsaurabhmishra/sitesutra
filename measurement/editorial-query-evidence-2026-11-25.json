@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-25",
+  "source": "Current search results. No current Search Console query data was available to this run; the repository observations predate it.",
+  "query_evidence": [
+    {
+      "query": "Should Your Website Be in Hindi, English or Both?",
+      "url": "https://www.vansys.co.in/blog/hindi-english-bilingual-website/",
+      "interpretation": "Evidence of a buyer question only. Search demand, volume and competition are unknown."
+    }
+  ],
+  "canonical_service": "/services/website-development/",
+  "distinct_buyer_task": "Decide the minimum complete bilingual customer journey and how to test and maintain it.",
+  "overlap_review": [
+    "Website content ownership covers staffing across the whole project.",
+    "Enquiry channel choice covers which route to offer.",
+    "Form acceptance covers operational delivery. This article covers language continuity across a specific customer task."
+  ],
+  "primary_sources": [
+    "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+    "https://www.w3.org/WAI/WCAG21/Techniques/html/H57"
+  ]
+}
