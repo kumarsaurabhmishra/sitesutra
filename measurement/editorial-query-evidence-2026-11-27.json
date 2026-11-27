@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-27",
+  "source": "Reviewed SiteSutra’s recent Search Console query list first. Visible queries centred on existing audit, reporting, website planning and contact topics. Public search results supplied the distinct buyer question below.",
+  "query_evidence": [
+    {
+      "query": "Product catalogue as PDF or web pages?",
+      "url": "https://srihayavadhana.tech/blog/product-catalogue-pdf-or-web-pages/",
+      "interpretation": "Observed public question wording only. Demand, volume and difficulty are unverified."
+    }
+  ],
+  "canonical_service": "/services/website-development/",
+  "distinct_buyer_task": "Decide how a wholesale product catalogue should divide specifications, quote inputs and reference documents between public web pages and a downloadable PDF.",
+  "overlap_review": [
+    "Website page count covers site structure.",
+    "Website redesign URL inventory covers existing URLs and redirect decisions.",
+    "Enquiry form testing covers delivery acceptance."
+  ],
+  "primary_sources": [
+    "https://developers.google.com/search/docs/crawling-indexing/indexable-file-types",
+    "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
+  ]
+}
