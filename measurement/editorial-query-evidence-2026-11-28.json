@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-28",
+  "source": "The recent 28-day India Web Search Console query view checked on 27 November centred on covered audit, reporting, website planning and contact topics. Current public results provided a distinct question.",
+  "query_evidence": [
+    {
+      "query": "What happens to my email when we launch the new website?",
+      "url": "https://www.billerickson.net/client-resources/email-options/",
+      "interpretation": "Evidence of wording only. Demand, volume and difficulty are unverified."
+    }
+  ],
+  "canonical_service": "/services/website-development/",
+  "distinct_buyer_task": "Determine whether the website can move independently of email and what evidence is needed before the original hosting plan can be cancelled.",
+  "overlap_review": [
+    "Account ownership covers control and access",
+    "Redesign URL inventory covers URL decisions and redirects",
+    "Enquiry form testing covers delivery in general. This draft tests mail and form dependencies at a hosting cutover."
+  ],
+  "primary_sources": [
+    "https://vercel.com/docs/domains/working-with-domains/add-a-domain",
+    "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/"
+  ]
+}
